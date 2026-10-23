@@ -1,0 +1,8 @@
+{
+  "title": "Secure but Broken? Deployment-Validated Evaluation of LLM Security Repairs for Kubernetes (replication package)",
+  "upload_type": "software",
+  "description": "Replication package for the study 'Secure but Broken? Deployment-Validated Evaluation of LLM Security Repairs for Kubernetes'. Every LLM repair of a Kubernetes security misconfiguration is deployed on a fresh cluster and judged by seven gates (scanner rules, new findings, dry run, readiness, functional journeys, load test, security intent with runtime probes). Contains the pre-registered protocol, decision log, cases, harness, analysis scripts, paper sources and the systematic literature review. Account-specific values are replaced by placeholders.",
+  "creators": [{"name": "Hadi, Abdul"}],
+  "license": "MIT",
+  "keywords": ["Kubernetes", "large language models", "security misconfiguration", "automated repair", "infrastructure as code", "replication package"]
+}
