@@ -1,5 +1,7 @@
 # Secure but Broken?
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23600348.svg)](https://doi.org/10.5281/zenodo.23600348)
+
 Replication package for *Secure but Broken? Deployment-Validated Evaluation of LLM Security Repairs for Kubernetes*
 (Abdul Hadi, 2026). Every LLM repair of a Kubernetes security misconfiguration is deployed on a fresh cluster and judged
 by seven gates: targeted scanner rules, no new findings, server-side dry run, readiness, functional user journeys,

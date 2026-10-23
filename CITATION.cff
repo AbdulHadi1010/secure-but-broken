@@ -6,4 +6,9 @@ authors:
     given-names: "Abdul"
 license: MIT
 repository-code: "https://github.com/AbdulHadi1010/secure-but-broken"
-# doi: add the Zenodo DOI after the first release
+doi: "10.5281/zenodo.23600348"
+version: "1.0.0"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23600349"
+    description: "v1.0.0"

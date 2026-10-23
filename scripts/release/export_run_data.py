@@ -21,7 +21,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from make_public_snapshot import DANGER, REPLACE  # noqa: E402
 
 BUCKET = "sbb-artifacts-<AWS_ACCOUNT_ID>"
-KEEP = ("chains/", "baseline/", "cases/", "pilot/", "p8/", "validation/")  # top-level prefixes in the package
+KEEP = ("chains/", "baseline/", "p8/", "vm-results/", "batches/")  # study data; code bundles and operational logs are left out
 
 
 def objects(s3):
@@ -67,7 +67,40 @@ def download(s3, out: str) -> None:
     print(f"exported {n} objects to {dest}; withheld {bad}")
 
 
+def redact_folder(raw: str, out: str) -> None:
+    """Same redaction and credential scan as --download, for a folder fetched with `aws s3 sync` (parallel)."""
+    src, dest = Path(raw), Path(out)
+    if dest.exists():
+        raise SystemExit(f"{dest} exists; choose a new folder")
+    n = bad = 0
+    for p in sorted(src.rglob("*")):
+        if not p.is_file():
+            continue
+        rel = p.relative_to(src)
+        if not str(rel).replace("\\", "/").startswith(KEEP):
+            continue
+        body = p.read_bytes()
+        target = dest / rel
+        target.parent.mkdir(parents=True, exist_ok=True)
+        try:
+            text = body.decode("utf-8")
+            for pat, ph in REPLACE:
+                text = pat.sub(ph, text)
+            if DANGER.search(text):
+                bad += 1
+                print("credential-like content, NOT exported:", rel)
+                continue
+            target.write_text(text, encoding="utf-8", newline="")
+        except UnicodeDecodeError:
+            target.write_bytes(body)
+        n += 1
+    print(f"redacted copy: {n} files in {dest}; withheld {bad}")
+
+
 if __name__ == "__main__":
+    if sys.argv[1:2] == ["--redact-folder"]:  # no AWS access needed
+        redact_folder(sys.argv[2], sys.argv[3])
+        raise SystemExit(0)
     s3 = boto3.Session(profile_name="secure-but-broken").client("s3")
     if sys.argv[1:2] == ["--measure"]:
         measure(s3)
