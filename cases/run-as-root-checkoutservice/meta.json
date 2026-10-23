@@ -1,0 +1,18 @@
+{
+ "case_id": "run-as-root-checkoutservice",
+ "service_port": 5050,
+ "type": "run-as-root",
+ "fix_class": "b",
+ "service": "checkoutservice",
+ "reference_fix": "set pod securityContext.runAsUser to a non-root UID the image can run as (gold: 10001) and runAsNonRoot: true",
+ "target_rules": [
+  "checkov:CKV_K8S_23",
+  "checkov:CKV_K8S_40",
+  "kics:cf34805e-3872-4c08-bf92-6ff7bb0cfadb",
+  "kics:02323c00-cdc3-4fdc-a310-4f2b3e7a1660",
+  "kube-score:container-security-context-user-group-id"
+ ],
+ "coupled_rules": [],
+ "gold_sha256": "08aa0feec0d6b47270472db2275acdc52479b3d80615bec107ab30682ac33dcb",
+ "case_sha256": "0f2cae824efb602bcae686bf6706dff4212fad495ff9acdf1b35a05bc2092e53"
+}

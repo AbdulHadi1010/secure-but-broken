@@ -1,0 +1,20 @@
+{
+  "_comment": "Image tag -> digest, resolved 2026-10-03 with `docker buildx imagetools inspect`. Change only with a journal entry.",
+  "upstream": "GoogleCloudPlatform/microservices-demo v0.10.7 release/kubernetes-manifests.yaml",
+  "upstream_sha256": "ae3c20181c051048e6a5cae51fa530681affa4043ba60ae95d4f39e1262f2744",
+  "images": {
+    "busybox:1.38.0": "sha256:dc2d74b28e4cf8984fa52af1f39bc7c3d9c73760b41a74d629f5d11b1ab28616",
+    "redis:alpine": "sha256:3811787313eba226a2ef38658c6ccb91cd5e110edc89c37767de373120a0e5a0",
+    "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/adservice:v0.10.7": "sha256:7b26b5ea1a6472ca62b3c20c6f6ac12dd1fbcf18ba596a2c174982bcccdfc0c8",
+    "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/cartservice:v0.10.7": "sha256:e5310c2aa45732e351c55c88051700d958dc7ed2693e66405fc6c70cf080109e",
+    "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/checkoutservice:v0.10.7": "sha256:f0e72ff7b438dd2e8776fb142d5132cfa5ba02c523466f1491270c576412d33f",
+    "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/currencyservice:v0.10.7": "sha256:c581681bbf9abec8563e520aac3f3dbe3e7498853b6eb263193bc80c87e42f74",
+    "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/emailservice:v0.10.7": "sha256:1142813191b50f7e74bd1d8957d3b272496e9648b745d2c9914752b94356eade",
+    "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/frontend:v0.10.7": "sha256:e1cbd4561d3c9d27497dc0e8b1c12da194c4bf2ea82648f58bf38f073698f483",
+    "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/paymentservice:v0.10.7": "sha256:e1ff27c553f7e0c31f4a10f1950ec0ee34cd41d77dd819b1fcfa139273891602",
+    "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/productcatalogservice:v0.10.7": "sha256:ba573405e9b03ea29970185eeaf0a9de9db7400b9104695e39d4dfc0fb651cb5",
+    "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/recommendationservice:v0.10.7": "sha256:69291992f5511e9199d08c24a3ceb6470b39461933304fbdad1c7ddfc7358fd9",
+    "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/shippingservice:v0.10.7": "sha256:3984397422ef1b45bd8a7c6736f935f4b6a41a1724ea39f9563b26733ed633e4"
+  },
+  "dropped_workloads": ["loadgenerator"]
+}

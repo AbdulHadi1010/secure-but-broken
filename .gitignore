@@ -1,0 +1,31 @@
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+*.tfplan
+tfplan*
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+dist/
+# local run outputs (source of truth is S3)
+runs/*
+!runs/.gitkeep
+# secrets: never commit
+.env
+*.pem
+credentials
+.aws/
+
+# literature full texts (copyrighted PDFs; URLs and sha256 are recorded in docs/lit-review/fulltext-manifest.csv)
+docs/lit-review/fulltext/
+
+# LaTeX build outputs (rebuild with scripts/build_paper.ps1)
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.bbl
+paper/*.blg
+paper/*.pdf

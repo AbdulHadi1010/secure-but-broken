@@ -1,0 +1,1 @@
+R0862 ? LLM-guided generation of Terraform update configs to find IaC-platform bugs; unclear whether LLM produces configs and whether prototype evaluation is empirical; full text decides

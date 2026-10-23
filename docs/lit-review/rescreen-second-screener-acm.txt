@@ -1,0 +1,2 @@
+R0848 X3 overview/position paper on AI for cloud security; LLMs only mentioned for detection (misconfig/threat/log analysis), no LLM-produced config, no empirical evaluation
+R0852 X1 no abstract; title indicates LLM agents performing privilege escalation (offensive pentesting), not producing or repairing IaC/K8s/cloud config

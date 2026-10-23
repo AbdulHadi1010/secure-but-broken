@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this replication package, please cite it as below."
+title: "Secure but Broken? Deployment-Validated Evaluation of LLM Security Repairs for Kubernetes (replication package)"
+authors:
+  - family-names: "Hadi"
+    given-names: "Abdul"
+license: MIT
+repository-code: "<REPOSITORY_URL>"
+# doi: add the Zenodo DOI after the first release

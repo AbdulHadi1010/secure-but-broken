@@ -1,0 +1,275 @@
+{
+ "all_chains": [
+  {
+   "term": "Intercept",
+   "log_odds": 6.1489804746348184,
+   "sd": 0.1532101099158931,
+   "odds_ratio": 468.23976103464463,
+   "or_95": [
+    346.7812489814299,
+    632.2385493960829
+   ],
+   "excludes_1": true
+  },
+  {
+   "term": "C(condition, Treatment('C1'))[T.C0]",
+   "log_odds": 0.24201936361951737,
+   "sd": 0.2663020311306258,
+   "odds_ratio": 1.2738188583210939,
+   "or_95": [
+    0.7558419159735391,
+    2.1467643557773535
+   ],
+   "excludes_1": false
+  },
+  {
+   "term": "C(condition, Treatment('C1'))[T.C2-LLM]",
+   "log_odds": 1.662589722300516,
+   "sd": 0.33451256336273233,
+   "odds_ratio": 5.2729486504692895,
+   "or_95": [
+    2.737259234923472,
+    10.1576011200354
+   ],
+   "excludes_1": true
+  },
+  {
+   "term": "C(condition, Treatment('C1'))[T.C2-template]",
+   "log_odds": 2.829986852979194,
+   "sd": 0.4385641354234526,
+   "odds_ratio": 16.945238043679442,
+   "or_95": [
+    7.173666823847184,
+    40.02710181666471
+   ],
+   "excludes_1": true
+  },
+  {
+   "term": "C(model, Treatment('kimi-k3'))[T.deepseek-v3-2]",
+   "log_odds": -2.9104888141215204,
+   "sd": 0.2140239729589735,
+   "odds_ratio": 0.054449107870284265,
+   "or_95": [
+    0.035794247019858,
+    0.0828263085468759
+   ],
+   "excludes_1": true
+  },
+  {
+   "term": "C(model, Treatment('kimi-k3'))[T.glm-5]",
+   "log_odds": -0.7901582662341454,
+   "sd": 0.2793014200678253,
+   "odds_ratio": 0.4537729726594179,
+   "or_95": [
+    0.26248036632084254,
+    0.7844773824510407
+   ],
+   "excludes_1": true
+  },
+  {
+   "term": "C(type, Treatment('privileged'))[T.added-capabilities]",
+   "log_odds": 2.4783850204880147,
+   "sd": 1.236189468215706,
+   "odds_ratio": 11.92199508444453,
+   "or_95": [
+    1.0570670779932305,
+    134.46068821228565
+   ],
+   "excludes_1": true
+  },
+  {
+   "term": "C(type, Treatment('privileged'))[T.allow-privilege-escalation]",
+   "log_odds": 0.5197959512076177,
+   "sd": 0.7047843537039135,
+   "odds_ratio": 1.6816844690022057,
+   "or_95": [
+    0.4225041499715327,
+    6.693573668977638
+   ],
+   "excludes_1": false
+  },
+  {
+   "term": "C(type, Treatment('privileged'))[T.missing-limits]",
+   "log_odds": -0.005405155316843135,
+   "sd": 0.599950760436334,
+   "odds_ratio": 0.9946094262514467,
+   "or_95": [
+    0.3068835106482225,
+    3.223529047548589
+   ],
+   "excludes_1": false
+  },
+  {
+   "term": "C(type, Treatment('privileged'))[T.netpol]",
+   "log_odds": -3.021287285411273,
+   "sd": 0.16694813606155345,
+   "odds_ratio": 0.04873843768255909,
+   "or_95": [
+    0.035137033404873064,
+    0.06760489083882798
+   ],
+   "excludes_1": true
+  },
+  {
+   "term": "C(type, Treatment('privileged'))[T.run-as-root]",
+   "log_odds": 2.4783859788476956,
+   "sd": 1.236189766730105,
+   "odds_ratio": 11.92200651000941,
+   "or_95": [
+    1.0570674725776346,
+    134.46089574406798
+   ],
+   "excludes_1": true
+  },
+  {
+   "term": "C(wording, Treatment('W0'))[T.W1]",
+   "log_odds": -0.0600522555957189,
+   "sd": 0.2148495904360251,
+   "odds_ratio": 0.9417153224033104,
+   "or_95": [
+    0.618072374051829,
+    1.4348283238021005
+   ],
+   "excludes_1": false
+  },
+  {
+   "term": "case random-intercept SD (log scale param)",
+   "log_odds": 0.28492366327117774,
+   "sd": 0.16314750901858066,
+   "odds_ratio": null,
+   "or_95": null,
+   "excludes_1": null
+  }
+ ],
+ "w0_only": [
+  {
+   "term": "Intercept",
+   "log_odds": 6.08232997506685,
+   "sd": 0.21785085462949091,
+   "odds_ratio": 438.04864903594193,
+   "or_95": [
+    285.8165417618862,
+    671.3628880237262
+   ],
+   "excludes_1": true
+  },
+  {
+   "term": "C(condition, Treatment('C1'))[T.C0]",
+   "log_odds": -0.29735252104362375,
+   "sd": 0.3667917449883638,
+   "odds_ratio": 0.7427821198752621,
+   "or_95": [
+    0.3619492983696499,
+    1.524316472200824
+   ],
+   "excludes_1": false
+  },
+  {
+   "term": "C(condition, Treatment('C1'))[T.C2-LLM]",
+   "log_odds": 1.272018774815556,
+   "sd": 0.47403610366478244,
+   "odds_ratio": 3.5680483827569622,
+   "or_95": [
+    1.4090631866349823,
+    9.035059167288097
+   ],
+   "excludes_1": true
+  },
+  {
+   "term": "C(condition, Treatment('C1'))[T.C2-template]",
+   "log_odds": 2.0796134428416204,
+   "sd": 0.5559855781230875,
+   "odds_ratio": 8.001375327501087,
+   "or_95": [
+    2.6909700048183782,
+    23.791423545006836
+   ],
+   "excludes_1": true
+  },
+  {
+   "term": "C(model, Treatment('kimi-k3'))[T.deepseek-v3-2]",
+   "log_odds": -2.9386943289342593,
+   "sd": 0.2900155523337322,
+   "odds_ratio": 0.052934799072489255,
+   "or_95": [
+    0.029983310435226757,
+    0.0934550892536766
+   ],
+   "excludes_1": true
+  },
+  {
+   "term": "C(model, Treatment('kimi-k3'))[T.glm-5]",
+   "log_odds": -0.29329064384890513,
+   "sd": 0.4354020981983554,
+   "odds_ratio": 0.7458053454575083,
+   "or_95": [
+    0.31769512520555787,
+    1.750815700911682
+   ],
+   "excludes_1": false
+  },
+  {
+   "term": "C(type, Treatment('privileged'))[T.added-capabilities]",
+   "log_odds": 2.1574380121848673,
+   "sd": 1.2453848674191348,
+   "odds_ratio": 8.648950742878663,
+   "or_95": [
+    0.7531645914675278,
+    99.32005540380813
+   ],
+   "excludes_1": false
+  },
+  {
+   "term": "C(type, Treatment('privileged'))[T.allow-privilege-escalation]",
+   "log_odds": 0.967069566884057,
+   "sd": 0.9033284931521418,
+   "odds_ratio": 2.6302254550891746,
+   "or_95": [
+    0.4477940957731286,
+    15.449256722902506
+   ],
+   "excludes_1": false
+  },
+  {
+   "term": "C(type, Treatment('privileged'))[T.missing-limits]",
+   "log_odds": 0.9670702323158914,
+   "sd": 0.9033291072744725,
+   "odds_ratio": 2.6302272053255065,
+   "or_95": [
+    0.4477938547588467,
+    15.449285598972928
+   ],
+   "excludes_1": false
+  },
+  {
+   "term": "C(type, Treatment('privileged'))[T.netpol]",
+   "log_odds": -2.5068275696672817,
+   "sd": 0.24235746469762376,
+   "odds_ratio": 0.081526466455497,
+   "or_95": [
+    0.050699487566490245,
+    0.1310972763581207
+   ],
+   "excludes_1": true
+  },
+  {
+   "term": "C(type, Treatment('privileged'))[T.run-as-root]",
+   "log_odds": 2.1574361473348183,
+   "sd": 1.2453846149307606,
+   "odds_ratio": 8.648934613897485,
+   "or_95": [
+    0.7531635596463578,
+    99.31982103674498
+   ],
+   "excludes_1": false
+  },
+  {
+   "term": "case random-intercept SD (log scale param)",
+   "log_odds": 0.42868072211513214,
+   "sd": 0.16252689741836976,
+   "odds_ratio": null,
+   "or_95": null,
+   "excludes_1": null
+  }
+ ]
+}

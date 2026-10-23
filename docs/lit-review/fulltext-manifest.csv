@@ -1,0 +1,189 @@
+rec_id,source,url,sha256,pages,chars,status
+R0001,"publisher (PDF supplied by Abdul's professor (full_doc.zip, 2026-10-23))",https://doi.org/10.5220/0011991200003488,a88aa5afc023dd6d97a573c390c8d23e4cbe62676bb550fc65870608a4552ad7,8,36934,ok
+R0006,arxiv,https://arxiv.org/pdf/2401.06786,b862025303214141259c0fb6a4dc7dd96220c019d48e3c73b1b7db431783bf66,22,74694,ok
+R0009,Journal of Web Engineering,https://journals.riverpublishers.com/index.php/JWE/article/download/24673/19159,77be0411dcefae33b08731f0a5ddbbdc8bc9ea8e1b682a4ba9bad29edd639742,24,46973,ok
+R0015,"publisher (PDF supplied by Abdul's professor (full_doc.zip, 2026-10-23))",https://doi.org/10.55041/isjem02027,19d9c8dea65ce40d5a89228f3d6a823cd5ee088302babec400b17c60c0782ed9,12,35478,ok
+R0017,INTERNATIONAL JOURNAL OF COMPUTER ENGINEERING & TECHNOLOGY,https://doi.org/10.34218/ijcet_15_05_112,8a6a53df6652c0cce8cb126cb8140f988f743fab03077c6d0173cad632b8b069,18,37211,ok
+R0018,ACM DL (Abdul's Chrome session),https://doi.org/10.1145/3704440.3704778,f840ca79bc533b1b55525a7bf013643edc24213615be031b7c2707708fed7a43,2,10123,ok
+R0019,arxiv,https://arxiv.org/pdf/2403.09537,48999cc2e31e3355c5f33785b4abf7d636b74d1e7ceb1931b26331a5e76102bd,7,39559,ok
+R0022,Journal of Artificial Intelligence Machine Learning and Data Science,https://doi.org/10.51219/jaimld/madhava-rao-thota/679,d676f2a98669a142b3318853c93284f7012b149107b1a22e6d5cf43afb3e6b54,9,54882,ok
+R0029,"IEEE Xplore (PDF supplied by Abdul's professor (full_doc.zip, 2026-10-23))",https://doi.org/10.1109/cloud-summit61220.2024.00012,4c9f3d25db4cd5c30d1b3d179fd45d1cee37acd1d8ccde427cffbc32967313b6,8,40816,ok
+R0030,ACM DL (Abdul's Chrome session),https://doi.org/10.1145/3643991.3645079,ec980de55aa635652189bd4ffa25f1a60ebbb446545c8876351ef80fb60b86c7,5,24204,ok
+R0031,International Journal of Research Publications in Engineering Technology and Management,https://www.ijrpetm.com/index.php/IJRPETM/article/download/415/394,34f37a74012999e5d940a66a2e73ea06a357c2488b2560bc66346f71bc60d319,12,57483,ok
+R0033,arxiv,https://arxiv.org/pdf/2405.19954,97347fe01229fe173fac4806e736e94d36ab51a6e9b9bbf42423a40e725b6c42,15,93640,ok
+R0038,"IEEE Xplore (PDF supplied by Abdul's professor (full_doc.zip, 2026-10-23))",https://doi.org/10.1109/camad62243.2024.10942727,f1833005645e989c3b4068c63bae2be9d1f5237f09fb57f02af86fe459602db6,2,8404,ok
+R0039,ACM DL (Abdul's Chrome session),https://doi.org/10.1145/3629527.3653665,462169b033ee4ad32e8744265b2dec2ec77cb227427d7edebdae25bd568c080a,5,32792,ok
+R0041,"IEEE Xplore (PDF supplied by Abdul's professor (full_doc.zip, 2026-10-23))",https://doi.org/10.1109/ants63515.2024.10898244,a55588b4b52dd7f20cf21df83edfc7da3b3424b831c86cc91300105b61e8331a,6,33906,ok
+R0043,arxiv,https://arxiv.org/pdf/2408.11428,e57f2ec63815d7dcb297f3f10b6bc62f653ee84627c2d6ff1b226e6dc1716a68,6,21875,ok
+R0047,"IEEE Xplore (PDF supplied by Abdul's professor (full_doc.zip, 2026-10-23))",https://doi.org/10.1109/iceecit63698.2024.10859822,19ac3bd0dc4459a557f0f5cc57537d9b4aeba88037fd831020339605779de8ab,6,35061,ok
+R0049,"IEEE Xplore (PDF supplied by Abdul's professor (full_doc.zip, 2026-10-23))",https://doi.org/10.1109/secdev61143.2024.00008,f4078366a513143240d7f9e1822ee615c575a675debdb03068fba2783e89cab3,8,40984,ok
+R0051,Zenodo,https://zenodo.org/api/records/18594166/files/IJSRET_V10_issue5_510.pdf/content,91c6966200cb8be04cb9762ed2432742640772eaedc2ea458a15631dbef73792,9,32578,ok
+R0053,arxiv,https://arxiv.org/pdf/2411.19043,8b71acbbe6a9135ab260851ffe329102702ea4c81e994d6a6aa1e8150f63fa92,4,23454,ok
+R0055,,,,,,no full text: Springer chapter paywalled
+R0057,ACM DL (Abdul's Chrome session),https://doi.org/10.1145/3795154.3795362,dc0474da1e431a9521dd3e33b5a15f13d247464a068b8e5bf31fec4d1a4be4b4,6,32191,ok
+R0058,Annual Meeting of the Association for Computational Linguistics (ACL),https://aclanthology.org/2025.acl-industry.27.pdf,89896420d002d523b0a6e7c3f55d1fdbd22d178d6bd7491e0ca569dea1501340,10,36138,ok
+R0066,SSRN PDF parsed in-page with pdf.js (Abdul's Chrome session; not saved),https://doi.org/10.2139/ssrn.5774785,,,,ok
+R0069,"publisher (PDF supplied by Abdul's professor (full_doc.zip, 2026-10-23))",https://doi.org/,de1658fab1e6655656cf58de0b0e1956f9e0eea239dbd7e8f3108d48c8646daf,8,41028,ok
+R0073,International Journal of Innovative Research in Engineering & Multidisciplinary Physical Sciences,https://www.ijirmps.org/papers/2025/3/232448.pdf,bef8bcc68484d397d94bc522d8293a0b76dacda4fc33277b6f58d26405fd56d5,13,51889,ok
+R0074,citation_pdf_url (www.jisem-journal.com),https://www.jisem-journal.com/index.php/journal/article/download/12800/5992,da0813a11df333150193a141312e2922cde145c5421e372d1701dda1fdc968c4,11,43655,ok
+R0085,arxiv,https://arxiv.org/pdf/2507.10584,aa3e00fbdcafa19e8056aadd690d093e58d51ba7bebb57277b941b50345731d4,15,35362,ok
+R0089,Brazilian Symposium on Multimedia and the Web,https://sol.sbc.org.br/index.php/webmedia/article/download/37949/37727,2a037454ebe6eb0de1ce9ddc978640d0358068a456eb778e4d9f34aebc44f44f,9,48574,ok
+R0096,"IEEE Xplore (PDF supplied by Abdul's professor (full_doc.zip, 2026-10-23))",https://doi.org/10.1109/csr64739.2025.11130174,45c2f2da157f32fa4c3877740bed07b93e422f9ff87e1e2c34308a328f3ea924,8,43832,ok
+R0097,arxiv,https://arxiv.org/pdf/2501.11107,8ae613bf87030eb2d339a3ee9bbb1be03141c361a825f090017173659ed3e043,114,457703,ok
+R0098,NORMA (NCI) thesis PDF parsed in-page with pdf.js (Abdul's Chrome session; not saved),,,,,ok
+R0099,MD-SOAR repository PDF parsed in-page with pdf.js (Abdul's Chrome session; not saved),,,,,ok
+R0103,"IEEE Xplore (PDF supplied by Abdul's professor (full_doc.zip, 2026-10-23))",https://doi.org/10.1109/niss66502.2025.00012,63c7d3ce4f432eb0eeb033943f14aadc9aba3235c030458ea277668e49af701f,8,41201,ok
+R0106,ETH Research Collection thesis PDF parsed in-page with pdf.js (Abdul's Chrome session; not saved),,,,,ok
+R0112,arxiv,https://arxiv.org/pdf/2506.05623,d3aab982bf0ff195197ae28cdf933e2ac541c3a711b20c3bf6d113732a277900,23,92624,ok
+R0115,Journal of Cyber-Physical Security and Robotics,https://jocpsr.com/index.php/journal/article/download/40/31,1a8bfe6589a3f4c4c2f5eb06d6ce884eb6dee3d6efbc4cbb28fa23b8bab7a8d6,9,45181,ok
+R0119,"IEEE Xplore (PDF supplied by Abdul's professor (full_doc.zip, 2026-10-23))",https://doi.org/10.1109/ipccc66453.2025.11304647,398dbc07df86427c1f0b69a8f2fb222ae99a1ecf35a24ffa917a4755d1700229,8,44696,ok
+R0122,NORMA (NCI) thesis PDF parsed in-page with pdf.js (Abdul's Chrome session; not saved),,,,,ok
+R0124,"IEEE Xplore (PDF supplied by Abdul's professor (full_doc.zip, 2026-10-23))",https://doi.org/10.1109/icidca66325.2025.11280531,50d82991797a755fd5e8c307f3a1163167f2c9fc58644288c37c0aab0ecd321d,6,25902,ok
+R0132,OPUS Stuttgart thesis PDF parsed in-page with pdf.js (Abdul's Chrome session; not saved),,,,,ok
+R0135,"IEEE Xplore (PDF supplied by Abdul's professor (full_doc.zip, 2026-10-23))",https://doi.org/10.1109/csr64739.2025.11130019,5c05e400059ce15d66e273ced25ed3469878e15a452dce492104e4e2bb86a635,6,31570,ok
+R0137,SSRN PDF parsed in-page with pdf.js (Abdul's Chrome session; not saved),https://doi.org/10.2139/ssrn.5401126,,,,ok
+R0140,Zenodo,https://zenodo.org/api/records/20351381/files/IJSRET_V11_issue6_351.pdf/content,106e27a61a7a3a40e9202b98eb5b4413482cf35c38bb9d4dbcc4a23923030a01,8,31659,ok
+R0141,arxiv,https://arxiv.org/pdf/2511.12385,1c963bb775c54b98ed2631cedf813a4194cc8a2e8557a1f791f40a731a4137e7,14,84905,ok
+R0146,arxiv,https://arxiv.org/pdf/2512.14792,5e34f5a4db9783b37495db27be35759920abb1ed60e97a5aa8eee466461e0ca4,43,156329,ok
+R0149,,,,,,no full text: IEEE DataPort entry requires an IEEE account
+R0152,"IEEE Xplore (PDF supplied by Abdul's professor (full_doc.zip, 2026-10-23))",https://doi.org/10.1109/ase63991.2025.00298,3515a5631a88346d55a023c091300e313b4724a68f8f1be922624bd01ff3eb37,11,58893,ok
+R0156,arxiv,https://arxiv.org/pdf/2509.04191,3ddd51b5471fd9e8b2e71ea7c0c2406ea3cd2b0a4da6eb2d6935d0d47ac2def5,20,123588,ok
+R0157,arxiv,https://arxiv.org/pdf/2509.02449,49b9782f422a3d89c5c7b8b550aeeaf9feaeb451f8fa8cf02a3ebb996978e6fe,20,75758,ok
+R0158,arxiv,https://arxiv.org/pdf/2502.20825,e8de96c3f33e86d892f96c7e313a47b7c6ba29381dc5c92842d5664794c6ac6b,17,56831,ok
+R0159,AIS eLibrary (WISP 2025) PDF parsed in-page with pdf.js (Abdul's Chrome session; not saved),https://aisel.aisnet.org/wisp2025/1,,,,ok
+R0162,IEEE Xplore HTML full text (read in Abdul's Chrome session),https://doi.org/10.1109/ACCESS.2025.3560911,,,,ok
+R0163,Repositori UdL thesis PDF parsed in-page with pdf.js (Abdul's Chrome session; not saved),,,,,ok
+R0164,SSRN PDF parsed in-page with pdf.js (Abdul's Chrome session; not saved),https://doi.org/10.2139/ssrn.5206937,,,,ok
+R0165,International Journal of Science Research and Technology,https://www.ijsrat.com/index.php/ijsrat/article/download/286/275,99a9045db7ccbc60222b15f30d0d35b239f798c5b5065e97b1e2e33d4ca1fb20,10,41341,ok
+R0167,"IEEE Xplore (PDF supplied by Abdul's professor (full_doc.zip, 2026-10-23))",https://doi.org/10.1109/cloud-summit64795.2025.00024,8c290d1581ef5161037725ec838bac279322dccf2add705a3b5f780802b8b9b9,6,28839,ok
+R0169,"IEEE Xplore (PDF supplied by Abdul's professor (full_doc.zip, 2026-10-23))",https://doi.org/10.1109/csitss67709.2025.11295499,dc7d954a3823fafd5e378ea761b2e1767f08746cc720ac33738c77da4170ce1f,6,30607,ok
+R0170,arxiv,https://arxiv.org/pdf/2511.07865,b3fb067e31e3ec5f058fd081f7caffa5669c50e47f540a05d0208c9213d8bf97,6,31899,ok
+R0171,arxiv,https://arxiv.org/pdf/2502.02009,dd89cb4ae314295e9861bb6d164d36d8c078aa50243e72b20a1d5bbb356abfe2,13,62849,ok
+R0174,arxiv,https://arxiv.org/pdf/2510.03902,b5bd989505052ac2b3f454cc34d6a3c2c4bd2e11ae3de6addf15e7f1b75a512a,18,59159,ok
+R0177,arxiv,https://arxiv.org/pdf/2509.05303,cff039c866fc2db8252a957c863563ebc3c5086b039ed2a4fce71e1b2fcadb24,28,83331,ok
+R0182,"publisher (PDF supplied by Abdul's professor (full_doc.zip, 2026-10-23))",https://doi.org/10.5463/thesis.1208,48c536f4e09f983c55b76127fbb874111331cff81de3066d64941ff9fa9e87a9,174,408720,ok
+R0188,MDPI (Abdul's Chrome session),https://doi.org/10.3390/fi17090416,40a4b4fef630bf711a4ee0e0eec750677c81d661f26a118bfc755faaf5cbe393,19,61787,ok
+R0190,ACM DL (Abdul's Chrome session),https://doi.org/10.1145/3746252.3761441,145864d795e7f0f76c99f061e82edf9a5cd2e962ba2fcb92e386dbc13676caa4,2,10540,ok
+R0213,International Journal for Research in Applied Science and Engineering Technology,https://doi.org/10.22214/ijraset.2026.84054,b5e944de5c6d42d3d1a5f4bd623f2029ed12e25c2c58d035ba6e880a05c47c14,10,28944,ok
+R0219,,,,,,no full text: Springer chapter paywalled
+R0220,Journal of Networking and Network Applications,https://iecscience.org/uploads/jpapers/202606/8GqQ8nOYzbLouXyUr9cMpGDYSTA2kdWUkKvx85PE.pdf,47e244545fca4bd67cd07a05d613ae605dea24c72ea71fb51da83e2d506e6784,12,64144,ok
+R0228,IOS Press open-access PDF parsed in-page with pdf.js (Abdul's Chrome session; not saved),,,,,ok
+R0229,"publisher (PDF supplied by Abdul's professor (full_doc.zip, 2026-10-23))",https://doi.org/10.1016/j.jnca.2026.104567,9e908522eb2146a3def0036dea54a26ba9e4c7132fd9d9728e1a0f9149991a35,21,136891,ok
+R0234,Zenodo,https://zenodo.org/api/records/19408840/files/D475615040426.pdf/content,3f0fb670bd050e788ba98a23391dd802a5eabc686b1e7becbfff72fb5bc9b52a,10,59986,ok
+R0240,International Journal For Multidisciplinary Research,https://www.ijfmr.com/papers/2026/2/78058.pdf,10effa213e125741f850dba83b4dccf32a03eefec8d1365cdbbf369179f2baca,19,68707,ok
+R0248,citation_pdf_url (sol.sbc.org.br),https://sol.sbc.org.br/index.php/sbseg_estendido/article/download/44455/44218,00daa913950ffb0768942de2be5ba6397bf47f9c053a0e8732a452e7e6b6e695,9,24874,ok
+R0249,Zenodo,https://zenodo.org/api/records/20846323/files/AICP_LLM_Infrastructure_Orchestration_Guttikonda_2026.pdf/content,bdcabc5329fe429dfa5310a731200ad2d93eb93d1e4d25c3d88cbac25f2c5a35,20,34463,ok
+R0260,arxiv,https://arxiv.org/pdf/2607.19182,ada0350d789d7dfbbd7c9d8d894167158787aa5161c4416a6fa916cebb6042c4,15,81216,ok
+R0262,Zenodo,https://zenodo.org/api/records/21234868/files/AhmetTunahanCinsoy_EMSC3_Thesis.pdf/content,d6241dd417443836b10f995a10bff40cc110184c8dfa76022909a599720a055b,64,126288,ok
+R0267,International Journal for Research in Applied Science and Engineering Technology,https://doi.org/10.22214/ijraset.2026.84056,d9f184e558665938eeddbf6cc8d2462a2527ef1269a5e82a688f4988469ac80e,9,23606,ok
+R0269,International Journal for Research in Applied Science and Engineering Technology,https://doi.org/10.22214/ijraset.2026.84057,e48a1853298a5c0bccd771623d335486949f06d0bd08aceecf698590638c9386,9,26589,ok
+R0274,SSRN PDF parsed in-page with pdf.js (Abdul's Chrome session; not saved),https://doi.org/10.2139/ssrn.7599861,,,,ok
+R0278,Iconic Research and Engineering Journals,https://www.irejournals.com/formatedpaper/1715267.pdf,4de065fd6142d50fcffe71d6141ccc99cf65d12dd65ebe69c2c888f1bb1ece8e,4,9844,ok
+R0287,"IEEE Xplore (PDF supplied by Abdul's professor (full_doc.zip, 2026-10-23))",https://doi.org/10.1109/hpsr68369.2026.11615170,802a5a5c6cb28ccb5b04ec07387d35afbb5388dedd083706dbdb3141a20f5381,6,35516,ok
+R0294,arxiv,https://arxiv.org/pdf/2602.03648,121a9c7616d760da75dc0e8e18b7d4cf5d6cd6e79f3c4b87ef360a70c47de018,8,44929,ok
+R0295,oa,https://sol.sbc.org.br/index.php/pesquisanuvem/article/download/43075/42841,f1d56dfbab01f86f702b7bb59e33e46e96b3d30e49aa93b82f5645281350b028,10,31566,ok
+R0299,Journal of Innovative Research and Technology,https://jirt.org/index.php/JIRT/article/download/45/41,33dfef2b36a55e559a60bb6654cc607dc0502df0ef75753efffbfe1775bf7acd,13,45472,ok
+R0307,Zenodo,https://zenodo.org/api/records/22834463/files/paper.pdf/content,dfa626e3721900fc1f0d3f7f6215d2e95ae5ae28ec73e6bbbe93b87ccc9dfb02,6,29870,ok
+R0311,arxiv,https://arxiv.org/pdf/2608.28021,078d9c5bebdd67f5a99fd431d9fff5afb1f1148b4ebaddd6fb33ca03c9c12593,14,62660,ok
+R0323,arxiv,https://arxiv.org/pdf/2604.03933,8e521537145d0a90136d74bbc1abf0f6367a02c1dbbc057bd4d78debba8d9a20,8,32720,ok
+R0327,web search (journals.uran.ua),https://journals.uran.ua/tarp/article/download/365453/350957/850299,0ffa77edce97444b8b5fd715cfe1707a0ea97d383c6d14f992c5bd3136384fc7,13,72592,ok
+R0330,arxiv,https://arxiv.org/pdf/2608.13404,e8404d97680654438e7e8ad40404920adcb53f036f8746c5a83eaf03becc7a07,20,66959,ok
+R0331,arxiv,https://arxiv.org/pdf/2607.25995,cb3deb0f4bf115c74efb078d1f87676a47ab4ffba6121b633ac690a1fff2b567,19,51587,ok
+R0332,"publisher (PDF supplied by Abdul's professor (full_doc.zip, 2026-10-23))",https://doi.org/10.13140/rg.2.2.13032.94725,0362e25f1c7da598a873b24f35450c4eda8f83c57d3f336d3b3aa12da26b5f47,8,34522,ok
+R0333,arxiv,https://arxiv.org/pdf/2609.00227,e5ff26b16a93e97f8c9e4d1a741962a94e1dabd96575b7806c7f1f501f7fc491,8,38392,ok
+R0334,International Journal of Computing and Engineering,https://carijournals.org/journals/IJCE/article/download/4034/4628,7e53f2895aab5f81c9e9e70b6582f0790096b51d8831a199451e1a260aba1f5b,20,44337,ok
+R0336,"IEEE Xplore (PDF supplied by Abdul's professor (full_doc.zip, 2026-10-23))",https://doi.org/10.1109/isctis70043.2026.11572212,33d6d8c63acb2942f9281d20b826b8642941cba2c862856d896331675e7c2b5e,6,29432,ok
+R0340,arxiv,https://arxiv.org/pdf/2606.26590,9e8eb640e6c8f5f22aa860ad2917ebecb69d6917f32b3e0ab62a99849efc8bfb,34,94354,ok
+R0348,"IEEE Xplore (PDF supplied by Abdul's professor (full_doc.zip, 2026-10-23))",https://doi.org/10.1109/isdfs69419.2026.11458930,a30077752bba971ac38dfd62b9eec26d983633826d6913d741f84126bea5af1e,6,24301,ok
+R0350,Journal of Computer Science and Technology Studies,https://al-kindipublisher.com/index.php/jcsts/article/download/12302/11034,b499e85352fe49ee8c37c833e1b174b572750742f2bffb4558801fce29c78379,14,34034,ok
+R0352,ACM DL (Abdul's Chrome session),https://doi.org/10.1145/3832783.3837539,049e2e4693a9be861948e4cb6432a2aabe4a2c233e94bd9fa77c0a198ff99d9e,13,76091,ok
+R0354,arxiv,https://arxiv.org/pdf/2609.27571,a09ae0f93c7b311a950e1b2fd22bfb437e9fd029aba5734977b878e3c3f2e4a7,25,91855,ok
+R0359,ACM DL (Abdul's Chrome session),https://doi.org/10.1145/3805621.3807637,5a39daf1f9ac5fc9314be84f5443266e3f1daed7fce999baa7c6eeb0b460c66c,8,42067,ok
+R0363,Ghent University Academic Bibliography (Ghent University),https://biblio.ugent.be/publication/01KVFMQK413KYZEHP3XJ3DS5GN/file/01KVFMT9PXGY0KDRC6H231FMR8.pdf,d081deae4d9b2ee14ede5cb02e19ba9ddb83d65ecbc8f8b906de18134bf975c6,9,44889,ok
+R0367,ACM DL (Abdul's Chrome session),https://doi.org/10.1145/3832783.3834509,3d6a3fb060ba8530e3e091e70670d91aeb5e925da3a853ea5cb23f2f71a26d37,12,70801,ok
+R0370,Trepo (Tampere) thesis PDF parsed in-page with pdf.js (Abdul's Chrome session; not saved),,,,,ok
+R0372,Automated Software Engineering,https://link.springer.com/content/pdf/10.1007/s10515-026-00600-5.pdf,2f19733814e71fdb7f5378c3cf733c6ccaec73b6251f87199ebd8ed69829d78f,13,37077,ok
+R0373,"IEEE Xplore (PDF supplied by Abdul's professor (full_doc.zip, 2026-10-23))",https://doi.org/10.1109/icsist70215.2026.11706067,568e36d45120a375d8f92a87bbe2a81cc5ee866b7a1e6b913267ffcbb4d65a6c,8,37563,ok
+R0382,arxiv,https://arxiv.org/pdf/2609.28488,78aea5e3d5ff0b29a705bc8906c8818d0eb725ea3452efe7f4db066fcfc2e433,11,55368,ok
+R0383,SSRN PDF parsed in-page with pdf.js (Abdul's Chrome session; not saved),https://doi.org/10.2139/ssrn.6829506,,,,ok
+R0386,SSRN PDF parsed in-page with pdf.js (Abdul's Chrome session; not saved),https://doi.org/10.2139/ssrn.7068618,,,,ok
+R0393,arxiv,https://arxiv.org/pdf/2604.02382,2c4ca7f8d66ed6b24a6ce328b9094de6e4fb18749b4dd72c39e886820beed33e,23,72712,ok
+R0397,arxiv,https://arxiv.org/pdf/2608.26699,9974c17d1309970dfbe106fa1aae5250c9cf4637dbd90e2a4cd7da215492f7f6,12,69564,ok
+R0398,"IEEE Xplore (PDF supplied by Abdul's professor (full_doc.zip, 2026-10-23))",https://doi.org/10.1109/southeastcon63549.2026.11476537,0ebfe8dc3d949ff1d19ae1e8186eb371c6a0c158839869e5b69218b106f60e76,6,27989,ok
+R0399,arxiv,https://arxiv.org/pdf/2609.27030,ab70796e7a83fc6832689da35ed5f0fb3a8391541abf0f2f54d79bc311d7fce6,10,58505,ok
+R0400,"IEEE Xplore (PDF supplied by Abdul's professor (full_doc.zip, 2026-10-23))",https://doi.org/10.1109/csnt69054.2026.11502446,c7157d517d01dd9d2115c64bab6dba14ee90dd490fb13fce2907c75004b77e60,7,30428,ok
+R0401,ACM DL (Abdul's Chrome session),https://doi.org/10.1145/3796563.3796572,9be3ad7d9a293cf0f9a3d1147f089b0bfd0d6e82d94ebbff8c8dcdcd363671dd,5,23450,ok
+R0402,ACM DL (Abdul's Chrome session),https://doi.org/10.1145/3788550.3794882,7595f47ebf2aeb4c5187bf5cf04521b6052361638fb77dc079e4c3afedaecb19,13,79703,ok
+R0403,RIT Scholar Works thesis PDF parsed in-page with pdf.js (Abdul's Chrome session; not saved),,,,,ok
+R0406,"publisher (PDF supplied by Abdul's professor (full_doc.zip, 2026-10-23))",https://doi.org/10.71465/ajbd3656,71654c67c51a71d53b07f416e3551ff819b3a903d7a1d90356506295e5a82531,17,42398,ok
+R0407,Journal of Network and Systems Management,https://link.springer.com/content/pdf/10.1007/s10922-026-10078-x.pdf,95c208b725a1e5d17b9cd29fc2f40bcb3f3234c3e07cacf8a1f28c05407b432b,46,124001,ok
+R0410,arxiv,https://arxiv.org/pdf/2602.16100,45c084d2d837c30f7a289ccbc312f06ffe577553f42d6c73aeaec09db34d9e9e,10,56670,ok
+R0435,"IEEE Xplore (PDF supplied by Abdul's professor (full_doc.zip, 2026-10-23))",https://doi.org/10.1109/netsoft70012.2026.11603505,ccea1dded6e2632001234437c2baecb345a0288f27f1d1a9c6b72387075c14ed,7,36870,ok
+R0444,"IEEE Xplore (PDF supplied by Abdul's professor (full_doc.zip, 2026-10-23))",https://doi.org/10.1109/aiea70743.2026.11632831,5d727750f2c679daad0e287b31b6ba9fc5a1ef2b00cd207747b9242186b6f8b1,6,32517,ok
+R0445,Adolescencia e Saude,https://adolescenciaesaude.com/index.php/aes/article/download/2334/1784,3e8f353518c75551cc3483e595c3ac00fba166a596cf6bd8ce72d17b652c32c1,18,58252,ok
+R0446,International Journal of Artificial Intelligence and Machine Learning,https://www.svedbergopen.com/index.php/ijaiml/article/download/1651/1069,69db2f5b4b6072fc2c6ff79e916e48347f672d75bff658ef3bcb0dd4aeb50191,11,42966,ok
+R0447,"publisher (PDF supplied by Abdul's professor (full_doc.zip, 2026-10-23))",https://doi.org/10.1007/978-3-032-17286-0_4,0059f46426967003214187cde5f79684f84dda4b713256f32f65853f3fc46017,16,43838,ok
+R0461,Zenodo record file (no .pdf extension) parsed in-page with pdf.js (Abdul's Chrome session; not saved),https://doi.org/10.5281/zenodo.21745261,,,,ok
+R0462,"IEEE Xplore (PDF supplied by Abdul's professor (full_doc.zip, 2026-10-23))",https://doi.org/10.1109/icietsd68684.2026.11584684,6d77b102c2607111a5c317e1f529a623f708fc3a62d86d14499e73acf00513aa,8,46048,ok
+R0470,arxiv,https://arxiv.org/pdf/2608.02672,e48a2a5f89f9720293383403ae4905d0292c36c7ffadec436edc4f97048b86d3,10,45657,ok
+R0472,International Journal of Innovative Technology and Exploring Engineering,https://www.ijitee.org/wp-content/uploads/papers/v15i4/D475715040426.pdf,acf12b088086d5aa291e3fdca348308b1c1657843739c4195d0b872d31375962,8,49995,ok
+R0474,Research Square,https://www.researchsquare.com/article/rs-10674271/latest.pdf,557e453e01a50359712e8729d17780400a5282e26be5a10f092fc0129173aa32,20,103144,ok
+R0475,,,,,,no full text: Springer chapter paywalled
+R0478,IEEE Xplore HTML full text (read in Abdul's Chrome session),https://doi.org/10.1109/ACCESS.2026.3732477,,,,ok
+R0490,arxiv,https://arxiv.org/pdf/2606.05249,03396c9c16397d98c2949be6ee08e800dc8aa67fd9168e5ee90a5cd404c4539d,30,80519,ok
+R0492,arxiv,https://arxiv.org/pdf/2607.12541,86fb53d2c4f512946d111df3f6b0932c188b55f35f9de2d9b1c7687064f20128,18,90676,ok
+R0493,arxiv,https://arxiv.org/pdf/2601.08734,704e94c0df21a4637c15cb2a8a93c57ded703dad32bf163975dd4e98f44ed2b5,12,77194,ok
+R0494,arxiv,https://arxiv.org/pdf/2607.11390,2fa4cc4192fd3a488ef584c33027a59b4ef8652671d38c3ac931ac319f9e2563,13,41005,ok
+R0496,ACM DL (Abdul's Chrome session),https://doi.org/10.1145/3843778.3844519,73638041460a6896e0004a8290d28ed2a04ff714284f85fff737200f7c8b3334,8,48274,ok
+R0498,"IEEE Xplore (PDF supplied by Abdul's professor (full_doc.zip, 2026-10-23))",https://doi.org/10.1109/ms.2026.3721790,deb36e1fd6b7632db33da75f5ac20eebd34e4516308547eb12c0290dd6b4c0b1,7,30504,ok
+R0506,arxiv,https://arxiv.org/pdf/2607.20478,516c4c2df55aa1d727880bb0c936feed35ba845e21209fbc6871d5c7db0a960e,25,45397,ok
+R0516,SSRN PDF parsed in-page with pdf.js (Abdul's Chrome session; not saved),https://doi.org/10.2139/ssrn.7068598,,,,ok
+R0517,arxiv,https://arxiv.org/pdf/2305.02783,8db6e8f3f6b736ae1af6041a2774246500eeac472b6098df04f424234d967e4e,9,48984,ok
+R0522,"IEEE Xplore (PDF supplied by Abdul's professor (full_doc.zip, 2026-10-23))",https://doi.org/10.1109/acsos-c58168.2023.00025,1f054d5a9d7b52610dbb0e9c5a8ec79da15cac2d950448af33220608a49bb6c9,3,16939,ok
+R0529,ACM DL (Abdul's Chrome session),https://doi.org/10.1145/3643661.3643951,586fa48a2df552065fc4dbbb4eff4b5ac74cb09b0283bbe3b2798b9f9e494aac,6,36997,ok
+R0530,ACM DL (Abdul's Chrome session),https://doi.org/10.1145/3691620.3695277,30fe48b88a65c92ec40b04c50cbfbd0c583766b5046fb82d8472c65100bbd798,11,57538,ok
+R0535,arxiv,https://arxiv.org/pdf/2406.11925,0aa0f615610fe5af6801d1e3a90f143e97a18e522149c563a75c5eac611f7622,17,60261,ok
+R0536,arxiv,https://arxiv.org/pdf/2408.05379,79c6b78a59374b8ef986ed4764adc23f2f62532b92a1b244b37f481b93bd23de,13,75099,ok
+R0544,arxiv,https://arxiv.org/pdf/2402.17442,901484c9f60a6b6c054aa2bb010c633224473146366dcbe55418043acf9a032b,12,57673,ok
+R0545,ACM DL (Abdul's Chrome session),https://doi.org/10.1145/3663529.3663855,0195ad1fa3046f927426647e292849aa50a1ae25111e49e5a313a1337f99e953,12,77427,ok
+R0568,arxiv,https://arxiv.org/pdf/2505.20505,926331a0c0c681d0b99c31174644d8fcb2e103934553dd045520f0aaeff36f79,37,107698,ok
+R0569,arxiv,https://arxiv.org/pdf/2511.01166,1456c905462efb43e7a47b1b2780b6a29ba71aeb3ec20822cdde7907c97f264f,24,81035,ok
+R0571,"IEEE Xplore (PDF supplied by Abdul's professor (full_doc.zip, 2026-10-23))",https://doi.org/10.1109/ase63991.2025.00344,eae2f868b0011c7d3ee6eb7d545a12004e9ddbd0f8e306564f206f4fe912b8d5,5,24954,ok
+R0575,arxiv,https://arxiv.org/pdf/2511.19422,4c2097883cb7691a02bb33f46cd589ed30841d21a7d32f27fd177231fa64144b,18,69985,ok
+R0604,ACM DL (Abdul's Chrome session),https://doi.org/10.1145/3744916.3773162,af1bbdeee24f0dd98176d37793069c8b207aabe951c849ad6facdc8bc82d5044,13,81967,ok
+R0610,arxiv,https://arxiv.org/pdf/2608.07776,6eec4a62e512fa08c2142749e6e51d6b568842337caf34d80abf693d49b386ba,12,58157,ok
+R0616,arxiv,https://arxiv.org/pdf/2605.25835,9f58712662a9624b440a2e14156681953fbae35f257802de52e5a07caac9cc40,15,31749,ok
+R0621,arxiv,https://arxiv.org/pdf/2604.11094,da0131b0d49a43d11d854ac9034762a1fca2d0eb3c6b1b18ecaacef5c7874661,12,73155,ok
+R0641,"IEEE Xplore (PDF supplied by Abdul's professor (full_doc.zip, 2026-10-23))",https://doi.org/10.1109/jcc72984.2026.00015,bd78c57b477f4560cbe949cdc626c468b540875d8d2ba4f28ec2d24e2c5fe8b7,8,48134,ok
+R0665,"MDPI (PDF supplied by Abdul's professor (full_doc.zip, 2026-10-23))",https://doi.org/10.3390/app16136805,a8b132f25ec22c0f693c3b8d8debd52379e73d816408401ca418c90bf4c823f1,18,58097,ok
+R0682,arxiv,https://arxiv.org/pdf/2607.25141,e8630108cbd46ec1b009cb6682b30398ac7bff1ed5a97816591e2f2e9d4db55e,25,145683,ok
+R0709,ACM DL (Abdul's Chrome session),https://doi.org/10.1145/3643788.3648014,de2c2e96399d6d6b7515361aeaf867aaa0f8aa2d0200ea5405eda979a2b574fb,4,21565,ok
+R0710,Zenodo,https://zenodo.org/api/records/19437671/files/ijnrefm-volume3-issue4-149.pdf/content,1dc96a0eac6c0e19f88779aafbcf68b6c764dcda0d1bb85da4a3e0cfd04ce430,4,21929,ok
+R0735,"IEEE Xplore (PDF supplied by Abdul's professor (full_doc.zip, 2026-10-23))",https://doi.org/10.1109/ICoICC64033.2025.11052114,6769ab7772478763fae1e865fea98f7f356542d570dcf5ed278ca738a9ca1afa,6,26910,ok
+R0740,"IEEE Xplore (PDF supplied by Abdul's professor (full_doc.zip, 2026-10-23))",https://doi.org/10.1109/ICBATS66542.2025.11258273,d0efa996315cb4f66ead4a3d8ef18aa2034e4347354a95ab895b41c703e73b9d,6,36660,ok
+R0744,"IEEE Xplore (PDF supplied by Abdul's professor (full_doc.zip, 2026-10-23))",https://doi.org/10.1109/CARS67163.2025.11337933,a5c2df276ea7324ccb6dd4df20646f1e93a3c993a78b1c1e14ef376cc6523b47,7,30645,ok
+R0747,"IEEE Xplore (PDF supplied by Abdul's professor (full_doc.zip, 2026-10-23))",https://doi.org/10.1109/ICOIICS67115.2025.11390482,6318fc49c66f19c651b1fcf95960148430fa481acd45180d0527c09c0e68397e,6,28860,ok
+R0752,"IEEE Xplore (PDF supplied by Abdul's professor (full_doc.zip, 2026-10-23))",https://doi.org/10.1109/CSITSS67709.2025.11295173,1067c1fb1941457004adc7de40613d7eceecde05a2aed02145106c2e5c5e8983,5,18779,ok
+R0755,"IEEE Xplore (PDF supplied by Abdul's professor (full_doc.zip, 2026-10-23))",https://doi.org/10.1109/ICTC66702.2025.11388772,f71f62a4c863d5964116e56cf8b52dc6c8cf148e603ad3cfdb6fba8225031154,6,41383,ok
+R0756,"IEEE Xplore (PDF supplied by Abdul's professor (full_doc.zip, 2026-10-23))",https://doi.org/10.1109/INFOCOM55648.2025.11044592,43675395a91025785fff0748ca4a7d592ad879eea1ad648ae8c4d870f43d69e5,10,62746,ok
+R0763,"IEEE Xplore (PDF supplied by Abdul's professor (full_doc.zip, 2026-10-23))",https://doi.org/10.1109/GCWCN66157.2025.11448552,09d0d88e53ac11a469f16114aea5312c429d18fc8a7549b2a837755810b30f20,7,36059,ok
+R0772,web search (dl.ifip.org),https://dl.ifip.org/db/conf/networking/networking2026/1571260960.pdf,6c4237e4ed9d001927558f10c13b8a0491718ec7956b70c7548200b2b96b1e31,6,25980,ok
+R0775,"IEEE Xplore (PDF supplied by Abdul's professor (full_doc.zip, 2026-10-23))",https://doi.org/10.1109/GTSD70918.2026.11722404,c69d4a83464d69f20beffb815681283841421c7582a919d45a0be37f74e8c8a6,6,30255,ok
+R0777,"IEEE Xplore (PDF supplied by Abdul's professor (full_doc.zip, 2026-10-23))",https://doi.org/10.1109/MIPRO70003.2026.11592043,9bb639d142c9edfb74444169ce4f9690486f317c6ba48562182c5c530a1de2da,5,27744,ok
+R0780,"IEEE Xplore (PDF supplied by Abdul's professor (full_doc.zip, 2026-10-23))",https://doi.org/10.1109/ECTI-CON68836.2026.11608645,8c50dc8f74944628d1ef07ed44d352a84f2b75b21d14682210ca291005a06088,6,39559,ok
+R0785,UPCommons institutional repository (Universitat Politècnica de Catalunya),https://upcommons.upc.edu/bitstreams/bef26f1f-6d4f-4e08-ac1b-81b9f23ef8c5/download,e21b8504c40a48171e723249a345a8ed077ab1b668a41f822264f505a8436cf0,11,56532,ok
+R0802,IEEE Xplore PDF parsed in-page with pdf.js (Abdul's Chrome session; not saved),https://doi.org/10.1109/ACCESS.2026.3743626,,,,ok
+R0803,"IEEE Xplore (PDF supplied by Abdul's professor (full_doc.zip, 2026-10-23))",https://doi.org/10.1109/ICIPAI70034.2026.11605740,aeab7d062683ed04381ebe040fb20eaa412e3a0a1c0cffe1e6c8475c15e9716b,6,30768,ok
+R0806,"IEEE Xplore (PDF supplied by Abdul's professor (full_doc.zip, 2026-10-23))",https://doi.org/10.1109/NOMS69089.2026.11668116,5dbbb9998f01b3e4d932b6ceba86a15f1c36b0254d7012cf31afbd54f9c6c6c0,7,38500,ok
+R0808,"IEEE Xplore (PDF supplied by Abdul's professor (full_doc.zip, 2026-10-23))",https://doi.org/10.1109/ICoECIT68303.2026.11497432,3b007b00c1e88f03804fccb63d8a7efd038f701bd07db7697fbd0cd1ecfaef75,7,29019,ok
+R0813,"IEEE Xplore (PDF supplied by Abdul's professor (full_doc.zip, 2026-10-23))",https://doi.org/10.1109/ICCSC71566.2026.11650355,015e1c121f1a23c1b1e2251781750f2d5b94e4a9010a01c12bc7cc863a6b7320,7,33481,ok
+R0819,"IEEE Xplore (PDF supplied by Abdul's professor (full_doc.zip, 2026-10-23))",https://doi.org/10.1109/ICEMCSI67638.2026.11603148,45f59e7a29ebba2c62cd1df21bbf7ef2609b0ee749f40437921f95f2c7681b66,6,36027,ok
+R0820,"IEEE Xplore (PDF supplied by Abdul's professor (full_doc.zip, 2026-10-23))",https://doi.org/10.1109/NAECON70028.2026.11675022,73470514a1023623cec69d55c19d7aef42d0e2a8a6456b8acc4fba8c998a812b,5,28316,ok
+R0830,"IEEE Xplore (PDF supplied by Abdul's professor (full_doc.zip, 2026-10-23))",https://doi.org/10.1109/QPAIN69676.2026.11546221,844f5e8c6bb41923115297233cc7df5cc2f2e2e5e80b8c0d0ec721c9e7a4c535,6,29440,ok
+R0856,ACM DL (Abdul's Chrome session),https://doi.org/10.1145/3832783.3834526,3794a7c7d2fb119b8f1d95a1fb731f5427b39676986951bbd91fb68cd830a6ea,13,79528,ok
+R0858,ACM DL (Abdul's Chrome session),https://doi.org/10.1145/3844136.3845869,9cceba557f9fb3de51b3f17ed2178a082cba9653c6ce48943715e51f064ec48e,4,24220,ok
+R0860,SciTePress HTML preview (first pages) read in Abdul's Chrome session,https://doi.org/10.5220/0012710300003711,,,,ok
+R0861,web search (proceedings.neurips.cc),https://proceedings.neurips.cc/paper_files/paper/2024/file/f26b29298ae8acd94bd7e839688e329b-Paper-Datasets_and_Benchmarks_Track.pdf,708a71ac8498cdfa36d50d73aa1fb95c2b58b96576c8ee894b8ce90597cee9df,19,62693,ok
+R0862,,,,,,no full text: IEEE AIOps 2025 workshop paper; HKU Scholars Hub record has no file
+R0863,arxiv,https://arxiv.org/pdf/2510.20211,49a1dd856125d8b8ed1e6c0f5371f9d75d0a42d862a8a14210cca5e565f41658,38,133245,ok
+R0865,arxiv,https://arxiv.org/pdf/2608.24962,c14afc18a2831a8d9752e060b9a5082fe7ebde4b839a4d6c5e4fee49270a69a5,16,45100,ok

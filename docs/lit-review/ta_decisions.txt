@@ -1,0 +1,872 @@
+# Title/abstract screening decisions (protocol step 1). One line per record: rec_id code note
+# Codes: I include to full text | ? unclear -> full text decides | X1 not an LLM producing/repairing IaC/K8s/cloud config
+# X2 LLM only detects/explains/classifies | X3 no empirical evaluation (vision, survey, framework only)
+# X4 application code security | X5 non-English / no full text / duplicate | X6 not a research paper (dataset, index, book matter)
+# Screener: Claude (2026-10-17). A random 20% is re-screened by Abdul (protocol step 2).
+R0001 ? LLMs analysing declarative deployment code; whether they also produce configs is unclear
+R0002 X1 compliance-driven patch management in banking clouds
+R0003 X1 linguistic benchmark
+R0004 X1 cloud log analysis
+R0005 X1 ChatGPT in dentistry
+R0006 I CloudEval-YAML: benchmark for LLM cloud configuration generation, evaluated
+R0007 X1 compliance-as-code governance model
+R0008 X1 Salesforce access control
+R0009 I LLM repair of Ansible scripts
+R0010 X1 LLM inference system
+R0011 X1 table-to-text
+R0012 X1 general LLM evaluation
+R0013 X2 LLM identification of Kubernetes misconfigurations (detection)
+R0014 X3 descriptive article on LLM and IaC
+R0015 ? generative-AI framework for infrastructure management; evaluation unclear
+R0016 X3 survey of LLMs for IaC generation (kept for snowballing)
+R0017 ? LLM self-healing systems incl. configuration validation; produces configs unclear
+R0018 ? LLM framework for dynamic IaC generation; evaluation unclear
+R0019 I LLMs mitigating security misconfigurations in Helm charts
+R0020 X1 quantum software deployment
+R0021 X1 FinOps scraper generation (code, not configuration)
+R0022 ? generative-AI cloud blueprint generation; evaluation unclear
+R0023 X1 incident root-cause analysis
+R0024 X1 incident response
+R0025 X2 RAG guidance for AWS security practices
+R0026 X1 representation estimation
+R0027 X6 dataset record
+R0028 X1 token generation
+R0029 ? DevSec-GPT container security platform; produces configs and evaluation unclear
+R0030 I generative AI and smells in generated Kubernetes manifests
+R0031 ? transformer framework for LLM-augmented DevOps; configs and evaluation unclear
+R0032 X1 generative AI at the edge
+R0033 I GenKubeSec: detection, localisation and remediation of Kubernetes misconfigurations
+R0034 X1 GPT-4 deployment in a cancer centre
+R0035 X1 peptide design
+R0036 X6 book index
+R0037 X1 workflow automation
+R0038 ? intent-driven deployment with LLM (demo); config generation evaluation unclear
+R0039 ? KubePlaybook: LLM-generated Ansible remediation playbooks; evaluation unclear
+R0040 X1 policy compliance
+R0041 I intent-based generation of cloud-native configurations
+R0042 X1 metacognition (non-English)
+R0043 I migrating container workloads to Kubernetes with LLMs, evaluated
+R0044 X1 image aesthetics
+R0045 X1 machine learning platform
+R0046 X1 editorial
+R0047 I NLP/LLM framework converting natural language to Terraform
+R0048 X1 intent-driven network management standards
+R0049 I repairing IaC with LLMs
+R0050 X1 RAG architecture on hybrid cloud
+R0051 ? guardrails for Copilot-generated IaC; empirical evaluation unclear
+R0052 X1 spaceflight assistant
+R0053 I feedback loop for LLM-based IaC generation
+R0054 X3 survey
+R0055 ? intent-driven Kubernetes configuration generation (no abstract)
+R0056 X1 ML-based microservice migration
+R0057 ? multi-agent assistant to deployable microservices; config evaluation unclear
+R0058 I LLM data generation from intent to Kubernetes manifests
+R0059 X3 review (duplicate of R0060)
+R0060 X3 review of generative AI and DevOps
+R0061 X3 review of OS deployment automation
+R0062 X1 adversarial attacks on LLMs
+R0063 X1 carbon-aware scheduling survey
+R0064 X1 medical training
+R0065 X2 LLM threat modelling of cloud infrastructure
+R0066 ? generative-AI cloud security framework (no abstract)
+R0067 X1 learning management system
+R0068 X1 attacks on SOC LLMs
+R0069 ? agentic multi-cloud DevSecOps framework; configs and evaluation unclear
+R0070 X1 penetration testing commands
+R0071 X1 CI/CD failure triage
+R0072 X1 invoice automation
+R0073 ? LLM-driven DevOps incl. infrastructure automation; evaluation unclear
+R0074 ? AI remediation playbooks for self-healing infrastructure; evaluation unclear
+R0075 X1 HFT self-healing infrastructure
+R0076 X2 misconfiguration diagnosis and ticket generation
+R0077 X2 cloud misconfiguration threat detection (thesis)
+R0078 X1 healthcare insurance framework
+R0079 X1 trading system
+R0080 X1 financial documents
+R0081 X1 anomaly detection and RCA
+R0082 X3 prospects of LLMs for Kubernetes control (descriptive)
+R0083 X1 financial systems architecture
+R0084 X1 computational notebooks
+R0085 ? agentic RAG for policy-as-code compliance in IaC; produces policies or configs unclear
+R0086 X6 artifact record (RisConFix, drone configurations)
+R0087 X6 artifact record (duplicate)
+R0088 X1 programming assessment review
+R0089 I LLM cloud infrastructure provisioning with semantic enrichment
+R0090 X1 release notes
+R0091 X3 hybrid cloud automation overview
+R0092 X3 descriptive article on self-healing AWS
+R0093 X1 ETL pipelines
+R0094 X3 descriptive platform engineering article
+R0095 X1 load balancing for agents
+R0096 ? C-Shield Kubernetes security framework; second screener saw LLM policy generation (changed X1 -> ? after re-screening, conservative rule)
+R0097 ? ChaosEater: LLMs automate chaos engineering incl. Kubernetes manifests; check
+R0098 ? self-correcting compliance-as-code with AI agents and Terraform; evaluation unclear
+R0099 ? CloudBot: autonomous deployment from code to infrastructure; check config generation
+R0100 X1 programming IDE
+R0101 X1 LLM firewall
+R0102 X1 service migration
+R0103 I GPT-2 vs Gemini generating Dockerfiles and Compose files
+R0104 X1 configuration logging
+R0105 X1 correction notice
+R0106 ? cross-platform IaC reliability with LLM-powered detection; detects or repairs unclear
+R0107 X1 live migration with LLM post-incident analysis
+R0108 X1 cyber deception
+R0109 X1 cybersecurity platform
+R0110 X1 project deliverable
+R0111 X4 deep link exploitation in mobile apps
+R0112 I deployability-centric IaC generation (IaCGen, seed)
+R0113 X1 data pipeline generation
+R0114 X1 policy engine for agentic AI (no abstract; not configuration)
+R0115 ? generative-AI DevSecOps platform; configs and evaluation unclear
+R0116 X5 Portuguese duplicate of R0081
+R0117 X2 RAG detection of cloud misconfigurations
+R0118 X1 RAG-as-a-service infrastructure
+R0119 ? DNSHolmes: LLM repair of DNS configuration; DNS zone files as configuration, check scope
+R0120 X1 edge computing latency
+R0121 X4 energy of LLM-generated application code
+R0122 I CodeT5 generating Kubernetes configuration with feedback
+R0123 X2 BGP anomaly detection
+R0124 ? LLMs for DevOps security automation; configs and evaluation unclear
+R0125 X1 supply chain analysis
+R0126 X1 deprescribing
+R0127 X1 RL for CI/CD
+R0128 X6 no title or abstract
+R0129 X1 deploying GenAI services
+R0130 X3 explainable AI patterns for DevOps
+R0131 X1 anomaly detection
+R0132 ? LLMs for microservice elasticity; may generate autoscaling configuration, check
+R0133 X4 application code synthesis
+R0134 X1 federated data modelling
+R0135 ? AI assistant generating and configuring cyber range scenarios; infrastructure configs, check
+R0136 X1 Gaussian mixture models
+R0137 ? generative AI agents end-to-end delivery (no abstract)
+R0138 X1 construction risk diagrams
+R0139 X1 integration documentation
+R0140 ? generative AI for IaC; second screener saw generation/remediation claims (changed X3 -> ? after re-screening, conservative rule)
+R0141 I GenSIaC: security-aware IaC generation with LLMs
+R0142 X1 intent-based networking digital twin
+R0143 X1 VIP threat detection
+R0144 X1 hyperbolic LLMs
+R0145 X5 Greek-language thesis
+R0146 I IaC generation error taxonomy and knowledge injection (Terraform)
+R0147 X1 endpoint protection
+R0148 X1 LLM benchmarking metrics
+R0149 ? Inframind: RL for LLM reasoning, possibly IaC; check
+R0150 X1 autoscaling predictions
+R0151 X1 Kubernetes scheduling decisions
+R0152 I IntelliTopo: IaC generation for network topology
+R0153 X3 intent-based Kubernetes configuration via LLMs: trends and challenges
+R0154 X1 CPU heterogeneity management
+R0155 X3 review
+R0156 I KubeGuard: LLM-assisted Kubernetes hardening (seed)
+R0157 ? KubeIntellect: LLM agent for Kubernetes management; may write manifests, check
+R0158 I LADs: LLMs for automated cloud configuration and deployment
+R0159 I LLMs for IaC vulnerability remediation
+R0160 X1 intent-based network configuration (network devices, not IaC/cloud)
+R0161 X3 5G orchestration platform description
+R0162 I agentic workflow for IaC vulnerability detection and remediation
+R0163 ? LLM configuration layer for an IoT platform (thesis); check
+R0164 I LLM generation of vulnerable containerised environments (Docker IaC)
+R0165 I LLM translation of middleware configuration into cloud-native deployment artefacts, empirical
+R0166 X2 LLM misconfiguration detection for AWS SAM
+R0167 ? KubeLLM: multi-agent troubleshooting that reconfigures Kubernetes; may produce manifests, check
+R0168 X2 security audit of configuration files (detection)
+R0169 ? LLM cloud automation agent; configs and evaluation unclear
+R0170 ? LLM chaos engineering incl. Kubernetes manifests (ChaosEater full version); check
+R0171 I LLMSecConfig (seed)
+R0172 X1 maturity metrics
+R0173 X6 knowledge-base record
+R0174 I multi-agent IaC generation, evaluated
+R0175 X4 web penetration testing
+R0176 X1 root cause analysis
+R0177 I Multi-IaC-Eval benchmark for LLM IaC generation
+R0178 X1 SDN policy generation (network devices)
+R0179 X3 review
+R0180 X1 email generation
+R0181 X6 dataset record
+R0182 ? detection and remediation of cloud misconfigurations (thesis); LLM role unclear
+R0183 X1 MLOps
+R0184 X1 CI/CD with PKonfig (review)
+R0185 X1 duplicate medical training abstract
+R0186 X1 LLM benchmark pitfalls
+R0187 X5 Italian thesis
+R0188 I prompt-driven, error-report-aware Kubernetes manifest management with LLMs
+R0189 X1 supply-chain release gates
+R0190 ? LLM container orchestration via MCP with structured decoding; may generate manifests, check
+R0191 X1 tool-call repair
+R0192 X1 LLM evaluation framework
+R0193 X1 security defence system
+R0194 X3 review
+R0195 X1 drone flight-control parameters (not IaC/cloud)
+R0196 X1 IoT access-control policies
+R0197 X1 RAG platform on Kubernetes
+R0198 X3 technical analysis of self-healing pipelines
+R0199 X3 survey (kept for snowballing)
+R0200 X1 intrusion detection
+R0201 X3 overview
+R0202 X1 Thai text generation
+R0203 X1 response differences
+R0204 X1 politics
+R0205 X1 editorial
+R0206 X1 event mesh architecture
+R0207 X2 threat modelling
+R0208 X1 video RAG
+R0209 X1 virtual commissioning
+R0210 X4 Android certificate validation
+R0211 X5 Greek thesis
+R0212 X5 Ukrainian-language paper on ontology-controlled LLM IaC generation (English abstract; full text not English)
+R0213 ? agentic self-configuring CI/CD; configs and evaluation unclear
+R0214 X1 emotions
+R0215 X1 MCP authentication
+R0216 X1 software update RAG
+R0217 X1 supply chain analytics
+R0218 X1 network monitoring
+R0219 ? DevSecOps framework with LLM remediation (no abstract)
+R0220 ? multi-agent DevSecOps auto-remediation incl. policy-as-code; whether configs are repaired unclear
+R0221 X1 incident intelligence
+R0222 X4 micro-frontend integration repair (application)
+R0223 X1 trust modelling (no abstract)
+R0224 X4 web hacking systems
+R0225 X1 reproducible research template
+R0226 X3 tertiary review of LLM code generation (kept for snowballing)
+R0227 X1 duplicate of R0225
+R0228 ? LLM-enhanced Kubernetes resource optimisation; may produce resource configs, check
+R0229 ? cognition-driven security policy generation for cloud-native (no abstract); check
+R0230 X1 validation layer for Unix commands
+R0231 X1 ML platform integration
+R0232 X1 reliability retrospection
+R0233 X3 survey of AI-driven Kubernetes management (kept for snowballing)
+R0234 ? generative AI agents for predictive IaC remediation; evaluation unclear
+R0235 X1 agent governance
+R0236 X1 decision-making under constraints
+R0237 X2 vulnerability detection
+R0238 X6 source code record
+R0239 X1 6G decision support
+R0240 ? agentic IaC closed-loop framework; evaluation unclear
+R0241 X4 REST API security testing
+R0242 X1 medicine
+R0243 X4 code complexity
+R0244 X6 podcast episode
+R0245 X1 data pipelines
+R0246 X6 project deliverable
+R0247 X3 survey of OS compliance automation
+R0248 I AIaCGateGuard: security benchmark of LLM-generated IaC
+R0249 ? AICP: intent-driven infrastructure orchestration with LLM agents; evaluation unclear
+R0250 X1 incident response
+R0251 X6 artifact record (LLM remediation loops on Kubernetes; paper to be traced in snowballing)
+R0252 X1 disaster recovery
+R0253 X1 canary deployment controller
+R0254 X1 root cause analysis
+R0255 X6 replication package (regulatory-to-policy-as-code; paper to be traced in snowballing)
+R0256 X6 dataset
+R0257 X1 control plane (no abstract)
+R0258 X1 documentation RAG
+R0259 X1 duplicate RCA topic
+R0260 ? ARBITER: agentic Kubernetes remediation of SLO violations; runtime actions vs configuration, check
+R0261 X1 root cause analysis
+R0262 I thesis evaluating LLM-generated Terraform (coherence and estimated cost)
+R0263 X1 FinTech
+R0264 X3 systematic literature review of AI for IaC (kept for snowballing)
+R0265 X1 network assertion generation
+R0266 X1 root cause analysis
+R0267 ? self-healing CI/CD with LLM remediation incl. configuration stage; check
+R0268 X1 trading
+R0269 I AutoInfraOps: infrastructure deployment via multi-step prompt pipelines
+R0270 X3 survey of LLM-based Kubernetes remediation (kept for snowballing)
+R0271 X1 cloud emulator synthesis (application code)
+R0272 X3 review of AI DevOps platforms
+R0273 X4 ML pipeline code generation
+R0274 ? DevSecOps platform with container hardening and Kubernetes synthesis (no abstract); check
+R0275 X1 resource management (no abstract)
+R0276 X1 data pipeline orchestration
+R0277 X3 descriptive article on autonomous DevOps platforms
+R0278 ? multi-agent cloud architecture design and IaC deployment; evaluation unclear
+R0279 X1 recovery frameworks
+R0280 X3 survey of vulnerability remediation (no abstract; kept for snowballing)
+R0281 X3 skills and mindset essay
+R0282 X1 network device configuration repair (not IaC/cloud); related benchmark, noted
+R0283 X2 vulnerability discovery and prioritisation
+R0284 X1 agent benchmark validity
+R0285 X6 replication package "Beyond the Agent's Own Scanner" (LLM Terraform compliance repair); paper to be traced in snowballing
+R0286 X1 denial of service on LLM serving
+R0287 I BRAT: intent-to-Kubernetes translation via fine-tuned LLM
+R0288 X1 curricula
+R0289 X1 LLM inference control
+R0290 X1 O-RAN forensics
+R0291 X1 zero-trust for healthcare agents
+R0292 X1 voice agents
+R0293 X1 mobile DSL (no abstract)
+R0294 I GPT-4o and Gemini for secure IaC development (detection and generation)
+R0295 I security benchmark of LM-generated Terraform (static analysis)
+R0296 X4 observability-aware application code
+R0297 X1 active learning for configuration spaces
+R0298 X1 failure diagnosis benchmark
+R0299 ? LLM-generated constraint programs for resource scaling; configuration vs controller code, check
+R0300 X1 Dockerfile reference standards via clustering
+R0301 X2 misconfiguration scanner
+R0302 X2 blast radius analyzer
+R0303 X1 quantum computing
+R0304 X6 artifact record (CloudFix-Bench / Sentinel-Mesh, LLM IaC repair); paper to be traced in snowballing
+R0305 X6 dataset (RCA verification)
+R0306 X6 dataset (duplicate)
+R0307 ? CloudSentinel: AI-assisted misconfiguration detection and remediation; LLM role and evaluation unclear
+R0308 X1 agent concurrency control
+R0309 X1 anomaly detection in CI/CD
+R0310 X1 service recovery
+R0311 I human-anchored security benchmark for LLM-generated IaC
+R0312 X1 LLMs simulating tool behaviour (not producing configuration)
+R0313 X5 German thesis on LLM hosting
+R0314 X3 defence-in-depth reference architecture for agents
+R0315 X1 cost-optimal data processing
+R0316 X1 philosophy of creativity
+R0317 X1 LLM serving autoscaling
+R0318 X1 configuration test generation
+R0319 X1 detection rule generation
+R0320 X1 agent traces
+R0321 X1 autoscaling for LLM serving
+R0322 X1 dental imaging
+R0323 ? autonomous SRE agent deploying and tuning Elasticsearch; produces cluster configuration, check
+R0324 X6 book chapter
+R0325 X1 education
+R0326 X1 RAG serving architecture
+R0327 I ontology-mediated semantic control of LLM-generated IaC (English version; R0212 is the Ukrainian version)
+R0328 X1 web development
+R0329 X1 infrastructure maintenance
+R0330 I security degradation in iterative LLM-driven IaC repair loops
+R0331 I runtime topology context for LLM Kubernetes security patches (KuTIE, seed)
+R0332 I interactive security feedback for LLM IaC generation via MCP (no abstract; title explicit)
+R0333 I deterministic minimal-diff GitOps remediation from LLM-proposed changes
+R0334 I DriftAgent: LLM turns Terraform drift into reviewed merge requests
+R0335 X6 podcast episode
+R0336 I graph RAG for Terraform generation (no abstract; title explicit)
+R0337 X1 editorial
+R0338 X1 course materials
+R0339 X1 RL fine-tuning
+R0340 I TerraProbe: deceptive fixes in LLM Terraform repair (seed)
+R0341 X1 energy-aware orchestration
+R0342 X6 book
+R0343 X1 help desk RAG
+R0344 X1 LLM evaluation framework
+R0345 X1 network device configuration repair (not IaC/cloud); related, noted
+R0346 X1 Kubernetes inference performance
+R0347 X1 LLM safety sampling
+R0348 I security policy compliance of LLM-generated IaC (no abstract; title explicit)
+R0349 X6 replication package (LLM code in CI/CD scanners); application code
+R0350 ? evidence-gated LLM incident remediation incl. deployments; configuration changes, check
+R0351 X1 system package repair
+R0352 I Exact-IaC: execution-driven knowledge injection for IaC synthesis
+R0353 X1 safety routing
+R0354 I FDE-Bench: LLM agents configuring deployment environments, running systems evaluated
+R0355 X1 interview platform
+R0356 X1 IoT device security misconfiguration remediation (devices, not IaC/cloud); related, noted
+R0357 X5 Swedish thesis (RAG for IaC generation)
+R0358 X3 survey of agentic CI/CD
+R0359 ? multi-agent GraphRAG generating Docker images and Kubernetes workflows; evaluation check
+R0360 X6 podcast episode
+R0361 X1 anomaly detection
+R0362 X6 artifact record
+R0363 I LLM generation of Kubernetes custom resources from intent, evaluated
+R0364 X1 legal AI
+R0365 X1 product owners
+R0366 X1 scientific workflows
+R0367 I IacFix: agentic repair of IaC misconfigurations with verification
+R0368 X1 tax compliance
+R0369 X5 Spanish paper on structured YAML generation for manifests
+R0370 I fine-tuned model generating Terraform
+R0371 X1 workflow DAGs
+R0372 I generative AI as infrastructure copilot across the DevSecOps lifecycle (journal, evaluated)
+R0373 ? generative AI for Terraform and pipeline generation (no abstract); check
+R0374 X1 inference dynamics
+R0375 X1 cyber defence simulation
+R0376 X1 hallucination detection
+R0377 X1 recommender evaluation
+R0378 X1 peptide notation
+R0379 X4 full-stack web application security
+R0380 X6 book
+R0381 X6 artifact for "Towards Reliable Agentic Infrastructure Provisioning with LLMs" (MAS-GAIN 2026); paper to be traced in snowballing
+R0382 I IaC-Guard-V (seed)
+R0383 I IaCBench: security of LLM-generated IaC across languages (no abstract; title explicit)
+R0384 X1 performance-sensitive configuration identification (application config)
+R0385 X1 safety classifiers
+R0386 ? InfraAgent: deployment failure detection and autonomous remediation (no abstract); check
+R0387 X1 retail checkout
+R0388 X5 thesis on RAG chatbots (not configuration)
+R0389 X2 IaC security smell detection
+R0390 X1 NFV management (network functions)
+R0391 X1 duplicate of R0154 topic (no abstract)
+R0392 X1 intent translation to SLO constraints
+R0393 I interactive clarification for LLM IaC synthesis
+R0394 X6 unrelated repository record
+R0395 X1 network device configuration repair
+R0396 X1 kernel boot repair
+R0397 I KubeCap: capability minimisation in Kubernetes manifests with LLM-assisted rule inference
+R0398 ? KubeNetLLM: LLM Kubernetes network configuration framework; evaluation unclear
+R0399 I Kubernetes misconfigurations taxonomy and automated repair with LLMs
+R0400 ? LLM-assisted cloud security policy enforcement; produces policies, evaluation unclear
+R0401 I exploratory empirical study of LLM IaC generation (no abstract; title explicit)
+R0402 ? low-parameter LLMs for Kubernetes self-healing; whether manifests are changed, check
+R0403 I open-source LLMs for Terraform drift detection and correction
+R0404 X5 Chinese-language library article
+R0405 X1 radio access network parameters
+R0406 I LLM-generated zero-trust policies for microservices (Kubernetes network/authorization policies), check evaluation
+R0407 ? LLM agent deploying VNFs (cloud deployment descriptors); check
+R0408 X6 code and protocol record (RCA)
+R0409 X1 system test generation
+R0410 ? LLM intent-based orchestration across cloud-edge; may produce placement configs, check
+R0411 X1 network slice management
+R0412 X1 RL scheduling
+R0413 X1 inference hardware
+R0414 X2 vulnerability scanning and reporting
+R0415 X6 software record
+R0416 X3 framework description
+R0417 X6 unrelated record
+R0418 X6 unrelated record
+R0419 X1 aesthetics
+R0420 X1 medical benchmark
+R0421 X1 AI program security (no abstract)
+R0422 X1 Arabic benchmark
+R0423 X1 anomaly detection
+R0424 X6 mirror record
+R0425 X1 Venus terraforming
+R0426 X6 software repository
+R0427 X6 software repository
+R0428 X4 microservice application design
+R0429 X1 accounts payable
+R0430 X6 proceedings book
+R0431 X6 book
+R0432 X6 software record
+R0433 X1 failure localisation in AI scanners
+R0434 X1 hardware design
+R0435 ? OperAID: benchmark of LLM agents for Kubernetes fault remediation (no abstract); check
+R0436 X1 knowledge graph for AIOps
+R0437 X1 LLM application controls
+R0438 X6 podcast episode
+R0439 X6 data repository (policy-as-code)
+R0440 X6 artifact record (PatchWeaver, Kubernetes vulnerability remediation, USENIX Security 2026); paper to be traced in snowballing
+R0441 X5 Greek thesis
+R0442 X1 fine-tuning
+R0443 X5 Finnish thesis on LLM-generated least-privilege RBAC policies (English abstract; full text Finnish)
+R0444 I policy-constrained LLM repair of Kubernetes backend configurations (no abstract; title explicit)
+R0445 ? prompt-based multi-cloud service management; configs and evaluation unclear
+R0446 I prompt-based Terraform multi-cloud provisioning with secure state management
+R0447 ? prompt-driven container orchestration (no abstract); check
+R0448 X1 agentic tool integration (no abstract)
+R0449 X1 genomic summarisation
+R0450 X6 dataset (Checkov findings for a Terraform repair thesis); thesis to be traced in snowballing
+R0451 X1 protein data bank help desk
+R0452 X1 agent trust verification
+R0453 X1 energy harvesting
+R0454 X6 replication package (LLM-assisted IaC mapping + security study); paper to be traced in snowballing
+R0455 X6 replication package of R0146 (duplicate)
+R0456 X6 replication package (LLM Terraform security repair, SANER 2027 submission); paper to be traced in snowballing
+R0457 X2 cloud API misconfiguration identification
+R0458 X1 AI governance
+R0459 X2 configuration drift detection
+R0460 X1 agentic coding task decomposition
+R0461 ? SAFE-HealCloud: agentic self-healing of cloud infrastructure; configuration changes and evaluation, check
+R0462 I SafeFix-Agent: diff-only LLM IaC remediation with policy, test and sandbox gates (no abstract; title explicit)
+R0463 X1 CI/CD log mining
+R0464 X4 SAST for application code
+R0465 X6 replication package (LLM agents vs scaffolders, ICSE-SEIP 2027); paper to be traced in snowballing
+R0466 X1 incident response
+R0467 X1 procurement agent
+R0468 X6 dataset for IEEE Software article on LLM Terraform security; article to be traced in snowballing
+R0469 X4 web application code security
+R0470 I security-first benchmark of text-to-Terraform generation
+R0471 X2 Dockerfile security smell detection
+R0472 I autonomous LLM agents remediating configuration drift and security misconfigurations in IaC
+R0473 X1 inference gateway
+R0474 I Sentinel-Mesh: formally verified remediation of cloud misconfigurations (no abstract; title explicit)
+R0475 ? Sentinel Polity: LLM-grounded policy-as-code for IaC hardening (no abstract); check
+R0476 X1 operating-system hardening (not IaC/cloud configuration)
+R0477 X1 multi-tenant RAG
+R0478 ? small language models for intent-driven Kubernetes management (commands vs manifests); check
+R0479 X6 project record
+R0480 X6 replication package (quantized LLMs for government DevOps); check paper in snowballing
+R0481 X1 specification reasoning
+R0482 X1 hallucination analysis
+R0483 X2 static analysis vs LLM review of Terraform (detection)
+R0484 X4 security of LLM code in CI/CD (no abstract)
+R0485 X1 workload synthesis for chaos engineering
+R0486 X6 software record
+R0487 X1 writing instruction
+R0488 X1 LLM threat argument
+R0489 X1 security decision-making
+R0490 I SWE-InfraBench: LLMs on cloud infrastructure code
+R0491 X6 patent-style system description
+R0492 I context-aware LLM repair of Dockerfile drift
+R0493 I TerraFormer: IaC generation fine-tuned with verifier feedback
+R0494 I TerraRepair: tool-grounded LLM agent for IaC repair
+R0495 X3 descriptive synthesis
+R0496 I agentic Kubernetes infrastructure provisioning with LLMs
+R0497 X3 overview of AI vulnerability management
+R0498 I LLM-generated Terraform treated as untrusted: security study (no abstract; title explicit)
+R0499 X1 root cause analysis
+R0500 X4 security debt of coding agents (application code)
+R0501 X1 honeypots
+R0502 X2 detection of OS compatibility issues in IaC
+R0503 X1 knowledge assessment system
+R0504 X1 DevOps concept classification
+R0505 X1 harms catalogue
+R0506 I verifier-first evaluation of agentic LLM IaC generation
+R0507 X6 experiment record
+R0508 X1 CRM platform
+R0509 X6 podcast episode
+R0510 X1 surveying statistics
+R0511 X1 representation rank
+R0512 X1 failover design
+R0513 X1 benchmark reliability
+R0514 X1 code knowledge graph
+R0515 X6 podcast episode
+R0516 I ZeroGuard: multi-agent autonomous IaC security remediation (no abstract; title explicit)
+# --- records added by search revisions v1.1 / v1.2 (R0517-R0720) ---
+R0517 I LLM generation of Ansible YAML (Ansible Wisdom, seed A1)
+R0518 X2 ChatGPT evaluating vulnerabilities and misconfigurations
+R0519 X1 generative AI for self-healing systems (runtime failures)
+R0520 X5 duplicate of R0517 ("Invited:" version)
+R0521 X1 recipes
+R0522 ? LLMs for auto-remediation in microservices; whether configuration/playbooks are produced, check
+R0523 X1 penetration testing reconnaissance
+R0524 X1 chemistry patents
+R0525 X1 literature
+R0526 X1 aspect term extraction
+R0527 X1 social media
+R0528 X1 recipes
+R0529 I empirical comparison of code generation approaches for Ansible
+R0530 I Ansible Lightspeed (seed A2)
+R0531 X1 network device automation
+R0532 X1 recipes
+R0533 X1 recipes (duplicate)
+R0534 X1 e-wallet platform
+R0535 I DocCGen: document-based controlled generation incl. Ansible YAML
+R0536 ? Dockerfile flakiness characterisation and repair; LLM role check
+R0537 X1 food LLM
+R0538 X1 food LLM
+R0539 X1 RAG at UN
+R0540 X1 duplicate
+R0541 X1 mRNA modelling
+R0542 X1 edge analytics
+R0543 X1 vision-language benchmark
+R0544 I usage insights of Ansible Lightspeed code completion
+R0545 I LLM-generated Ansible playbooks for microservice auto-remediation, experimental study
+R0546 X1 recipes
+R0547 X1 social media
+R0548 X1 recipes
+R0549 X6 workshop proceedings front matter (abstract of R0529)
+R0550 X1 risk management framework automation
+R0551 X1 vision-language evaluation
+R0552 X1 audio-language evaluation
+R0553 X1 mobile app
+R0554 X1 recipes
+R0555 X1 vision-language models
+R0556 X6 software release
+R0557 X5 Catalan/Spanish thesis
+R0558 X1 food culture
+R0559 X1 emotions
+R0560 X6 book
+R0561 X1 6G security agents
+R0562 X6 podcast episode
+R0563 X1 food LLM
+R0564 X1 social media
+R0565 X1 peptides
+R0566 X1 RAG in CI/CD (not configuration)
+R0567 X1 meal planning
+R0568 I LLMs for IT automation tasks (Ansible), real-world benchmark
+R0569 ? MicroRemed: benchmark of LLM microservice remediation; configuration produced, check
+R0570 X6 experiment repository
+R0571 ? schema-conformant declarative code generation (Ansible JSON); check scope and evaluation
+R0572 X1 network device configuration
+R0573 X1 meteorology framework
+R0574 X1 firewall validation
+R0575 ? SLMFix: small LMs fixing DSL errors with RL; check whether IaC DSLs are evaluated
+R0576 X2 sensitive parameter detection in Ansible
+R0577 X6 supplementary material
+R0578 X1 recipes
+R0579 X1 personhood
+R0580 X1 Congress digital twin
+R0581 X4 formal verification of LLM code (general)
+R0582 X6 software release
+R0583 X5 duplicate Greek thesis (R0211)
+R0584 X5 duplicate Ukrainian paper (R0212)
+R0585 X1 brand recommendations
+R0586 X1 fact checking
+R0587 X6 artifact (business process models)
+R0588 X1 intellectual interaction
+R0589 X6 hardware design artifact
+R0590 X6 software
+R0591 X1 CI/CD code repair prototype (application code)
+R0592 X1 recipes
+R0593 X6 podcast episode
+R0594 X6 replication package
+R0595 X1 offline RAG
+R0596 X6 software
+R0597 X6 replication package
+R0598 X6 artifact
+R0599 X6 artifact
+R0600 X6 artifact
+R0601 X6 artifact
+R0602 X1 recommender auditing
+R0603 X6 artifact
+R0604 I automatic Dockerfile generation with LLMs (no abstract; title explicit)
+R0605 X1 CI/CD quality assurance (no abstract)
+R0606 X6 artifact
+R0607 X1 recipes
+R0608 X6 artifact
+R0609 X1 mobile apps (no abstract)
+R0610 ? SOC 2 compliance of AI-written code incl. infrastructure provisioning; check share of IaC
+R0611 X6 artifact
+R0612 X1 protein variants
+R0613 X6 artifact
+R0614 X6 dataset (Spanish)
+R0615 X6 artifact
+R0616 I SLMs generating Kubernetes manifests via data distillation, evaluated
+R0617 X6 dataset
+R0618 X6 dataset and prompts for "Evaluating and Preventing Security Smells in AI-Generated Ansible Code"; paper to be traced in snowballing
+R0619 X1 documentation generation
+R0620 X6 artifact
+R0621 ? E2E-REME: LLM microservice auto-remediation; whether playbooks/config are produced and evaluated, check
+R0622 X6 artifact
+R0623 X6 podcast episode
+R0624 X6 podcast episode
+R0625 X6 podcast episode
+R0626 X6 podcast episode
+R0627 X6 software image
+R0628 X1 evaluation statistics library
+R0629 X1 dental reports
+R0630 X4 bug detection
+R0631 X1 control plane (no abstract)
+R0632 X1 plant-based foods
+R0633 X1 haute cuisine
+R0634 X6 software release
+R0635 X1 governance grounding (no abstract)
+R0636 X1 honeypot
+R0637 X6 unrelated white paper
+R0638 X1 development methodology
+R0639 X5 Russian thesis
+R0640 X6 dataset for a paper on Kubernetes manifest generation by SLMs; paper to be traced in snowballing
+R0641 I knowledge-graph-augmented LLM Dockerfile generation (no abstract; title explicit)
+R0642 X6 podcast episode
+R0643 X1 output detectability
+R0644 X6 artifact (PLC software)
+R0645 X6 artifact (Java lock contention)
+R0646 X1 physics
+R0647 X6 software tool
+R0648 X6 dataset
+R0649 X6 software
+R0650 X6 dataset
+R0651 X6 online appendix
+R0652 X6 artifact
+R0653 X6 software release
+R0654 X1 hardware white paper
+R0655 X1 peptides
+R0656 X1 AI ethics teaching
+R0657 X6 software
+R0658 X6 software
+R0659 X5 Russian thesis
+R0660 X6 repository
+R0661 X6 repository
+R0662 X1 recipes
+R0663 X6 repository
+R0664 X6 replication package (RegoSmith: generated Rego policy rules); paper to be traced in snowballing
+R0665 I repairing Docker smells with LLMs, empirical study
+R0666 X6 replication package
+R0667 X6 replication package
+R0668 X6 replication package
+R0669 X6 replication package
+R0670 X6 replication package
+R0671 X6 replication package ("Automated Containerization and Verification of Heterogeneous OSS": LLM-generated Dockerfiles, verified by building); paper to be traced in snowballing
+R0672 X6 replication package
+R0673 X6 replication package
+R0674 X6 repository
+R0675 X1 robotics rewards
+R0676 X1 fake news
+R0677 X1 meta-learning
+R0678 X6 software release
+R0679 X1 style transfer
+R0680 X6 software
+R0681 X1 campus system
+R0682 I specification-driven DevOps: LLM-generated multi-service environments checked for conformity
+R0683 X6 event walkthrough
+R0684 X6 software
+R0685 X1 rationale distillation
+R0686 X1 network alerts
+R0687 X6 artifact
+R0688 X6 supplementary material
+R0689 X1 digital twin model debugging
+R0690 X6 artifact
+R0691 X1 Mars literature
+R0692 X6 book chapter
+R0693 X6 podcast episode
+R0694 X3 architecture essay
+R0695 X1 education framework
+R0696 X6 artifact
+R0697 X1 UML generation
+R0698 X1 pig farming
+R0699 X1 auditing personalisation
+R0700 X1 recipes
+R0701 X6 software
+R0702 X6 artifact
+R0703 X6 software
+R0704 X1 TikTok analysis
+R0705 X6 software
+R0706 X1 repository contents study
+R0707 X6 software
+R0708 X6 podcast episode
+R0709 I self-healing of IaC projects with constrained LLMs (seed C2)
+R0710 ? ML techniques for IaC security; whether LLMs repair configs, check
+R0711 X3 Kubernetes for AI workloads overview
+R0712 X6 unrelated record
+R0713 X5 duplicate Greek thesis
+R0714 X5 duplicate Ukrainian paper
+R0715 X3 threat model of agentic IaC systems (no empirical configuration evaluation)
+R0716 X1 no abstract, general cloud security with AI
+R0717 X1 malware detection
+R0718 X3 design patterns overview
+R0719 X1 incident retrospection
+R0720 X1 multi-agent LLM pipeline healing
+# --- records added by the IEEE Xplore search (R0721-R0847); abstracts from IEEE, first 450 characters ---
+R0721 X6 book
+R0722 X1 model deployment with microservices
+R0723 X2 covert channel detection in access policies
+R0724 X1 intent-based network security provisioning (no LLM config generation evident)
+R0725 X1 defence intelligence RAG
+R0726 X1 culinary robotics
+R0727 X6 book
+R0728 X1 game narration
+R0729 X1 traffic signal control
+R0730 X6 book
+R0731 X1 card game
+R0732 X1 metamodel for Vagrant (no LLM)
+R0733 X1 RDF-based code generation (no LLM IaC)
+R0734 X1 predictive maintenance
+R0735 ? LLM Terraform script generator; evaluation unclear
+R0736 X1 licence plates
+R0737 X6 book
+R0738 X1 deploying LLM workflows
+R0739 X1 security context discovery
+R0740 I InfraGenie: multi-agent generation, validation and deployment of IaC
+R0741 X6 dataset descriptor
+R0742 X6 book
+R0743 X1 network monitoring
+R0744 I foundation models on Bedrock for IaC (Terraform/CloudFormation) automation and misconfiguration
+R0745 X1 orchestration middleware (no LLM)
+R0746 X1 container orchestration decisions
+R0747 ? generative AI cloud setup assistant; config generation and evaluation unclear
+R0748 X6 workshop abstract
+R0749 X1 inference energy
+R0750 X6 book chapter
+R0751 X1 recipes
+R0752 ? GNN-based cloud deployment generating IaC YAML/JSON; language model involvement check
+R0753 X1 intent classification for deployment plans (classification)
+R0754 X6 book
+R0755 I KubeScribe: LLM-generated runtime security policies for Kubernetes
+R0756 ? KUBETEUS: intelligent network policy generation for containers; LLM involvement check
+R0757 X1 healthcare
+R0758 X1 healthcare cloud
+R0759 X1 recipes
+R0760 X1 education platform performance
+R0761 X1 GPU scheduling
+R0762 X1 image style
+R0763 ? LLM-orchestrated cloud pipeline automation; second screener: may generate infra configs (changed X1 -> ? after re-screening, conservative rule)
+R0764 X4 prompt injection defences in development
+R0765 X1 data pipelines
+R0766 X1 vertical scaling
+R0767 X1 AI platform
+R0768 X2 risk assessment of configurations
+R0769 X1 inference service framework
+R0770 X1 knowledge graph QA
+R0771 X1 autoscaling
+R0772 I self-correcting multi-agent LLM pipeline generating verified Kubernetes NetworkPolicy
+R0773 X3 survey (kept for snowballing)
+R0774 X1 SmartNIC taxonomy
+R0775 ? LLM translating business intent into Kubernetes configuration with RL scheduling; check
+R0776 X1 IoT rule generation (not IaC/cloud)
+R0777 ? agentic LMs generating cyber range scenarios (likely container/IaC environments); check
+R0778 X1 RAN control
+R0779 X1 ERP release readiness
+R0780 I AI-assisted Dockerfile hardening with scanning and secure generation
+R0781 X1 root cause analysis
+R0782 X3 framework overview
+R0783 X1 5G core configuration (network functions)
+R0784 X1 release notes
+R0785 ? ARM: LLM agents for configuration and remediation across cloud-native/IoT; check
+R0786 X1 autoscaling
+R0787 X1 troubleshooting framework
+R0788 X1 Open RAN
+R0789 X6 course
+R0790 X6 course
+R0791 X1 KV cache placement
+R0792 X6 course
+R0793 X6 course
+R0794 X6 course
+R0795 X6 book
+R0796 X6 book
+R0797 X1 intrusion detection
+R0798 X1 inference acceleration
+R0799 X1 Dockerfile completion with multi-task learning (not an LLM producing configs as studied object; non-LLM model); check snowballing only
+R0800 X1 inference scaling
+R0801 X5 published IEEE version of R0490 (SWE-InfraBench, same abstract); one entry kept for full text, cite published version
+R0802 ? reflexion LLM agents remediating Kubernetes incidents; whether manifests are changed and verified, check
+R0803 ? VeriOps-Agent: evidence-verified LLM incident remediation; configuration changes, check
+R0804 X1 configuration error diagnosis (no LLM generation)
+R0805 X1 scheduling
+R0806 I LLMs generating Kubernetes manifests from source code with structured metadata
+R0807 X6 course
+R0808 ? GenIaC-GF: generative AI IaC governance framework; evaluation unclear
+R0809 X1 vulnerability reachability analysis
+R0810 X1 GitOps for federated learning
+R0811 X3 recipe generation review
+R0812 X1 MCP for agent orchestration
+R0813 ? multi-agent system producing Dockerfiles and Kubernetes manifests with security checks; evaluation check
+R0814 X1 Linux kernel configuration repair (not IaC/cloud)
+R0815 X1 AIOps detection
+R0816 X6 course
+R0817 X1 reverse engineering to SysML
+R0818 X1 vehicle routing
+R0819 ? DreamOps: LLM incident and infrastructure management on Kubernetes; configuration changes, check
+R0820 ? LLM+RAG constructing cyber ranges (infrastructure definitions); check
+R0821 X1 monitoring
+R0822 X1 LLMOps
+R0823 X1 log analytics
+R0824 X1 software testing
+R0825 X1 5G failure prediction
+R0826 X6 course
+R0827 X1 agriculture LLM
+R0828 X1 network device misconfiguration detection
+R0829 X6 book chapter
+R0830 I NLP/LLM framework generating AWS configuration templates from intent
+R0831 X1 database CIS remediation (not IaC/cloud configuration)
+R0832 X1 knowledge graphs
+R0833 X6 course
+R0834 X1 scheduling
+R0835 X1 hallucination
+R0836 X6 course
+R0837 X1 EV charging
+R0838 X6 course
+R0839 X1 multi-tenant architecture
+R0840 X1 GPU scheduler
+R0841 X6 course
+R0842 X6 book
+R0843 X1 orchestration of GenAI workloads
+R0844 X1 FinOps
+R0845 X1 attack graphs from IaC (analysis, not generation by LLM)
+R0846 X1 vehicles
+R0847 X1 inference platform
+R0848 X3 overview of cloud security and AI techniques; no configuration produced or evaluated
+R0849 X1 empirical study of state reconciliation defects in IaC; no LLM producing configuration
+R0850 X1 scaling of a generative AI application on Kubernetes; LLM is the workload, not a configuration producer
+R0851 X1 GPU-aware workload manager for fine-tuning jobs; LLM is the workload
+R0852 X1 LLM agents for privilege escalation (penetration testing); no IaC/cloud configuration produced
+R0853 X1 tool that builds and deploys RAG pipelines; LLM is the application being configured, not the producer of IaC
+R0854 X1 technical debt in IaC; no LLM producing configuration
+R0855 X1 technical debt in Kubernetes evolution; no LLM producing configuration
+R0856 I agent-based LLM repair of programming-language IaC (Pulumi/CDK-style) programs
+R0857 X1 modelling language for multi-agent system interactions; not IaC
+R0858 ? production observability for LLM-based IaC (ConfLang 2026 short paper); abstract missing in OpenAlex, ACM text says valid configurations may remain unsuitable for the applications they support
+R0859 X4 repository-level program repair of application code
+R0860 ? Kubernetes manifest generation by prompt engineering (CLOSER 2024 position paper with an evaluation); possibly the earlier version of R0188 (same topic) - full text decides
+R0861 I IaC-Eval benchmark: LLM Terraform generation checked by plan + intent policies (known seed missed by the searches)
+R0862 ? LLM agents generate IaC update sequences that are deployed to find IaC-platform bugs (TerraFault); LLM produces IaC but the aim is platform testing - full text decides
+R0863 I LLM agents reconcile Terraform with out-of-band cloud changes (NSYNC): produce IaC patches
+R0864 X1 Kubernetes observability with generative AI (title only, no abstract); not producing configuration
+R0865 I security smells in AI-generated Ansible roles checked against CIS benchmarks; prompt-based prevention

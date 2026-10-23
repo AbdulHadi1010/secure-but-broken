@@ -1,0 +1,6 @@
+# Keep files byte-identical across machines: hashes of upstream inputs (gold manifest, policies, references)
+# are verified in code and recorded in the docs, so checkout must not rewrite line endings.
+* text=auto eol=lf
+*.pdf binary
+*.zip binary
+*.png binary

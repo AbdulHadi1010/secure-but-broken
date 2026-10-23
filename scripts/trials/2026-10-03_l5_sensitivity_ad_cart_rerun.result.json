@@ -1,0 +1,27 @@
+{
+ "cluster_create_s": 38.9,
+ "ready_s_warm_cache": 29.1,
+ "healthy": {
+  "pass_rate": 1.0
+ },
+ "without_adservice": {
+  "pass_rate": 0.9,
+  "failed": [
+   "browseProduct has ad"
+  ]
+ },
+ "without_cartservice": {
+  "pass_rate": 0.0,
+  "failed": [
+   "index 200",
+   "setCurrency 200",
+   "browseProduct 200",
+   "browseProduct has recommendations",
+   "browseProduct has ad",
+   "addToCart 200",
+   "viewCart 200",
+   "checkout 200",
+   "checkout order complete"
+  ]
+ }
+}

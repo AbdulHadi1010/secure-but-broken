@@ -1,0 +1,18 @@
+{
+ "case_id": "missing-limits-frontend",
+ "service_port": 80,
+ "type": "missing-limits",
+ "fix_class": "b",
+ "service": "frontend",
+ "reference_fix": "add cpu and memory limits the service tolerates (gold values per service in app/gold/manifests.yaml)",
+ "target_rules": [
+  "checkov:CKV_K8S_11",
+  "checkov:CKV_K8S_13",
+  "kics:b14d1bc4-a208-45db-92f0-e21f8e2588e9",
+  "kics:4ac0e2b7-d2d2-4af7-8799-e8de6721ccda",
+  "kube-score:container-resources"
+ ],
+ "coupled_rules": [],
+ "gold_sha256": "08aa0feec0d6b47270472db2275acdc52479b3d80615bec107ab30682ac33dcb",
+ "case_sha256": "049bd2ea62e4ac36771dd59fbc41bce109bfebec49410381e26d87b0a815755c"
+}

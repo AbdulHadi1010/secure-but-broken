@@ -1,0 +1,28 @@
+﻿local-20261003-r1: ok=True ready=36.2s restarts=0 func=1.0 p95=135.55023479999986 err=0 
+local-20261003-r2: ok=True ready=34.9s restarts=0 func=1.0 p95=181.3296895 err=0 
+local-20261003-r3: ok=True ready=35.1s restarts=0 func=1.0 p95=182.27438330000004 err=0 
+local-20261003-r4: ok=True ready=40.9s restarts=0 func=1.0 p95=189.403923 err=0 
+local-20261003-r5: ok=True ready=41.0s restarts=0 func=1.0 p95=199.17446189999998 err=0 
+{
+ "n_runs": 5,
+ "n_ok": 5,
+ "p95_ms": {
+  "mean": 177.54653849999997,
+  "sd": 24.53935059339102,
+  "min": 135.55023479999986,
+  "max": 199.17446189999998
+ },
+ "error_rate": {
+  "mean": 0,
+  "max": 0
+ },
+ "ready_s": {
+  "mean": 37.62,
+  "max": 41.0
+ },
+ "restarts_total": 0,
+ "thresholds": {
+  "p95_ms_max": 251.16459028017303,
+  "error_rate_max": 0.01
+ }
+}

@@ -1,0 +1,17 @@
+{
+  "_comment": "Single source of truth for model IDs. Credits-only (D-032): every model here is sold by AWS (Pricing API service code AmazonBedrock) and covered by the AWS credits; no AWS Marketplace models. Change only with a docs/decisions.md entry.",
+  "temperature": 0.2,
+  "repairers": [
+    {"key": "kimi-k3", "vendor": "Moonshot AI", "model_id": "us.moonshotai.kimi-k3"},
+    {"key": "glm-5", "vendor": "Zhipu AI (Z.ai)", "model_id": "zai.glm-5"},
+    {"key": "deepseek-v3-2", "vendor": "DeepSeek", "model_id": "deepseek.v3.2"}
+  ],
+  "stretch_repairers": [
+    {"key": "gpt-oss-120b", "vendor": "OpenAI", "model_id": "openai.gpt-oss-120b-1:0"},
+    {"key": "qwen3-coder-next", "vendor": "Alibaba (Qwen)", "model_id": "qwen.qwen3-coder-next"}
+  ],
+  "pending_external": [
+    {"key": "claude-via-anthropic-api", "vendor": "Anthropic", "note": "only if Anthropic AI for Science credits are granted; Claude on Bedrock is AWS Marketplace (not credited)"}
+  ],
+  "moderator": {"key": "mistral-large-3", "vendor": "Mistral AI", "model_id": "mistral.mistral-large-3-675b-instruct", "temperature": 0.0}
+}

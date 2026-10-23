@@ -1,0 +1,152 @@
+{
+ "case_id": "missing-limits-cartservice",
+ "validated": "2026-10-04T11:27:25.975592+00:00",
+ "scanners": {
+  "checkov": "bridgecrew/checkov@sha256:617c76e3f9b1f7907ebca9abb6b9d746844edcb48e9bd775e4692c69c1c6ac47",
+  "kics": "checkmarx/kics@sha256:3e5a268eb8adda2e5a483c9359ddfc4cd520ab856a7076dc0b1d8784a37e2602",
+  "kube-score": "zegl/kube-score@sha256:ac4c43ad560af905d66f6bf57b0937c591332e6dbf2167c31193a13b4695ab97"
+ },
+ "new_findings": [
+  "checkov:CKV_K8S_11:Deployment/cartservice",
+  "checkov:CKV_K8S_13:Deployment/cartservice",
+  "kics:4ac0e2b7-d2d2-4af7-8799-e8de6721ccda:Deployment/cartservice",
+  "kics:b14d1bc4-a208-45db-92f0-e21f8e2588e9:Deployment/cartservice",
+  "kube-score:container-resources:Deployment/cartservice"
+ ],
+ "gold_findings_lost": [],
+ "v1_flagged": true,
+ "v1_targets_present": true,
+ "unexpected_new_findings": [],
+ "v2_gold_clean_for_targets": true,
+ "dry_run_ok": true,
+ "ready_s": 32.4,
+ "all_available": true,
+ "functional_pass_rate": 1.0,
+ "l7_on_case": {
+  "static": {
+   "pass": 10,
+   "fail": 1,
+   "warn": 0,
+   "error": 0,
+   "failures": [
+    "require-requests-limits -> boutique/Deployment/cartservice"
+   ],
+   "ok": false
+  },
+  "runtime": {
+   "pod": "cartservice-574756b7f-gr2f6",
+   "ok": true,
+   "limits": {
+    "ephemeral-storage": "512Mi"
+   },
+   "source": "status"
+  },
+  "runtime_ok": false,
+  "pass": false,
+  "intent": "the running container has CPU and memory limits applied"
+ },
+ "pods": [
+  {
+   "name": "adservice-8458b4797c-6bmbw",
+   "app": "adservice",
+   "phase": "Running",
+   "ready": true,
+   "restarts": 0,
+   "last_terminated_reason": null,
+   "waiting_reason": null
+  },
+  {
+   "name": "cartservice-574756b7f-gr2f6",
+   "app": "cartservice",
+   "phase": "Running",
+   "ready": true,
+   "restarts": 0,
+   "last_terminated_reason": null,
+   "waiting_reason": null
+  },
+  {
+   "name": "checkoutservice-6d859d664d-kd897",
+   "app": "checkoutservice",
+   "phase": "Running",
+   "ready": true,
+   "restarts": 0,
+   "last_terminated_reason": null,
+   "waiting_reason": null
+  },
+  {
+   "name": "currencyservice-86d7b97dbc-whlmm",
+   "app": "currencyservice",
+   "phase": "Running",
+   "ready": true,
+   "restarts": 0,
+   "last_terminated_reason": null,
+   "waiting_reason": null
+  },
+  {
+   "name": "emailservice-cdd886b76-75njh",
+   "app": "emailservice",
+   "phase": "Running",
+   "ready": true,
+   "restarts": 0,
+   "last_terminated_reason": null,
+   "waiting_reason": null
+  },
+  {
+   "name": "frontend-7dfdb7cdfd-tv4sd",
+   "app": "frontend",
+   "phase": "Running",
+   "ready": true,
+   "restarts": 0,
+   "last_terminated_reason": null,
+   "waiting_reason": null
+  },
+  {
+   "name": "paymentservice-68f4749f6f-5s5jt",
+   "app": "paymentservice",
+   "phase": "Running",
+   "ready": true,
+   "restarts": 0,
+   "last_terminated_reason": null,
+   "waiting_reason": null
+  },
+  {
+   "name": "productcatalogservice-575b6f888d-457jw",
+   "app": "productcatalogservice",
+   "phase": "Running",
+   "ready": true,
+   "restarts": 0,
+   "last_terminated_reason": null,
+   "waiting_reason": null
+  },
+  {
+   "name": "recommendationservice-847c46b576-j8dvp",
+   "app": "recommendationservice",
+   "phase": "Running",
+   "ready": true,
+   "restarts": 0,
+   "last_terminated_reason": null,
+   "waiting_reason": null
+  },
+  {
+   "name": "redis-cart-64f7459c49-57f7v",
+   "app": "redis-cart",
+   "phase": "Running",
+   "ready": true,
+   "restarts": 0,
+   "last_terminated_reason": null,
+   "waiting_reason": null
+  },
+  {
+   "name": "shippingservice-58484f78cd-c8rns",
+   "app": "shippingservice",
+   "phase": "Running",
+   "ready": true,
+   "restarts": 0,
+   "last_terminated_reason": null,
+   "waiting_reason": null
+  }
+ ],
+ "v3_deploys": true,
+ "v4_l7_flags_case": true,
+ "valid": true
+}

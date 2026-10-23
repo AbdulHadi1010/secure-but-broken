@@ -1,0 +1,422 @@
+<title>Secure but Broken Architecture</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one reading column (~74ch) with full-width figures; blueprint-ink palette, amber marks what is not built yet. */
+:root {
+  --bg: #f6f7f9;
+  --fg: #17202b;
+  --muted: #566273;
+  --line: #c9d0da;
+  --panel: #ffffff;
+  --zone: #edf0f4;
+  --accent: #1f5f8b;
+  --accent-soft: #dcebf6;
+  --planned: #a8650a;
+  --planned-soft: #fbf0dc;
+  --ok: #2c7a4b;
+  --ok-soft: #e0f1e7;
+  --risk: #a23a32;
+  --risk-soft: #f8e3e1;
+  --f-display: "IBM Plex Sans Condensed", "Arial Narrow", system-ui, sans-serif;
+  --f-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #11161d; --fg: #e3e8ef; --muted: #9aa6b5; --line: #334050; --panel: #18202a; --zone: #141b23;
+    --accent: #7db8e3; --accent-soft: #1b3346; --planned: #e8a64a; --planned-soft: #3a2c15;
+    --ok: #6fc993; --ok-soft: #173525; --risk: #ee8a80; --risk-soft: #3d1d1a; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #11161d; --fg: #e3e8ef; --muted: #9aa6b5; --line: #334050; --panel: #18202a; --zone: #141b23;
+  --accent: #7db8e3; --accent-soft: #1b3346; --planned: #e8a64a; --planned-soft: #3a2c15;
+  --ok: #6fc993; --ok-soft: #173525; --risk: #ee8a80; --risk-soft: #3d1d1a; color-scheme: dark;
+}
+body { background: var(--bg); color: var(--fg); font: 15px/1.6 var(--f-body); }
+.wrap { max-width: 1120px; margin: 0 auto; padding-inline: 20px; padding-block: 40px 64px; display: grid; gap: 44px; }
+.prose { max-width: 74ch; }
+h1, h2 { font-family: var(--f-display); font-weight: 600; text-wrap: balance; letter-spacing: -0.005em; margin: 0; }
+h1 { font-size: clamp(28px, 4vw, 40px); line-height: 1.12; }
+h2 { font-size: 24px; line-height: 1.2; }
+h3 { font-size: 15px; margin: 0; font-weight: 600; }
+p { margin: 0; }
+.eyebrow { font: 500 12px/1 var(--f-mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+header { display: grid; gap: 14px; }
+.lede { color: var(--muted); font-size: 16px; }
+section { display: grid; gap: 16px; }
+code, .mono { font-family: var(--f-mono); font-size: 0.9em; }
+
+figure { margin: 0; display: grid; gap: 12px; }
+.canvas { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; overflow-x: auto; padding: 12px; }
+.canvas svg { display: block; width: 100%; min-width: 860px; height: auto; color: var(--fg); }
+figcaption { color: var(--muted); font-size: 14px; max-width: 80ch; }
+
+/* SVG styling from the page (no <style> inside the SVGs) */
+.box { fill: var(--panel); stroke: var(--fg); stroke-width: 1.2; }
+.box.accent { fill: var(--accent-soft); stroke: var(--accent); }
+.box.planned { stroke: var(--planned); stroke-dasharray: 5 4; fill: var(--planned-soft); }
+.box.guard { fill: var(--risk-soft); stroke: var(--risk); }
+.box.gate { fill: var(--panel); stroke: var(--line); }
+.zone { fill: var(--zone); stroke: var(--line); stroke-width: 1; }
+.zone.inner { fill: var(--panel); }
+.edge { stroke: var(--fg); stroke-width: 1.3; fill: none; }
+.edge.accent { stroke: var(--accent); stroke-width: 1.6; }
+.edge.guard { stroke: var(--risk); stroke-dasharray: 4 4; }
+.edge.planned { stroke: var(--planned); stroke-dasharray: 5 4; }
+.t { fill: var(--fg); font: 600 13px var(--f-body); }
+.ts { fill: var(--muted); font: 400 11.5px var(--f-body); }
+.tm { fill: var(--muted); font: 400 11px var(--f-mono); }
+.tl { fill: var(--fg); font: 500 11px var(--f-mono); }
+.tz { fill: var(--muted); font: 600 11px var(--f-mono); letter-spacing: 0.08em; }
+.ta { fill: var(--accent); font: 600 11.5px var(--f-body); }
+.tp { fill: var(--planned); font: 600 11px var(--f-mono); }
+.tr { fill: var(--risk); font: 600 11.5px var(--f-body); }
+.arrowhead { fill: var(--fg); }
+.arrowhead.accent { fill: var(--accent); }
+.arrowhead.planned { fill: var(--planned); }
+
+.legend { display: flex; flex-wrap: wrap; gap: 8px 22px; font-size: 13px; color: var(--muted); }
+.legend span { display: inline-flex; align-items: center; gap: 8px; }
+.sw { width: 26px; height: 14px; border-radius: 3px; border: 1.5px solid var(--fg); background: var(--panel); }
+.sw.planned { border: 1.5px dashed var(--planned); background: var(--planned-soft); }
+.sw.accent { border-color: var(--accent); background: var(--accent-soft); }
+.sw.guard { border-color: var(--risk); background: var(--risk-soft); }
+
+.grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+.grid2 > * { min-width: 0; }
+.tablewrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 6px; background: var(--panel); }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font: 600 12px var(--f-mono); letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); background: var(--zone); }
+tr:last-child td { border-bottom: 0; }
+td .mono { white-space: nowrap; }
+
+.pill { display: inline-block; font: 600 11px/1 var(--f-mono); letter-spacing: 0.04em; padding: 4px 7px; border-radius: 999px; white-space: nowrap; }
+.pill.done { color: var(--ok); background: var(--ok-soft); }
+.pill.next { color: var(--accent); background: var(--accent-soft); }
+.pill.todo { color: var(--planned); background: var(--planned-soft); }
+.pill.open { color: var(--risk); background: var(--risk-soft); }
+
+.gaps { display: grid; gap: 0; border: 1px solid var(--line); border-radius: 6px; background: var(--panel); }
+.gap { display: grid; grid-template-columns: 116px 1fr; gap: 6px 16px; padding: 14px 16px; border-bottom: 1px solid var(--line); }
+.gap:last-child { border-bottom: 0; }
+.gap > div { min-width: 0; }
+.gap p { color: var(--muted); font-size: 14px; }
+@media (max-width: 560px) { .gap { grid-template-columns: 1fr; } }
+footer { color: var(--muted); font-size: 13px; border-top: 1px solid var(--line); padding-top: 16px; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+</style>
+
+<div class="wrap">
+  <header class="prose">
+    <div class="eyebrow">Research architecture · status 4 Oct 2026, 13:45</div>
+    <h1>Secure but Broken? Deployment-validated evaluation of LLM security repairs for Kubernetes</h1>
+    <p class="lede">An LLM is asked to fix one injected security misconfiguration in a Kubernetes app. Prior work stops when the scanner goes quiet. We deploy every repair on a fresh cluster, drive real traffic through it, and check that the security intent is actually met. Then we test whether feeding runtime failures back to the LLM produces fixes that are both secure and working.</p>
+  </header>
+
+  <section>
+    <div class="prose" style="display:grid;gap:8px">
+      <div class="eyebrow">Figure 1</div>
+      <h2>One repair attempt and the feedback loop</h2>
+    </div>
+    <figure>
+      <div class="canvas">
+        <svg viewBox="0 0 1160 500" role="img" aria-label="A case goes to the repairer LLM; its output passes seven gates from static scanning to runtime security probes; a deterministic evaluator assigns a verdict; if the fix is not safe, a feedback message passes a leakage check and returns to the repairer for up to five iterations. Gold manifests feed only the scan baseline and never reach the repairer or moderator.">
+          <defs>
+            <marker id="a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" class="arrowhead"/></marker>
+            <marker id="a1a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" class="arrowhead accent"/></marker>
+          </defs>
+
+          <!-- Case -->
+          <rect class="box" x="20" y="60" width="160" height="72" rx="5"/>
+          <text class="t" x="100" y="90" text-anchor="middle">Case</text>
+          <text class="ts" x="100" y="108" text-anchor="middle">gold app + exactly one</text>
+          <text class="ts" x="100" y="123" text-anchor="middle">injected misconfiguration</text>
+
+          <!-- Repairer -->
+          <rect class="box" x="230" y="60" width="160" height="72" rx="5"/>
+          <text class="t" x="310" y="90" text-anchor="middle">Repairer LLM</text>
+          <text class="ts" x="310" y="108" text-anchor="middle">Bedrock Converse</text>
+          <text class="ts" x="310" y="123" text-anchor="middle">returns full manifest set</text>
+
+          <line class="edge" x1="180" y1="96" x2="226" y2="96" marker-end="url(#a1)"/>
+          <text class="tm" x="203" y="88" text-anchor="middle">prompt</text>
+
+          <!-- Gates panel -->
+          <rect class="zone" x="440" y="22" width="410" height="330" rx="6"/>
+          <text class="tz" x="456" y="42">STATIC</text>
+          <text class="tz" x="456" y="186">RUNTIME · FRESH KIND CLUSTER</text>
+          <g>
+            <rect class="box gate" x="456" y="50" width="378" height="34" rx="4"/>
+            <text class="tl" x="468" y="71">L1</text><text class="t" x="496" y="71">target rule cleared</text><text class="tm" x="826" y="71" text-anchor="end">Checkov·KICS·kube-score</text>
+            <rect class="box gate" x="456" y="90" width="378" height="34" rx="4"/>
+            <text class="tl" x="468" y="111">L2</text><text class="t" x="496" y="111">no new findings</text><text class="tm" x="826" y="111" text-anchor="end">scan diff vs gold</text>
+            <rect class="box gate" x="456" y="130" width="378" height="34" rx="4"/>
+            <text class="tl" x="468" y="151">L3</text><text class="t" x="496" y="151">server dry-run</text><text class="tm" x="826" y="151" text-anchor="end">kubectl 1.37</text>
+            <rect class="box gate" x="456" y="194" width="378" height="34" rx="4"/>
+            <text class="tl" x="468" y="215">L4</text><text class="t" x="496" y="215">all pods Ready</text><text class="tm" x="826" y="215" text-anchor="end">within timeout</text>
+            <rect class="box gate" x="456" y="234" width="378" height="34" rx="4"/>
+            <text class="tl" x="468" y="255">L5</text><text class="t" x="496" y="255">user journeys work</text><text class="tm" x="826" y="255" text-anchor="end">k6 + log check</text>
+            <rect class="box gate" x="456" y="274" width="378" height="34" rx="4"/>
+            <text class="tl" x="468" y="295">L6</text><text class="t" x="496" y="295">in load band</text><text class="tm" x="826" y="295" text-anchor="end">p95 ≤ 251 ms · err ≤ 1%</text>
+            <rect class="box accent" x="456" y="314" width="378" height="30" rx="4"/>
+            <text class="tl" x="468" y="333">L7</text><text class="t" x="496" y="333">security intent met</text><text class="tm" x="826" y="333" text-anchor="end">Kyverno + runtime probe</text>
+          </g>
+          <line class="edge" x1="390" y1="96" x2="436" y2="96" marker-end="url(#a1)"/>
+
+          <!-- Evaluator + verdict -->
+          <rect class="box" x="880" y="150" width="120" height="72" rx="5"/>
+          <text class="t" x="940" y="180" text-anchor="middle">Evaluator</text>
+          <text class="ts" x="940" y="198" text-anchor="middle">deterministic</text>
+          <text class="ts" x="940" y="212" text-anchor="middle">verdict JSON</text>
+          <line class="edge" x1="850" y1="186" x2="876" y2="186" marker-end="url(#a1)"/>
+          <text class="tm" x="863" y="178" text-anchor="middle">L1–L7</text>
+
+          <rect class="box" x="1030" y="150" width="120" height="72" rx="5"/>
+          <text class="t" x="1090" y="176" text-anchor="middle">Verdict</text>
+          <text class="tm" x="1090" y="194" text-anchor="middle">SAFE · BREAKING</text>
+          <text class="tm" x="1090" y="208" text-anchor="middle">DECEPTIVE · …</text>
+          <line class="edge" x1="1000" y1="186" x2="1026" y2="186" marker-end="url(#a1)"/>
+
+          <!-- Feedback loop -->
+          <path class="edge accent" d="M940 222 V430 H774" marker-end="url(#a1a)"/>
+          <text class="ta" x="950" y="300">not SAFE_FIX</text>
+          <text class="ta" x="950" y="316">and iteration &lt; 5</text>
+
+          <rect class="box accent" x="440" y="392" width="330" height="76" rx="5"/>
+          <text class="t" x="605" y="418" text-anchor="middle">Feedback builder</text>
+          <text class="ts" x="605" y="437" text-anchor="middle">C1: raw scanner output, fixed template</text>
+          <text class="ts" x="605" y="453" text-anchor="middle">C2: moderator, LLM (Haiku 4.5) or deterministic template</text>
+
+          <rect class="box guard" x="230" y="392" width="160" height="76" rx="5"/>
+          <text class="t" x="310" y="418" text-anchor="middle">Leakage check</text>
+          <text class="ts" x="310" y="437" text-anchor="middle">no YAML, no gold lines</text>
+          <text class="ts" x="310" y="453" text-anchor="middle">2 retries, then template</text>
+
+          <line class="edge accent" x1="440" y1="430" x2="394" y2="430" marker-end="url(#a1a)"/>
+          <path class="edge accent" d="M310 392 V136" marker-end="url(#a1a)"/>
+          <text class="ta" x="318" y="262">next attempt</text>
+
+          <!-- Gold isolation -->
+          <rect class="box guard" x="20" y="200" width="170" height="86" rx="5" style="stroke-dasharray:5 4"/>
+          <text class="t" x="105" y="226" text-anchor="middle">Gold + reference fix</text>
+          <text class="ts" x="105" y="244" text-anchor="middle">scan baseline and</text>
+          <text class="ts" x="105" y="259" text-anchor="middle">analysis only</text>
+          <text class="tr" x="105" y="277" text-anchor="middle">never sent to an LLM</text>
+          <path class="edge guard" d="M190 228 H420 V107 H452"/>
+          <text class="tm" x="300" y="221" text-anchor="middle">baseline scan</text>
+
+          <text class="tm" x="20" y="340">C0: one attempt, no feedback</text>
+          <text class="tm" x="20" y="358">C1/C2: up to 5 iterations</text>
+          <text class="tm" x="20" y="376">every condition: 3 repeats</text>
+        </svg>
+      </div>
+      <figcaption>Every attempt passes the same seven gates; only the feedback differs between conditions. The red boundary marks what must never reach the repairer or the moderator: the gold manifests and the reference fix are used only for the L2 scan diff and for analysis. Every prompt, response, manifest and check result is stored in S3.</figcaption>
+    </figure>
+
+    <div class="grid2">
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>Condition</th><th>After a failed attempt the repairer sees</th></tr></thead>
+          <tbody>
+            <tr><td><span class="mono">C0</span> one-shot</td><td>Nothing. One attempt.</td></tr>
+            <tr><td><span class="mono">C1</span> scanner loop</td><td>Raw scanner output in a fixed template. The status quo in prior work.</td></tr>
+            <tr><td><span class="mono">C2-LLM</span></td><td>Moderator message from scanner, deploy, functional, load and intent evidence.</td></tr>
+            <tr><td><span class="mono">C2-template</span></td><td>The same evidence, written by a fixed script. Shows the gain is the runtime information, not another LLM.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>Verdict</th><th>Rule</th></tr></thead>
+          <tbody>
+            <tr><td class="mono">SAFE_FIX</td><td>L1–L7 all pass</td></tr>
+            <tr><td class="mono">BREAKING_FIX</td><td>L1, L2 pass; any of L3–L6 fails</td></tr>
+            <tr><td class="mono">DECEPTIVE_FIX</td><td>L1–L6 pass; L7 fails</td></tr>
+            <tr><td class="mono">BREAKING_AND_DECEPTIVE</td><td>L1, L2 pass; L3–L6 and L7 both fail</td></tr>
+            <tr><td class="mono">NOT_FIXED</td><td>L1 fails</td></tr>
+            <tr><td class="mono">INVALID_OUTPUT</td><td>unparsable or wrong shape</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="prose" style="display:grid;gap:8px">
+      <div class="eyebrow">Figure 2</div>
+      <h2>Where it runs: laptop today, AWS at scale</h2>
+    </div>
+    <div class="legend" aria-hidden="true">
+      <span><i class="sw"></i>built and in use</span>
+      <span><i class="sw planned"></i>planned (phase shown)</span>
+    </div>
+    <figure>
+      <div class="canvas">
+        <svg viewBox="0 0 1040 540" role="img" aria-label="Left: the researcher's laptop runs the Python harness, Docker Desktop, a fresh kind cluster per run with the boutique app and an in-cluster k6 job, local registry caches and the scanners. Right: AWS us-east-1 with SSO, Bedrock, S3, DynamoDB, ECR and Budgets built; Step Functions, Batch on EC2 Spot, CloudWatch, Athena and EKS validation planned. The harness calls Bedrock and uploads to S3 today.">
+          <defs>
+            <marker id="a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" class="arrowhead"/></marker>
+            <marker id="a2p" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" class="arrowhead planned"/></marker>
+          </defs>
+
+          <!-- Laptop zone -->
+          <rect class="zone" x="16" y="20" width="474" height="500" rx="6"/>
+          <text class="tz" x="32" y="42">RESEARCHER LAPTOP · P1–P4</text>
+
+          <rect class="box" x="32" y="56" width="200" height="62" rx="5"/>
+          <text class="t" x="132" y="82" text-anchor="middle">harness CLI</text>
+          <text class="ts" x="132" y="100" text-anchor="middle">Python 3, uv, typer</text>
+
+          <rect class="zone inner" x="32" y="150" width="442" height="350" rx="6"/>
+          <text class="tz" x="46" y="170">DOCKER DESKTOP · WSL2</text>
+
+          <!-- kind cluster -->
+          <rect class="zone" x="46" y="182" width="262" height="200" rx="6"/>
+          <text class="tz" x="60" y="202">KIND 1.37 · FRESH PER RUN</text>
+          <rect class="box" x="60" y="214" width="234" height="70" rx="5"/>
+          <text class="t" x="177" y="240" text-anchor="middle">ns boutique</text>
+          <text class="ts" x="177" y="258" text-anchor="middle">Online Boutique v0.10.7, 11 services</text>
+          <text class="ts" x="177" y="273" text-anchor="middle">digest-pinned, hardened gold</text>
+          <rect class="box" x="60" y="296" width="234" height="72" rx="5"/>
+          <text class="t" x="177" y="322" text-anchor="middle">ns loadtest</text>
+          <text class="ts" x="177" y="340" text-anchor="middle">k6 Jobs: functional (L5)</text>
+          <text class="ts" x="177" y="355" text-anchor="middle">and load (L6)</text>
+          <line class="edge" x1="177" y1="296" x2="177" y2="288" marker-end="url(#a2)"/>
+
+          <!-- caches + scanners -->
+          <rect class="box" x="326" y="182" width="134" height="76" rx="5"/>
+          <text class="t" x="393" y="206" text-anchor="middle">Image caches</text>
+          <text class="ts" x="393" y="224" text-anchor="middle">pull-through registry</text>
+          <text class="ts" x="393" y="239" text-anchor="middle">docker.io · GAR</text>
+          <line class="edge" x1="326" y1="232" x2="312" y2="232" marker-end="url(#a2)"/>
+
+          <rect class="box" x="326" y="282" width="134" height="76" rx="5"/>
+          <text class="t" x="393" y="306" text-anchor="middle">Scanners</text>
+          <text class="ts" x="393" y="324" text-anchor="middle">Checkov · KICS</text>
+          <text class="ts" x="393" y="339" text-anchor="middle">kube-score</text>
+
+          <rect class="box planned" x="46" y="402" width="414" height="82" rx="5"/>
+          <text class="t" x="253" y="428" text-anchor="middle">Repair loop, evaluator, moderator</text>
+          <text class="ts" x="253" y="446" text-anchor="middle">harness run-one --case X --model Y --condition C2</text>
+          <text class="tp" x="253" y="468" text-anchor="middle">P3–P4</text>
+
+          <path class="edge" d="M132 118 V140 H177 V178" marker-end="url(#a2)"/>
+          <text class="tm" x="186" y="136">create · apply · test · delete</text>
+          <path class="edge" d="M232 87 H393 V278" marker-end="url(#a2)"/>
+          <text class="tm" x="300" y="80" text-anchor="middle">L1 / L2</text>
+
+          <!-- AWS zone -->
+          <rect class="zone" x="520" y="20" width="504" height="500" rx="6"/>
+          <text class="tz" x="536" y="42">AWS · US-EAST-1</text>
+
+          <rect class="box" x="536" y="56" width="212" height="62" rx="5"/>
+          <text class="t" x="642" y="82" text-anchor="middle">IAM Identity Center</text>
+          <text class="ts" x="642" y="100" text-anchor="middle">SSO roles, no access keys</text>
+
+          <rect class="box" x="796" y="56" width="212" height="62" rx="5"/>
+          <text class="t" x="902" y="82" text-anchor="middle">Bedrock Converse</text>
+          <text class="ts" x="902" y="100" text-anchor="middle">3 repairers + Haiku 4.5 moderator</text>
+
+          <rect class="box" x="536" y="140" width="212" height="62" rx="5"/>
+          <text class="t" x="642" y="166" text-anchor="middle">S3 artifacts</text>
+          <text class="ts" x="642" y="184" text-anchor="middle">versioned, source of truth</text>
+
+          <rect class="box" x="796" y="140" width="212" height="62" rx="5"/>
+          <text class="t" x="902" y="166" text-anchor="middle">DynamoDB</text>
+          <text class="ts" x="902" y="184" text-anchor="middle">one item per attempt</text>
+
+          <rect class="box" x="536" y="224" width="212" height="62" rx="5"/>
+          <text class="t" x="642" y="250" text-anchor="middle">ECR</text>
+          <text class="ts" x="642" y="268" text-anchor="middle">worker image (empty today)</text>
+
+          <rect class="box" x="796" y="224" width="212" height="62" rx="5"/>
+          <text class="t" x="902" y="250" text-anchor="middle">Budgets</text>
+          <text class="ts" x="902" y="268" text-anchor="middle">$100/month, 50/80/100% alerts</text>
+
+          <rect class="box planned" x="536" y="318" width="212" height="62" rx="5"/>
+          <text class="t" x="642" y="344" text-anchor="middle">Step Functions</text>
+          <text class="tp" x="642" y="364" text-anchor="middle">P5 · loop + Map over cases</text>
+
+          <rect class="box planned" x="796" y="318" width="212" height="62" rx="5"/>
+          <text class="t" x="902" y="344" text-anchor="middle">Batch on EC2 Spot</text>
+          <text class="tp" x="902" y="364" text-anchor="middle">P5 · kind per attempt</text>
+          <line class="edge planned" x1="748" y1="349" x2="792" y2="349" marker-end="url(#a2p)"/>
+
+          <rect class="box planned" x="536" y="410" width="146" height="62" rx="5"/>
+          <text class="t" x="609" y="436" text-anchor="middle">CloudWatch</text>
+          <text class="tp" x="609" y="456" text-anchor="middle">P5 · logs</text>
+          <rect class="box planned" x="698" y="410" width="150" height="62" rx="5"/>
+          <text class="t" x="773" y="436" text-anchor="middle">Athena + Glue</text>
+          <text class="tp" x="773" y="456" text-anchor="middle">P9 · paper numbers</text>
+          <rect class="box planned" x="864" y="410" width="144" height="62" rx="5"/>
+          <text class="t" x="936" y="436" text-anchor="middle">EKS validation</text>
+          <text class="tp" x="936" y="456" text-anchor="middle">P8 · off by default</text>
+
+          <!-- cross-boundary calls in use today -->
+          <path class="edge" d="M232 64 H520 V50 H902 V52" marker-end="url(#a2)"/>
+          <text class="tm" x="372" y="58" text-anchor="middle">Converse (SSO role)</text>
+          <path class="edge" d="M232 108 H510 V171 H532" marker-end="url(#a2)"/>
+          <text class="tm" x="372" y="122" text-anchor="middle">upload results</text>
+        </svg>
+      </div>
+      <figcaption>Today everything runs on one laptop: each run gets a brand-new kind cluster that loads images from local caches (ready in about 38 s instead of about 6 min). The harness calls Bedrock through an SSO role and stores results in S3. At scale (P5) the same worker moves into AWS Batch on Spot instances, orchestrated by Step Functions.</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <div class="prose" style="display:grid;gap:8px">
+      <div class="eyebrow">Progress</div>
+      <h2>Phases</h2>
+    </div>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Phase</th><th>Goal</th><th>Status</th><th>Evidence</th></tr></thead>
+        <tbody>
+          <tr><td class="mono">P0</td><td>AWS foundation in Terraform; every model answers</td><td><span class="pill done">DONE</span></td><td>4 models respond via Converse; newest models blocked on this account (support case)</td></tr>
+          <tr><td class="mono">P1</td><td>Gold app and baseline band</td><td><span class="pill done">DONE</span></td><td>5/5 clean runs, 0 errors; band p95 ≤ 251 ms, error ≤ 1%; L5 catches all 10 broken services</td></tr>
+          <tr><td class="mono">P2</td><td>Case catalogue: 6 types × variants, all validated</td><td><span class="pill next">IN PROGRESS</span></td><td>6 injectors and L7 intent checks built; 9 of 18 cases validated (all class a), class b/c validating</td></tr>
+          <tr><td class="mono">P3–P4</td><td>One attempt end to end; full C0/C1/C2 loop locally</td><td><span class="pill next">BUILT, NOT YET RUN WITH AN LLM</span></td><td>Pipeline gives the known verdict on 6 of 6 hand-made repairs; loop and moderator checks unit-tested</td></tr>
+          <tr><td class="mono">P5–P6</td><td>Scale on AWS; pilot; freeze protocol</td><td><span class="pill todo">PLANNED</span></td><td></td></tr>
+          <tr><td class="mono">P7–P9</td><td>Full experiment; EKS check; analysis</td><td><span class="pill todo">PLANNED</span></td><td></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Misconfiguration</th><th>Fix class</th><th>Pod Security Standards</th><th>NSA/CISA guide v1.2</th></tr></thead>
+        <tbody>
+          <tr><td>privileged container</td><td>a · remove or flip</td><td>Baseline</td><td>p.2, p.46</td></tr>
+          <tr><td>allowPrivilegeEscalation</td><td>a · remove or flip</td><td>Restricted</td><td>p.45, p.46</td></tr>
+          <tr><td>added Linux capabilities</td><td>a · remove or flip</td><td>Baseline</td><td>p.46</td></tr>
+          <tr><td>runs as root</td><td>b · app-fitting value</td><td>Restricted</td><td>p.9</td></tr>
+          <tr><td>missing resource limits</td><td>b · app-fitting value</td><td>not covered</td><td>pp.16–17</td></tr>
+          <tr><td>missing or permissive NetworkPolicy</td><td>c · needs app structure</td><td>not covered</td><td>pp.14–15</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="prose" style="display:grid;gap:8px">
+      <div class="eyebrow">For discussion</div>
+      <h2>Known gaps and open questions</h2>
+      <p class="lede" style="font-size:15px">What a reviewer could challenge today, and where each item is handled. Feedback on anything missing is welcome.</p>
+    </div>
+    <div class="gaps">
+      <div class="gap"><div><span class="pill open">OPEN</span></div><div><h3>Repairer prompt wording</h3><p>One fixed, pre-registered prompt for all models and conditions, never tuned on test cases. Undecided: does it say "keep the application working"? The other wording becomes a sensitivity check on a subset.</p></div></div>
+      <div class="gap"><div><span class="pill open">OPEN</span></div><div><h3>Newest frontier models unavailable</h3><p>Claude Sonnet 5.5 and GPT-5.5 are blocked on this account. The study uses Sonnet 4.6, GPT-OSS 120B and DeepSeek V3.2, and will say so.</p></div></div>
+      <div class="gap"><div><span class="pill done">RESOLVED</span></div><div><h3>NetworkPolicy enforcement in kind</h3><p>Tested: kindnet blocks a connection the policy forbids and allows the permitted caller (D-017). Also found: no scanner flags a policy that admits all ingress, so only the runtime probe can catch that deceptive fix (D-019).</p></div></div>
+      <div class="gap"><div><span class="pill done">RESOLVED</span></div><div><h3>Runtime probes on minimal images</h3><p>An ephemeral debug container reads /proc of the app process. Found on the way: a privileged container running as non-root shows zero effective capabilities, like the hardened app; only the bounding set gives it away (D-018).</p></div></div>
+      <div class="gap"><div><span class="pill done">RESOLVED</span></div><div><h3>Coupled fields</h3><p>Each injector declares its target and coupled scanner rules; case validation fails on any unexpected finding (D-016).</p></div></div>
+      <div class="gap"><div><span class="pill todo">P4</span></div><div><h3>Moderator grounding and leakage check</h3><p>Every moderator claim must cite evidence; messages with YAML or gold lines are rejected. Hallucination and fallback rates are reported.</p></div></div>
+      <div class="gap"><div><span class="pill todo">P5</span></div><div><h3>kind inside AWS Batch</h3><p>Needs privileged worker containers on EC2 compute (not Fargate), plus image caching. The working band must be re-measured on the Batch instance type before comparing.</p></div></div>
+      <div class="gap"><div><span class="pill todo">P6</span></div><div><h3>Drift and sample size</h3><p>Baseline p95 rose run over run (136→199 ms). Plan: periodic gold control runs during experiments, and a sample-size check from pilot variance before freezing the protocol.</p></div></div>
+      <div class="gap"><div><span class="pill todo">P7–P9</span></div><div><h3>Verdict audit</h3><p>A manual audit of a random sample of verdicts, with a second rater on a subset, to show the automated checks agree with human judgement.</p></div></div>
+    </div>
+  </section>
+
+  <footer>Every step is recorded in the project journal; decisions and deviations are numbered (D-001 onward). Sources for the security classification: Kubernetes Pod Security Standards and the NSA/CISA Kubernetes Hardening Guidance v1.2 (Aug 2022), pinned locally with SHA-256 hashes.</footer>
+</div>

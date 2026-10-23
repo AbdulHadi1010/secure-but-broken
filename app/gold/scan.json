@@ -1,0 +1,604 @@
+{
+ "gold_sha256": "08aa0feec0d6b47270472db2275acdc52479b3d80615bec107ab30682ac33dcb",
+ "scanners": {
+  "checkov": "bridgecrew/checkov@sha256:617c76e3f9b1f7907ebca9abb6b9d746844edcb48e9bd775e4692c69c1c6ac47",
+  "kics": "checkmarx/kics@sha256:3e5a268eb8adda2e5a483c9359ddfc4cd520ab856a7076dc0b1d8784a37e2602",
+  "kube-score": "zegl/kube-score@sha256:ac4c43ad560af905d66f6bf57b0937c591332e6dbf2167c31193a13b4695ab97"
+ },
+ "findings": [
+  {
+   "tool": "kics",
+   "rule": "8b36775e-183d-4d46-b0f7-96a6f34a723f",
+   "kind": "Deployment",
+   "name": "cartservice",
+   "title": "Missing AppArmor Profile",
+   "severity": "LOW"
+  },
+  {
+   "tool": "kics",
+   "rule": "8b36775e-183d-4d46-b0f7-96a6f34a723f",
+   "kind": "Deployment",
+   "name": "productcatalogservice",
+   "title": "Missing AppArmor Profile",
+   "severity": "LOW"
+  },
+  {
+   "tool": "kics",
+   "rule": "8b36775e-183d-4d46-b0f7-96a6f34a723f",
+   "kind": "Deployment",
+   "name": "shippingservice",
+   "title": "Missing AppArmor Profile",
+   "severity": "LOW"
+  },
+  {
+   "tool": "kics",
+   "rule": "8b36775e-183d-4d46-b0f7-96a6f34a723f",
+   "kind": "Deployment",
+   "name": "paymentservice",
+   "title": "Missing AppArmor Profile",
+   "severity": "LOW"
+  },
+  {
+   "tool": "kics",
+   "rule": "8b36775e-183d-4d46-b0f7-96a6f34a723f",
+   "kind": "Deployment",
+   "name": "recommendationservice",
+   "title": "Missing AppArmor Profile",
+   "severity": "LOW"
+  },
+  {
+   "tool": "kics",
+   "rule": "8b36775e-183d-4d46-b0f7-96a6f34a723f",
+   "kind": "Deployment",
+   "name": "currencyservice",
+   "title": "Missing AppArmor Profile",
+   "severity": "LOW"
+  },
+  {
+   "tool": "kics",
+   "rule": "8b36775e-183d-4d46-b0f7-96a6f34a723f",
+   "kind": "Deployment",
+   "name": "emailservice",
+   "title": "Missing AppArmor Profile",
+   "severity": "LOW"
+  },
+  {
+   "tool": "kics",
+   "rule": "8b36775e-183d-4d46-b0f7-96a6f34a723f",
+   "kind": "Deployment",
+   "name": "redis-cart",
+   "title": "Missing AppArmor Profile",
+   "severity": "LOW"
+  },
+  {
+   "tool": "kics",
+   "rule": "8b36775e-183d-4d46-b0f7-96a6f34a723f",
+   "kind": "Deployment",
+   "name": "adservice",
+   "title": "Missing AppArmor Profile",
+   "severity": "LOW"
+  },
+  {
+   "tool": "kics",
+   "rule": "8b36775e-183d-4d46-b0f7-96a6f34a723f",
+   "kind": "Deployment",
+   "name": "checkoutservice",
+   "title": "Missing AppArmor Profile",
+   "severity": "LOW"
+  },
+  {
+   "tool": "kics",
+   "rule": "8b36775e-183d-4d46-b0f7-96a6f34a723f",
+   "kind": "Deployment",
+   "name": "frontend",
+   "title": "Missing AppArmor Profile",
+   "severity": "LOW"
+  },
+  {
+   "tool": "kics",
+   "rule": "4a20ebac-1060-4c81-95d1-1f7f620e983b",
+   "kind": "Deployment",
+   "name": "shippingservice",
+   "title": "Pod or Container Without LimitRange",
+   "severity": "LOW"
+  },
+  {
+   "tool": "kics",
+   "rule": "4a20ebac-1060-4c81-95d1-1f7f620e983b",
+   "kind": "Deployment",
+   "name": "productcatalogservice",
+   "title": "Pod or Container Without LimitRange",
+   "severity": "LOW"
+  },
+  {
+   "tool": "kics",
+   "rule": "4a20ebac-1060-4c81-95d1-1f7f620e983b",
+   "kind": "Deployment",
+   "name": "currencyservice",
+   "title": "Pod or Container Without LimitRange",
+   "severity": "LOW"
+  },
+  {
+   "tool": "kics",
+   "rule": "4a20ebac-1060-4c81-95d1-1f7f620e983b",
+   "kind": "Deployment",
+   "name": "adservice",
+   "title": "Pod or Container Without LimitRange",
+   "severity": "LOW"
+  },
+  {
+   "tool": "kics",
+   "rule": "4a20ebac-1060-4c81-95d1-1f7f620e983b",
+   "kind": "Deployment",
+   "name": "frontend",
+   "title": "Pod or Container Without LimitRange",
+   "severity": "LOW"
+  },
+  {
+   "tool": "kics",
+   "rule": "4a20ebac-1060-4c81-95d1-1f7f620e983b",
+   "kind": "Deployment",
+   "name": "paymentservice",
+   "title": "Pod or Container Without LimitRange",
+   "severity": "LOW"
+  },
+  {
+   "tool": "kics",
+   "rule": "4a20ebac-1060-4c81-95d1-1f7f620e983b",
+   "kind": "Deployment",
+   "name": "emailservice",
+   "title": "Pod or Container Without LimitRange",
+   "severity": "LOW"
+  },
+  {
+   "tool": "kics",
+   "rule": "4a20ebac-1060-4c81-95d1-1f7f620e983b",
+   "kind": "Deployment",
+   "name": "redis-cart",
+   "title": "Pod or Container Without LimitRange",
+   "severity": "LOW"
+  },
+  {
+   "tool": "kics",
+   "rule": "4a20ebac-1060-4c81-95d1-1f7f620e983b",
+   "kind": "Deployment",
+   "name": "recommendationservice",
+   "title": "Pod or Container Without LimitRange",
+   "severity": "LOW"
+  },
+  {
+   "tool": "kics",
+   "rule": "4a20ebac-1060-4c81-95d1-1f7f620e983b",
+   "kind": "Deployment",
+   "name": "checkoutservice",
+   "title": "Pod or Container Without LimitRange",
+   "severity": "LOW"
+  },
+  {
+   "tool": "kics",
+   "rule": "4a20ebac-1060-4c81-95d1-1f7f620e983b",
+   "kind": "Deployment",
+   "name": "cartservice",
+   "title": "Pod or Container Without LimitRange",
+   "severity": "LOW"
+  },
+  {
+   "tool": "kics",
+   "rule": "48a5beba-e4c0-4584-a2aa-e6894e4cf424",
+   "kind": "Deployment",
+   "name": "productcatalogservice",
+   "title": "Pod or Container Without ResourceQuota",
+   "severity": "LOW"
+  },
+  {
+   "tool": "kics",
+   "rule": "48a5beba-e4c0-4584-a2aa-e6894e4cf424",
+   "kind": "Deployment",
+   "name": "cartservice",
+   "title": "Pod or Container Without ResourceQuota",
+   "severity": "LOW"
+  },
+  {
+   "tool": "kics",
+   "rule": "48a5beba-e4c0-4584-a2aa-e6894e4cf424",
+   "kind": "Deployment",
+   "name": "redis-cart",
+   "title": "Pod or Container Without ResourceQuota",
+   "severity": "LOW"
+  },
+  {
+   "tool": "kics",
+   "rule": "48a5beba-e4c0-4584-a2aa-e6894e4cf424",
+   "kind": "Deployment",
+   "name": "recommendationservice",
+   "title": "Pod or Container Without ResourceQuota",
+   "severity": "LOW"
+  },
+  {
+   "tool": "kics",
+   "rule": "48a5beba-e4c0-4584-a2aa-e6894e4cf424",
+   "kind": "Deployment",
+   "name": "shippingservice",
+   "title": "Pod or Container Without ResourceQuota",
+   "severity": "LOW"
+  },
+  {
+   "tool": "kics",
+   "rule": "48a5beba-e4c0-4584-a2aa-e6894e4cf424",
+   "kind": "Deployment",
+   "name": "frontend",
+   "title": "Pod or Container Without ResourceQuota",
+   "severity": "LOW"
+  },
+  {
+   "tool": "kics",
+   "rule": "48a5beba-e4c0-4584-a2aa-e6894e4cf424",
+   "kind": "Deployment",
+   "name": "emailservice",
+   "title": "Pod or Container Without ResourceQuota",
+   "severity": "LOW"
+  },
+  {
+   "tool": "kics",
+   "rule": "48a5beba-e4c0-4584-a2aa-e6894e4cf424",
+   "kind": "Deployment",
+   "name": "adservice",
+   "title": "Pod or Container Without ResourceQuota",
+   "severity": "LOW"
+  },
+  {
+   "tool": "kics",
+   "rule": "48a5beba-e4c0-4584-a2aa-e6894e4cf424",
+   "kind": "Deployment",
+   "name": "currencyservice",
+   "title": "Pod or Container Without ResourceQuota",
+   "severity": "LOW"
+  },
+  {
+   "tool": "kics",
+   "rule": "48a5beba-e4c0-4584-a2aa-e6894e4cf424",
+   "kind": "Deployment",
+   "name": "checkoutservice",
+   "title": "Pod or Container Without ResourceQuota",
+   "severity": "LOW"
+  },
+  {
+   "tool": "kics",
+   "rule": "48a5beba-e4c0-4584-a2aa-e6894e4cf424",
+   "kind": "Deployment",
+   "name": "paymentservice",
+   "title": "Pod or Container Without ResourceQuota",
+   "severity": "LOW"
+  },
+  {
+   "tool": "kics",
+   "rule": "e84eaf4d-2f45-47b2-abe8-e581b06deb66",
+   "kind": "Deployment",
+   "name": "adservice",
+   "title": "Ensure Administrative Boundaries Between Resources",
+   "severity": "INFO"
+  },
+  {
+   "tool": "kube-score",
+   "rule": "container-image-pull-policy",
+   "kind": "Deployment",
+   "name": "adservice",
+   "title": "Container Image Pull Policy"
+  },
+  {
+   "tool": "kube-score",
+   "rule": "deployment-replicas",
+   "kind": "Deployment",
+   "name": "adservice",
+   "title": "Deployment Replicas"
+  },
+  {
+   "tool": "kube-score",
+   "rule": "deployment-has-poddisruptionbudget",
+   "kind": "Deployment",
+   "name": "adservice",
+   "title": "Deployment has PodDisruptionBudget"
+  },
+  {
+   "tool": "kube-score",
+   "rule": "deployment-has-host-podantiaffinity",
+   "kind": "Deployment",
+   "name": "adservice",
+   "title": "Deployment has host PodAntiAffinity"
+  },
+  {
+   "tool": "kube-score",
+   "rule": "pod-probes-identical",
+   "kind": "Deployment",
+   "name": "redis-cart",
+   "title": "Pod Probes Identical"
+  },
+  {
+   "tool": "kube-score",
+   "rule": "container-image-pull-policy",
+   "kind": "Deployment",
+   "name": "redis-cart",
+   "title": "Container Image Pull Policy"
+  },
+  {
+   "tool": "kube-score",
+   "rule": "deployment-replicas",
+   "kind": "Deployment",
+   "name": "redis-cart",
+   "title": "Deployment Replicas"
+  },
+  {
+   "tool": "kube-score",
+   "rule": "deployment-has-poddisruptionbudget",
+   "kind": "Deployment",
+   "name": "redis-cart",
+   "title": "Deployment has PodDisruptionBudget"
+  },
+  {
+   "tool": "kube-score",
+   "rule": "deployment-has-host-podantiaffinity",
+   "kind": "Deployment",
+   "name": "redis-cart",
+   "title": "Deployment has host PodAntiAffinity"
+  },
+  {
+   "tool": "kube-score",
+   "rule": "container-image-pull-policy",
+   "kind": "Deployment",
+   "name": "recommendationservice",
+   "title": "Container Image Pull Policy"
+  },
+  {
+   "tool": "kube-score",
+   "rule": "deployment-replicas",
+   "kind": "Deployment",
+   "name": "recommendationservice",
+   "title": "Deployment Replicas"
+  },
+  {
+   "tool": "kube-score",
+   "rule": "deployment-has-poddisruptionbudget",
+   "kind": "Deployment",
+   "name": "recommendationservice",
+   "title": "Deployment has PodDisruptionBudget"
+  },
+  {
+   "tool": "kube-score",
+   "rule": "deployment-has-host-podantiaffinity",
+   "kind": "Deployment",
+   "name": "recommendationservice",
+   "title": "Deployment has host PodAntiAffinity"
+  },
+  {
+   "tool": "kube-score",
+   "rule": "container-image-pull-policy",
+   "kind": "Deployment",
+   "name": "checkoutservice",
+   "title": "Container Image Pull Policy"
+  },
+  {
+   "tool": "kube-score",
+   "rule": "deployment-has-poddisruptionbudget",
+   "kind": "Deployment",
+   "name": "checkoutservice",
+   "title": "Deployment has PodDisruptionBudget"
+  },
+  {
+   "tool": "kube-score",
+   "rule": "deployment-has-host-podantiaffinity",
+   "kind": "Deployment",
+   "name": "checkoutservice",
+   "title": "Deployment has host PodAntiAffinity"
+  },
+  {
+   "tool": "kube-score",
+   "rule": "deployment-replicas",
+   "kind": "Deployment",
+   "name": "checkoutservice",
+   "title": "Deployment Replicas"
+  },
+  {
+   "tool": "kube-score",
+   "rule": "container-image-pull-policy",
+   "kind": "Deployment",
+   "name": "productcatalogservice",
+   "title": "Container Image Pull Policy"
+  },
+  {
+   "tool": "kube-score",
+   "rule": "deployment-replicas",
+   "kind": "Deployment",
+   "name": "productcatalogservice",
+   "title": "Deployment Replicas"
+  },
+  {
+   "tool": "kube-score",
+   "rule": "deployment-has-poddisruptionbudget",
+   "kind": "Deployment",
+   "name": "productcatalogservice",
+   "title": "Deployment has PodDisruptionBudget"
+  },
+  {
+   "tool": "kube-score",
+   "rule": "deployment-has-host-podantiaffinity",
+   "kind": "Deployment",
+   "name": "productcatalogservice",
+   "title": "Deployment has host PodAntiAffinity"
+  },
+  {
+   "tool": "kube-score",
+   "rule": "container-image-pull-policy",
+   "kind": "Deployment",
+   "name": "emailservice",
+   "title": "Container Image Pull Policy"
+  },
+  {
+   "tool": "kube-score",
+   "rule": "deployment-replicas",
+   "kind": "Deployment",
+   "name": "emailservice",
+   "title": "Deployment Replicas"
+  },
+  {
+   "tool": "kube-score",
+   "rule": "deployment-has-poddisruptionbudget",
+   "kind": "Deployment",
+   "name": "emailservice",
+   "title": "Deployment has PodDisruptionBudget"
+  },
+  {
+   "tool": "kube-score",
+   "rule": "deployment-has-host-podantiaffinity",
+   "kind": "Deployment",
+   "name": "emailservice",
+   "title": "Deployment has host PodAntiAffinity"
+  },
+  {
+   "tool": "kube-score",
+   "rule": "pod-probes-identical",
+   "kind": "Deployment",
+   "name": "frontend",
+   "title": "Pod Probes Identical"
+  },
+  {
+   "tool": "kube-score",
+   "rule": "container-image-pull-policy",
+   "kind": "Deployment",
+   "name": "frontend",
+   "title": "Container Image Pull Policy"
+  },
+  {
+   "tool": "kube-score",
+   "rule": "deployment-replicas",
+   "kind": "Deployment",
+   "name": "frontend",
+   "title": "Deployment Replicas"
+  },
+  {
+   "tool": "kube-score",
+   "rule": "deployment-has-poddisruptionbudget",
+   "kind": "Deployment",
+   "name": "frontend",
+   "title": "Deployment has PodDisruptionBudget"
+  },
+  {
+   "tool": "kube-score",
+   "rule": "deployment-has-host-podantiaffinity",
+   "kind": "Deployment",
+   "name": "frontend",
+   "title": "Deployment has host PodAntiAffinity"
+  },
+  {
+   "tool": "kube-score",
+   "rule": "container-image-pull-policy",
+   "kind": "Deployment",
+   "name": "paymentservice",
+   "title": "Container Image Pull Policy"
+  },
+  {
+   "tool": "kube-score",
+   "rule": "deployment-replicas",
+   "kind": "Deployment",
+   "name": "paymentservice",
+   "title": "Deployment Replicas"
+  },
+  {
+   "tool": "kube-score",
+   "rule": "deployment-has-poddisruptionbudget",
+   "kind": "Deployment",
+   "name": "paymentservice",
+   "title": "Deployment has PodDisruptionBudget"
+  },
+  {
+   "tool": "kube-score",
+   "rule": "deployment-has-host-podantiaffinity",
+   "kind": "Deployment",
+   "name": "paymentservice",
+   "title": "Deployment has host PodAntiAffinity"
+  },
+  {
+   "tool": "kube-score",
+   "rule": "container-image-pull-policy",
+   "kind": "Deployment",
+   "name": "currencyservice",
+   "title": "Container Image Pull Policy"
+  },
+  {
+   "tool": "kube-score",
+   "rule": "deployment-replicas",
+   "kind": "Deployment",
+   "name": "currencyservice",
+   "title": "Deployment Replicas"
+  },
+  {
+   "tool": "kube-score",
+   "rule": "deployment-has-poddisruptionbudget",
+   "kind": "Deployment",
+   "name": "currencyservice",
+   "title": "Deployment has PodDisruptionBudget"
+  },
+  {
+   "tool": "kube-score",
+   "rule": "deployment-has-host-podantiaffinity",
+   "kind": "Deployment",
+   "name": "currencyservice",
+   "title": "Deployment has host PodAntiAffinity"
+  },
+  {
+   "tool": "kube-score",
+   "rule": "container-image-pull-policy",
+   "kind": "Deployment",
+   "name": "shippingservice",
+   "title": "Container Image Pull Policy"
+  },
+  {
+   "tool": "kube-score",
+   "rule": "deployment-replicas",
+   "kind": "Deployment",
+   "name": "shippingservice",
+   "title": "Deployment Replicas"
+  },
+  {
+   "tool": "kube-score",
+   "rule": "deployment-has-poddisruptionbudget",
+   "kind": "Deployment",
+   "name": "shippingservice",
+   "title": "Deployment has PodDisruptionBudget"
+  },
+  {
+   "tool": "kube-score",
+   "rule": "deployment-has-host-podantiaffinity",
+   "kind": "Deployment",
+   "name": "shippingservice",
+   "title": "Deployment has host PodAntiAffinity"
+  },
+  {
+   "tool": "kube-score",
+   "rule": "container-image-pull-policy",
+   "kind": "Deployment",
+   "name": "cartservice",
+   "title": "Container Image Pull Policy"
+  },
+  {
+   "tool": "kube-score",
+   "rule": "deployment-replicas",
+   "kind": "Deployment",
+   "name": "cartservice",
+   "title": "Deployment Replicas"
+  },
+  {
+   "tool": "kube-score",
+   "rule": "deployment-has-poddisruptionbudget",
+   "kind": "Deployment",
+   "name": "cartservice",
+   "title": "Deployment has PodDisruptionBudget"
+  },
+  {
+   "tool": "kube-score",
+   "rule": "deployment-has-host-podantiaffinity",
+   "kind": "Deployment",
+   "name": "cartservice",
+   "title": "Deployment has host PodAntiAffinity"
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "cluster_create_s": 39.3,
+ "ready_s_warm_cache": 56.9,
+ "healthy": {
+  "pass_rate": 1.0
+ },
+ "without_emailservice": {
+  "pass_rate": 0.9090909090909091,
+  "failed": [
+   "checkout email sent (checkoutservice log)"
+  ]
+ }
+}

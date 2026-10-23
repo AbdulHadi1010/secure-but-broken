@@ -1,0 +1,82 @@
+   "browseProduct has ad",
+   "addToCart 200",
+   "viewCart 200",
+   "checkout 200",
+   "checkout order complete"
+  ]
+ },
+ "without_checkoutservice": {
+  "pass_rate": 0.8,
+  "failed": [
+   "checkout 200",
+   "checkout order complete"
+  ]
+ },
+ "without_currencyservice": {
+  "pass_rate": 0.0,
+  "failed": [
+   "index 200",
+   "setCurrency 200",
+   "browseProduct 200",
+   "browseProduct has recommendations",
+   "browseProduct has ad",
+   "addToCart 200",
+   "viewCart 200",
+   "checkout 200",
+   "checkout order complete"
+  ]
+ },
+ "without_emailservice": {
+  "pass_rate": 1.0,
+  "failed": []
+ },
+ "without_paymentservice": {
+  "pass_rate": 0.8,
+  "failed": [
+   "checkout 200",
+   "checkout order complete"
+  ]
+ },
+ "without_productcatalogservice": {
+  "pass_rate": 0.3,
+  "failed": [
+   "index 200",
+   "setCurrency 200",
+   "browseProduct 200",
+   "browseProduct has recommendations",
+   "browseProduct has ad",
+   "addToCart 200"
+  ]
+ },
+ "without_recommendationservice": {
+  "pass_rate": 0.9,
+  "failed": [
+   "browseProduct has recommendations"
+  ]
+ },
+ "without_redis-cart": {
+  "pass_rate": 0.0,
+  "failed": [
+   "index 200",
+   "setCurrency 200",
+   "browseProduct 200",
+   "browseProduct has recommendations",
+   "browseProduct has ad",
+   "addToCart 200",
+   "viewCart 200",
+   "checkout 200",
+   "checkout order complete"
+  ]
+ },
+ "without_shippingservice": {
+  "pass_rate": 0.5,
+  "failed": [
+   "addToCart 200",
+   "viewCart 200",
+   "checkout 200",
+   "checkout order complete"
+  ]
+ }
+}
+
+[exited with code 0]

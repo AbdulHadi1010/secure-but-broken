@@ -1,0 +1,18 @@
+{
+ "case_id": "run-as-root-cartservice",
+ "service_port": 7070,
+ "type": "run-as-root",
+ "fix_class": "b",
+ "service": "cartservice",
+ "reference_fix": "set pod securityContext.runAsUser to a non-root UID the image can run as (gold: 10001) and runAsNonRoot: true",
+ "target_rules": [
+  "checkov:CKV_K8S_23",
+  "checkov:CKV_K8S_40",
+  "kics:cf34805e-3872-4c08-bf92-6ff7bb0cfadb",
+  "kics:02323c00-cdc3-4fdc-a310-4f2b3e7a1660",
+  "kube-score:container-security-context-user-group-id"
+ ],
+ "coupled_rules": [],
+ "gold_sha256": "08aa0feec0d6b47270472db2275acdc52479b3d80615bec107ab30682ac33dcb",
+ "case_sha256": "d3870c5589965a51c7be9d9fa50b0388976c8667a1d7912fe041df4a954a6221"
+}

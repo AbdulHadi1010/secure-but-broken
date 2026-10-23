@@ -1,0 +1,12 @@
+{
+  "_comment": "USD per 1M tokens, on-demand standard tier, us-east-1, from the AWS Pricing API (service code AmazonBedrock = sold by AWS, covered by credits) on 2026-10-06. Used for cost_usd per call; the bill is the authority (check Cost Explorer).",
+  "retrieved": "2026-10-06",
+  "models": {
+    "us.moonshotai.kimi-k3": {"in": 3.00, "out": 16.50},
+    "zai.glm-5": {"in": 1.00, "out": 3.20},
+    "deepseek.v3.2": {"in": 0.62, "out": 1.85},
+    "openai.gpt-oss-120b-1:0": {"in": 0.15, "out": 0.60},
+    "qwen.qwen3-coder-next": {"in": 0.50, "out": 1.20},
+    "mistral.mistral-large-3-675b-instruct": {"in": 0.50, "out": 1.50}
+  }
+}

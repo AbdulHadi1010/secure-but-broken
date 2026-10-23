@@ -1,0 +1,2 @@
+Public snapshot of commit 88e29c92406d30eb64d0d91de75e22e5638d83a6.
+Identifying values replaced by placeholders (<AWS_ACCOUNT_ID>, <SSO_START_URL>, <CONTACT_EMAIL>); session transcripts not included.

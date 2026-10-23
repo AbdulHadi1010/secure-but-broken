@@ -1,0 +1,11 @@
+# Local kind cluster used for every attempt and baseline run (one fresh cluster per run).
+# Image pulls go through local pull-through caches (harness.deploy.kind) so ready time measures
+# Kubernetes, not internet speed. Digests are still verified by containerd.
+kind: Cluster
+apiVersion: kind.x-k8s.io/v1alpha4
+containerdConfigPatches:
+- |-
+  [plugins."io.containerd.grpc.v1.cri".registry]
+    config_path = "/etc/containerd/certs.d"
+nodes:
+- role: control-plane

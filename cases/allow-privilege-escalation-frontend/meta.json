@@ -1,0 +1,15 @@
+{
+ "case_id": "allow-privilege-escalation-frontend",
+ "service_port": 80,
+ "type": "allow-privilege-escalation",
+ "fix_class": "a",
+ "service": "frontend",
+ "reference_fix": "set securityContext.allowPrivilegeEscalation to false",
+ "target_rules": [
+  "checkov:CKV_K8S_20",
+  "kics:5572cc5e-1e4c-4113-92a6-7a8a3bd25e6d"
+ ],
+ "coupled_rules": [],
+ "gold_sha256": "08aa0feec0d6b47270472db2275acdc52479b3d80615bec107ab30682ac33dcb",
+ "case_sha256": "b7b09b93637543ec3e261e2e03dcb8cea8bc31856cc7116f293b41ba2e71684f"
+}

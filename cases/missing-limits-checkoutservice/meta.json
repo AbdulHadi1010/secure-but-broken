@@ -1,0 +1,18 @@
+{
+ "case_id": "missing-limits-checkoutservice",
+ "service_port": 5050,
+ "type": "missing-limits",
+ "fix_class": "b",
+ "service": "checkoutservice",
+ "reference_fix": "add cpu and memory limits the service tolerates (gold values per service in app/gold/manifests.yaml)",
+ "target_rules": [
+  "checkov:CKV_K8S_11",
+  "checkov:CKV_K8S_13",
+  "kics:b14d1bc4-a208-45db-92f0-e21f8e2588e9",
+  "kics:4ac0e2b7-d2d2-4af7-8799-e8de6721ccda",
+  "kube-score:container-resources"
+ ],
+ "coupled_rules": [],
+ "gold_sha256": "08aa0feec0d6b47270472db2275acdc52479b3d80615bec107ab30682ac33dcb",
+ "case_sha256": "7d1bc460673d544f79fdfe21c42e9ec54337928da538a8204305b5c48cd16400"
+}
