@@ -1,0 +1,495 @@
+﻿=== privileged frontend 2026-10-04T12:53:51.3248167+05:00
+built D:\Research Paper\cases\privileged-frontend
+{
+ "case_id": "privileged-frontend",
+ "validated": "2026-10-04T07:54:05.867781+00:00",
+ "scanners": {
+  "checkov": "bridgecrew/checkov@sha256:617c76e3f9b1f7907ebca9abb6b9d746844edcb48e9bd775e4692c69c1c6ac47",
+  "kics": "checkmarx/kics@sha256:3e5a268eb8adda2e5a483c9359ddfc4cd520ab856a7076dc0b1d8784a37e2602",
+  "kube-score": "zegl/kube-score@sha256:ac4c43ad560af905d66f6bf57b0937c591332e6dbf2167c31193a13b4695ab97"
+ },
+ "new_findings": [
+  "checkov:CKV_K8S_16:Deployment/frontend",
+  "checkov:CKV_K8S_20:Deployment/frontend",
+  "kics:5572cc5e-1e4c-4113-92a6-7a8a3bd25e6d:Deployment/frontend",
+  "kics:dd29336b-fe57-445b-a26e-e6aa867ae609:Deployment/frontend",
+  "kube-score:container-security-context-privileged:Deployment/frontend"
+ ],
+ "gold_findings_lost": [],
+ "v1_flagged": true,
+ "v1_targets_present": true,
+ "unexpected_new_findings": [],
+ "v2_gold_clean_for_targets": true,
+ "dry_run_ok": true,
+ "ready_s": 49.5,
+ "all_available": true,
+ "functional_pass_rate": 1.0,
+ "l7_on_case": {
+  "static": {
+   "pass": 10,
+   "fail": 1,
+   "warn": 0,
+   "error": 0,
+   "failures": [
+    "disallow-privileged-containers -> boutique/Deployment/frontend"
+   ],
+   "ok": false
+  },
+  "runtime": {
+   "pod": "frontend-f7759cfcf-q7f29",
+   "container": "server",
+   "ok": true,
+   "cap_eff": 0,
+   "cap_bnd": 2199023255551,
+   "no_new_privs": false,
+   "uid_real": 10001,
+   "uid_effective": 10001,
+   "seccomp": "2"
+  },
+  "runtime_ok": false,
+  "pass": false,
+  "intent": "container is not privileged: capability bounding set is not the full set"
+ },
+ "v3_deploys": true,
+ "v4_l7_flags_case": true,
+ "valid": true
+}
+=== privileged checkoutservice 2026-10-04T12:56:04.1313954+05:00
+built D:\Research Paper\cases\privileged-checkoutservice
+{
+ "case_id": "privileged-checkoutservice",
+ "validated": "2026-10-04T07:56:28.996978+00:00",
+ "scanners": {
+  "checkov": "bridgecrew/checkov@sha256:617c76e3f9b1f7907ebca9abb6b9d746844edcb48e9bd775e4692c69c1c6ac47",
+  "kics": "checkmarx/kics@sha256:3e5a268eb8adda2e5a483c9359ddfc4cd520ab856a7076dc0b1d8784a37e2602",
+  "kube-score": "zegl/kube-score@sha256:ac4c43ad560af905d66f6bf57b0937c591332e6dbf2167c31193a13b4695ab97"
+ },
+ "new_findings": [
+  "checkov:CKV_K8S_16:Deployment/checkoutservice",
+  "checkov:CKV_K8S_20:Deployment/checkoutservice",
+  "kics:5572cc5e-1e4c-4113-92a6-7a8a3bd25e6d:Deployment/checkoutservice",
+  "kics:dd29336b-fe57-445b-a26e-e6aa867ae609:Deployment/checkoutservice",
+  "kube-score:container-security-context-privileged:Deployment/checkoutservice"
+ ],
+ "gold_findings_lost": [],
+ "v1_flagged": true,
+ "v1_targets_present": true,
+ "unexpected_new_findings": [],
+ "v2_gold_clean_for_targets": true,
+ "dry_run_ok": true,
+ "ready_s": 50.9,
+ "all_available": true,
+ "functional_pass_rate": 1.0,
+ "l7_on_case": {
+  "static": {
+   "pass": 10,
+   "fail": 1,
+   "warn": 0,
+   "error": 0,
+   "failures": [
+    "disallow-privileged-containers -> boutique/Deployment/checkoutservice"
+   ],
+   "ok": false
+  },
+  "runtime": {
+   "pod": "checkoutservice-dd6cb7777-lg554",
+   "container": "server",
+   "ok": true,
+   "cap_eff": 0,
+   "cap_bnd": 2199023255551,
+   "no_new_privs": false,
+   "uid_real": 10001,
+   "uid_effective": 10001,
+   "seccomp": "2"
+  },
+  "runtime_ok": false,
+  "pass": false,
+  "intent": "container is not privileged: capability bounding set is not the full set"
+ },
+ "v3_deploys": true,
+ "v4_l7_flags_case": true,
+ "valid": true
+}
+=== privileged cartservice 2026-10-04T12:58:36.1209905+05:00
+built D:\Research Paper\cases\privileged-cartservice
+{
+ "case_id": "privileged-cartservice",
+ "validated": "2026-10-04T07:59:00.684769+00:00",
+ "scanners": {
+  "checkov": "bridgecrew/checkov@sha256:617c76e3f9b1f7907ebca9abb6b9d746844edcb48e9bd775e4692c69c1c6ac47",
+  "kics": "checkmarx/kics@sha256:3e5a268eb8adda2e5a483c9359ddfc4cd520ab856a7076dc0b1d8784a37e2602",
+  "kube-score": "zegl/kube-score@sha256:ac4c43ad560af905d66f6bf57b0937c591332e6dbf2167c31193a13b4695ab97"
+ },
+ "new_findings": [
+  "checkov:CKV_K8S_16:Deployment/cartservice",
+  "checkov:CKV_K8S_20:Deployment/cartservice",
+  "kics:5572cc5e-1e4c-4113-92a6-7a8a3bd25e6d:Deployment/cartservice",
+  "kics:dd29336b-fe57-445b-a26e-e6aa867ae609:Deployment/cartservice",
+  "kube-score:container-security-context-privileged:Deployment/cartservice"
+ ],
+ "gold_findings_lost": [],
+ "v1_flagged": true,
+ "v1_targets_present": true,
+ "unexpected_new_findings": [],
+ "v2_gold_clean_for_targets": true,
+ "dry_run_ok": true,
+ "ready_s": 53.3,
+ "all_available": true,
+ "functional_pass_rate": 1.0,
+ "l7_on_case": {
+  "static": {
+   "pass": 10,
+   "fail": 1,
+   "warn": 0,
+   "error": 0,
+   "failures": [
+    "disallow-privileged-containers -> boutique/Deployment/cartservice"
+   ],
+   "ok": false
+  },
+  "runtime": {
+   "pod": "cartservice-dcf6bd779-plwr6",
+   "container": "server",
+   "ok": true,
+   "cap_eff": 0,
+   "cap_bnd": 2199023255551,
+   "no_new_privs": false,
+   "uid_real": 10001,
+   "uid_effective": 10001,
+   "seccomp": "2"
+  },
+  "runtime_ok": false,
+  "pass": false,
+  "intent": "container is not privileged: capability bounding set is not the full set"
+ },
+ "v3_deploys": true,
+ "v4_l7_flags_case": true,
+ "valid": true
+}
+=== allow-privilege-escalation frontend 2026-10-04T13:01:18.1306657+05:00
+built D:\Research Paper\cases\allow-privilege-escalation-frontend
+{
+ "case_id": "allow-privilege-escalation-frontend",
+ "validated": "2026-10-04T08:01:46.899602+00:00",
+ "scanners": {
+  "checkov": "bridgecrew/checkov@sha256:617c76e3f9b1f7907ebca9abb6b9d746844edcb48e9bd775e4692c69c1c6ac47",
+  "kics": "checkmarx/kics@sha256:3e5a268eb8adda2e5a483c9359ddfc4cd520ab856a7076dc0b1d8784a37e2602",
+  "kube-score": "zegl/kube-score@sha256:ac4c43ad560af905d66f6bf57b0937c591332e6dbf2167c31193a13b4695ab97"
+ },
+ "new_findings": [
+  "checkov:CKV_K8S_20:Deployment/frontend",
+  "kics:5572cc5e-1e4c-4113-92a6-7a8a3bd25e6d:Deployment/frontend"
+ ],
+ "gold_findings_lost": [],
+ "v1_flagged": true,
+ "v1_targets_present": true,
+ "unexpected_new_findings": [],
+ "v2_gold_clean_for_targets": true,
+ "dry_run_ok": true,
+ "ready_s": 59.6,
+ "all_available": true,
+ "functional_pass_rate": 1.0,
+ "l7_on_case": {
+  "static": {
+   "pass": 10,
+   "fail": 1,
+   "warn": 0,
+   "error": 0,
+   "failures": [
+    "disallow-privilege-escalation -> boutique/Deployment/frontend"
+   ],
+   "ok": false
+  },
+  "runtime": {
+   "pod": "frontend-7fbcd47c85-9l9xb",
+   "container": "server",
+   "ok": true,
+   "cap_eff": 0,
+   "cap_bnd": 0,
+   "no_new_privs": false,
+   "uid_real": 10001,
+   "uid_effective": 10001,
+   "seccomp": "2"
+  },
+  "runtime_ok": false,
+  "pass": false,
+  "intent": "the process cannot gain privileges: NoNewPrivs is set"
+ },
+ "v3_deploys": true,
+ "v4_l7_flags_case": true,
+ "valid": true
+}
+=== allow-privilege-escalation checkoutservice 2026-10-04T13:04:11.2438821+05:00
+built D:\Research Paper\cases\allow-privilege-escalation-checkoutservice
+{
+ "case_id": "allow-privilege-escalation-checkoutservice",
+ "validated": "2026-10-04T08:04:37.181071+00:00",
+ "scanners": {
+  "checkov": "bridgecrew/checkov@sha256:617c76e3f9b1f7907ebca9abb6b9d746844edcb48e9bd775e4692c69c1c6ac47",
+  "kics": "checkmarx/kics@sha256:3e5a268eb8adda2e5a483c9359ddfc4cd520ab856a7076dc0b1d8784a37e2602",
+  "kube-score": "zegl/kube-score@sha256:ac4c43ad560af905d66f6bf57b0937c591332e6dbf2167c31193a13b4695ab97"
+ },
+ "new_findings": [
+  "checkov:CKV_K8S_20:Deployment/checkoutservice",
+  "kics:5572cc5e-1e4c-4113-92a6-7a8a3bd25e6d:Deployment/checkoutservice"
+ ],
+ "gold_findings_lost": [],
+ "v1_flagged": true,
+ "v1_targets_present": true,
+ "unexpected_new_findings": [],
+ "v2_gold_clean_for_targets": true,
+ "dry_run_ok": true,
+ "ready_s": 55.3,
+ "all_available": true,
+ "functional_pass_rate": 1.0,
+ "l7_on_case": {
+  "static": {
+   "pass": 10,
+   "fail": 1,
+   "warn": 0,
+   "error": 0,
+   "failures": [
+    "disallow-privilege-escalation -> boutique/Deployment/checkoutservice"
+   ],
+   "ok": false
+  },
+  "runtime": {
+   "pod": "checkoutservice-6d47d955d7-55kqd",
+   "container": "server",
+   "ok": true,
+   "cap_eff": 0,
+   "cap_bnd": 0,
+   "no_new_privs": false,
+   "uid_real": 10001,
+   "uid_effective": 10001,
+   "seccomp": "2"
+  },
+  "runtime_ok": false,
+  "pass": false,
+  "intent": "the process cannot gain privileges: NoNewPrivs is set"
+ },
+ "v3_deploys": true,
+ "v4_l7_flags_case": true,
+ "valid": true
+}
+=== allow-privilege-escalation cartservice 2026-10-04T13:06:50.5107436+05:00
+built D:\Research Paper\cases\allow-privilege-escalation-cartservice
+{
+ "case_id": "allow-privilege-escalation-cartservice",
+ "validated": "2026-10-04T08:07:18.159588+00:00",
+ "scanners": {
+  "checkov": "bridgecrew/checkov@sha256:617c76e3f9b1f7907ebca9abb6b9d746844edcb48e9bd775e4692c69c1c6ac47",
+  "kics": "checkmarx/kics@sha256:3e5a268eb8adda2e5a483c9359ddfc4cd520ab856a7076dc0b1d8784a37e2602",
+  "kube-score": "zegl/kube-score@sha256:ac4c43ad560af905d66f6bf57b0937c591332e6dbf2167c31193a13b4695ab97"
+ },
+ "new_findings": [
+  "checkov:CKV_K8S_20:Deployment/cartservice",
+  "kics:5572cc5e-1e4c-4113-92a6-7a8a3bd25e6d:Deployment/cartservice"
+ ],
+ "gold_findings_lost": [],
+ "v1_flagged": true,
+ "v1_targets_present": true,
+ "unexpected_new_findings": [],
+ "v2_gold_clean_for_targets": true,
+ "dry_run_ok": true,
+ "ready_s": 44.9,
+ "all_available": true,
+ "functional_pass_rate": 1.0,
+ "l7_on_case": {
+  "static": {
+   "pass": 10,
+   "fail": 1,
+   "warn": 0,
+   "error": 0,
+   "failures": [
+    "disallow-privilege-escalation -> boutique/Deployment/cartservice"
+   ],
+   "ok": false
+  },
+  "runtime": {
+   "pod": "cartservice-6b845f69f7-9x9sh",
+   "container": "server",
+   "ok": true,
+   "cap_eff": 0,
+   "cap_bnd": 0,
+   "no_new_privs": false,
+   "uid_real": 10001,
+   "uid_effective": 10001,
+   "seccomp": "2"
+  },
+  "runtime_ok": false,
+  "pass": false,
+  "intent": "the process cannot gain privileges: NoNewPrivs is set"
+ },
+ "v3_deploys": true,
+ "v4_l7_flags_case": true,
+ "valid": true
+}
+=== added-capabilities frontend 2026-10-04T13:09:15.2182651+05:00
+built D:\Research Paper\cases\added-capabilities-frontend
+{
+ "case_id": "added-capabilities-frontend",
+ "validated": "2026-10-04T08:09:35.878655+00:00",
+ "scanners": {
+  "checkov": "bridgecrew/checkov@sha256:617c76e3f9b1f7907ebca9abb6b9d746844edcb48e9bd775e4692c69c1c6ac47",
+  "kics": "checkmarx/kics@sha256:3e5a268eb8adda2e5a483c9359ddfc4cd520ab856a7076dc0b1d8784a37e2602",
+  "kube-score": "zegl/kube-score@sha256:ac4c43ad560af905d66f6bf57b0937c591332e6dbf2167c31193a13b4695ab97"
+ },
+ "new_findings": [
+  "checkov:CKV_K8S_25:Deployment/frontend",
+  "checkov:CKV_K8S_39:Deployment/frontend",
+  "kics:19ebaa28-fc86-4a58-bcfa-015c9e22fe40:Deployment/frontend",
+  "kics:235236ee-ad78-4065-bd29-61b061f28ce0:Deployment/frontend"
+ ],
+ "gold_findings_lost": [],
+ "v1_flagged": true,
+ "v1_targets_present": true,
+ "unexpected_new_findings": [],
+ "v2_gold_clean_for_targets": true,
+ "dry_run_ok": true,
+ "ready_s": 43.0,
+ "all_available": true,
+ "functional_pass_rate": 1.0,
+ "l7_on_case": {
+  "static": {
+   "pass": 20,
+   "fail": 2,
+   "warn": 0,
+   "error": 0,
+   "failures": [
+    "disallow-capabilities -> boutique/Deployment/frontend",
+    "disallow-capabilities-strict -> boutique/Deployment/frontend"
+   ],
+   "ok": false
+  },
+  "runtime": {
+   "pod": "frontend-7d8d99fdc6-sbqhm",
+   "container": "server",
+   "ok": true,
+   "cap_eff": 0,
+   "cap_bnd": 2097152,
+   "no_new_privs": true,
+   "uid_real": 10001,
+   "uid_effective": 10001,
+   "seccomp": "2"
+  },
+  "runtime_ok": false,
+  "pass": false,
+  "intent": "the injected capability is absent from the bounding set"
+ },
+ "v3_deploys": true,
+ "v4_l7_flags_case": true,
+ "valid": true
+}
+=== added-capabilities checkoutservice 2026-10-04T13:11:27.1263717+05:00
+built D:\Research Paper\cases\added-capabilities-checkoutservice
+{
+ "case_id": "added-capabilities-checkoutservice",
+ "validated": "2026-10-04T08:11:47.561508+00:00",
+ "scanners": {
+  "checkov": "bridgecrew/checkov@sha256:617c76e3f9b1f7907ebca9abb6b9d746844edcb48e9bd775e4692c69c1c6ac47",
+  "kics": "checkmarx/kics@sha256:3e5a268eb8adda2e5a483c9359ddfc4cd520ab856a7076dc0b1d8784a37e2602",
+  "kube-score": "zegl/kube-score@sha256:ac4c43ad560af905d66f6bf57b0937c591332e6dbf2167c31193a13b4695ab97"
+ },
+ "new_findings": [
+  "checkov:CKV_K8S_25:Deployment/checkoutservice",
+  "checkov:CKV_K8S_39:Deployment/checkoutservice",
+  "kics:19ebaa28-fc86-4a58-bcfa-015c9e22fe40:Deployment/checkoutservice",
+  "kics:235236ee-ad78-4065-bd29-61b061f28ce0:Deployment/checkoutservice"
+ ],
+ "gold_findings_lost": [],
+ "v1_flagged": true,
+ "v1_targets_present": true,
+ "unexpected_new_findings": [],
+ "v2_gold_clean_for_targets": true,
+ "dry_run_ok": true,
+ "ready_s": 48.8,
+ "all_available": true,
+ "functional_pass_rate": 1.0,
+ "l7_on_case": {
+  "static": {
+   "pass": 20,
+   "fail": 2,
+   "warn": 0,
+   "error": 0,
+   "failures": [
+    "disallow-capabilities -> boutique/Deployment/checkoutservice",
+    "disallow-capabilities-strict -> boutique/Deployment/checkoutservice"
+   ],
+   "ok": false
+  },
+  "runtime": {
+   "pod": "checkoutservice-566bc67f98-kgmgk",
+   "container": "server",
+   "ok": true,
+   "cap_eff": 0,
+   "cap_bnd": 2097152,
+   "no_new_privs": true,
+   "uid_real": 10001,
+   "uid_effective": 10001,
+   "seccomp": "2"
+  },
+  "runtime_ok": false,
+  "pass": false,
+  "intent": "the injected capability is absent from the bounding set"
+ },
+ "v3_deploys": true,
+ "v4_l7_flags_case": true,
+ "valid": true
+}
+=== added-capabilities cartservice 2026-10-04T13:13:46.8590564+05:00
+built D:\Research Paper\cases\added-capabilities-cartservice
+{
+ "case_id": "added-capabilities-cartservice",
+ "validated": "2026-10-04T08:14:08.207641+00:00",
+ "scanners": {
+  "checkov": "bridgecrew/checkov@sha256:617c76e3f9b1f7907ebca9abb6b9d746844edcb48e9bd775e4692c69c1c6ac47",
+  "kics": "checkmarx/kics@sha256:3e5a268eb8adda2e5a483c9359ddfc4cd520ab856a7076dc0b1d8784a37e2602",
+  "kube-score": "zegl/kube-score@sha256:ac4c43ad560af905d66f6bf57b0937c591332e6dbf2167c31193a13b4695ab97"
+ },
+ "new_findings": [
+  "checkov:CKV_K8S_25:Deployment/cartservice",
+  "checkov:CKV_K8S_39:Deployment/cartservice",
+  "kics:19ebaa28-fc86-4a58-bcfa-015c9e22fe40:Deployment/cartservice",
+  "kics:235236ee-ad78-4065-bd29-61b061f28ce0:Deployment/cartservice"
+ ],
+ "gold_findings_lost": [],
+ "v1_flagged": true,
+ "v1_targets_present": true,
+ "unexpected_new_findings": [],
+ "v2_gold_clean_for_targets": true,
+ "dry_run_ok": true,
+ "ready_s": 45.0,
+ "all_available": true,
+ "functional_pass_rate": 1.0,
+ "l7_on_case": {
+  "static": {
+   "pass": 20,
+   "fail": 2,
+   "warn": 0,
+   "error": 0,
+   "failures": [
+    "disallow-capabilities -> boutique/Deployment/cartservice",
+    "disallow-capabilities-strict -> boutique/Deployment/cartservice"
+   ],
+   "ok": false
+  },
+  "runtime": {
+   "pod": "cartservice-86df55c954-smz8f",
+   "container": "server",
+   "ok": true,
+   "cap_eff": 0,
+   "cap_bnd": 2097152,
+   "no_new_privs": true,
+   "uid_real": 10001,
+   "uid_effective": 10001,
+   "seccomp": "2"
+  },
+  "runtime_ok": false,
+  "pass": false,
+  "intent": "the injected capability is absent from the bounding set"
+ },
+ "v3_deploys": true,
+ "v4_l7_flags_case": true,
+ "valid": true
+}

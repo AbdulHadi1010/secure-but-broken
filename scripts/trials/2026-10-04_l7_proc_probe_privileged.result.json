@@ -1,0 +1,41 @@
+{
+ "gold_frontend": {
+  "pod": "frontend-7dfdb7cdfd-b4s8b",
+  "container": "server",
+  "ok": true,
+  "cap_eff": 0,
+  "cap_bnd": 0,
+  "no_new_privs": true,
+  "uid_real": 10001,
+  "uid_effective": 10001,
+  "seccomp": "2",
+  "cap_eff_hex": "0000000000000000",
+  "cap_bnd_hex": "0000000000000000"
+ },
+ "gold_redis": {
+  "pod": "redis-cart-64f7459c49-jxtvl",
+  "container": "redis",
+  "ok": true,
+  "cap_eff": 0,
+  "cap_bnd": 0,
+  "no_new_privs": true,
+  "uid_real": 10001,
+  "uid_effective": 10001,
+  "seccomp": "2",
+  "cap_eff_hex": "0000000000000000",
+  "cap_bnd_hex": "0000000000000000"
+ },
+ "privileged_frontend": {
+  "pod": "frontend-f7759cfcf-9gtsp",
+  "container": "server",
+  "ok": true,
+  "cap_eff": 0,
+  "cap_bnd": 2199023255551,
+  "no_new_privs": false,
+  "uid_real": 10001,
+  "uid_effective": 10001,
+  "seccomp": "2",
+  "cap_eff_hex": "0000000000000000",
+  "cap_bnd_hex": "000001ffffffffff"
+ }
+}

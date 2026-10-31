@@ -1,0 +1,15 @@
+{
+ "case_id": "allow-privilege-escalation-checkoutservice",
+ "service_port": 5050,
+ "type": "allow-privilege-escalation",
+ "fix_class": "a",
+ "service": "checkoutservice",
+ "reference_fix": "set securityContext.allowPrivilegeEscalation to false",
+ "target_rules": [
+  "checkov:CKV_K8S_20",
+  "kics:5572cc5e-1e4c-4113-92a6-7a8a3bd25e6d"
+ ],
+ "coupled_rules": [],
+ "gold_sha256": "08aa0feec0d6b47270472db2275acdc52479b3d80615bec107ab30682ac33dcb",
+ "case_sha256": "312cf4010a2544546ddff110375ba8702b8143b35a60ec68a72d8158cef00270"
+}

@@ -1,0 +1,2701 @@
+{
+ "meta": {
+  "label": "vm-c6i2xl-20261004",
+  "git_commit": "5eed31d922fcb46f9adfffb5057f625542bd5268-dirty",
+  "gold_sha256": "08aa0feec0d6b47270472db2275acdc52479b3d80615bec107ab30682ac33dcb",
+  "k6_image": "grafana/k6:2.3.0@sha256:9c2dee7f8ed74d317e4027c06a10f169b625638189de8d4555d0b3486a5aeb34",
+  "versions": {
+   "kind": "kind v0.33.0 go1.26.7 linux/amd64",
+   "kubectl": "v1.37.1",
+   "node_image": "kindest/node:v1.37.0@sha256:a1ed56cfb0e7b93589bdf97c8cd566405a265939e3620fc4f5de89adff580ae5",
+   "registry_cache_image": "registry:2.8.3@sha256:a3d8aaa63ed8681a604f1dea0aa03f100d5895b6a58ace528858a7b332415373",
+   "docker": "29.1.3"
+  },
+  "ready_timeout_s": 600
+ },
+ "runs": [
+  {
+   "run_id": "vm-c6i2xl-20261004-r1",
+   "started": "2026-10-04T10:19:14.451274+00:00",
+   "ok": true,
+   "cluster_create_s": 27.3,
+   "ready_s": 27.0,
+   "all_available": true,
+   "pods_after_ready": [
+    {
+     "name": "adservice-8458b4797c-xdblb",
+     "app": "adservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "cartservice-6b87d49788-rbfvr",
+     "app": "cartservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "checkoutservice-6d859d664d-q48td",
+     "app": "checkoutservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "currencyservice-86d7b97dbc-88qzx",
+     "app": "currencyservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "emailservice-cdd886b76-nl7d4",
+     "app": "emailservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "frontend-7dfdb7cdfd-vlndc",
+     "app": "frontend",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "paymentservice-68f4749f6f-tl7wb",
+     "app": "paymentservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "productcatalogservice-575b6f888d-cb8lp",
+     "app": "productcatalogservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "recommendationservice-847c46b576-6bsqv",
+     "app": "recommendationservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "redis-cart-64f7459c49-8tvnq",
+     "app": "redis-cart",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "shippingservice-58484f78cd-qnvk9",
+     "app": "shippingservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    }
+   ],
+   "functional": {
+    "checks": {
+     "index 200": {
+      "passes": 1,
+      "fails": 0
+     },
+     "setCurrency 200": {
+      "passes": 1,
+      "fails": 0
+     },
+     "browseProduct 200": {
+      "passes": 1,
+      "fails": 0
+     },
+     "browseProduct has recommendations": {
+      "passes": 1,
+      "fails": 0
+     },
+     "browseProduct has ad": {
+      "passes": 1,
+      "fails": 0
+     },
+     "addToCart 200": {
+      "passes": 2,
+      "fails": 0
+     },
+     "viewCart 200": {
+      "passes": 1,
+      "fails": 0
+     },
+     "checkout 200": {
+      "passes": 1,
+      "fails": 0
+     },
+     "checkout order complete": {
+      "passes": 1,
+      "fails": 0
+     },
+     "checkout email sent (checkoutservice log)": {
+      "passes": 1,
+      "fails": 0
+     }
+    },
+    "pass_rate": 1.0
+   },
+   "load": {
+    "p95_ms": 10.844922249999996,
+    "p99_ms": 71.71909089000012,
+    "median_ms": 5.717741500000001,
+    "error_rate": 0,
+    "check_pass_rate": 1,
+    "requests_total": 1728,
+    "rps": 11.500558097685728
+   },
+   "pods_after_load": [
+    {
+     "name": "adservice-8458b4797c-xdblb",
+     "app": "adservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "cartservice-6b87d49788-rbfvr",
+     "app": "cartservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "checkoutservice-6d859d664d-q48td",
+     "app": "checkoutservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "currencyservice-86d7b97dbc-88qzx",
+     "app": "currencyservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "emailservice-cdd886b76-nl7d4",
+     "app": "emailservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "frontend-7dfdb7cdfd-vlndc",
+     "app": "frontend",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "paymentservice-68f4749f6f-tl7wb",
+     "app": "paymentservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "productcatalogservice-575b6f888d-cb8lp",
+     "app": "productcatalogservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "recommendationservice-847c46b576-6bsqv",
+     "app": "recommendationservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "redis-cart-64f7459c49-8tvnq",
+     "app": "redis-cart",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "shippingservice-58484f78cd-qnvk9",
+     "app": "shippingservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    }
+   ],
+   "restarts_total": 0,
+   "finished": "2026-10-04T10:22:48.257217+00:00"
+  },
+  {
+   "run_id": "vm-c6i2xl-20261004-r2",
+   "started": "2026-10-04T10:22:49.813361+00:00",
+   "ok": true,
+   "cluster_create_s": 29.8,
+   "ready_s": 27.3,
+   "all_available": true,
+   "pods_after_ready": [
+    {
+     "name": "adservice-8458b4797c-l587g",
+     "app": "adservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "cartservice-6b87d49788-dzpmw",
+     "app": "cartservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "checkoutservice-6d859d664d-5srh9",
+     "app": "checkoutservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "currencyservice-86d7b97dbc-nwffm",
+     "app": "currencyservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "emailservice-cdd886b76-nnlcg",
+     "app": "emailservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "frontend-7dfdb7cdfd-2q5dh",
+     "app": "frontend",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "paymentservice-68f4749f6f-sqf6z",
+     "app": "paymentservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "productcatalogservice-575b6f888d-jw6qx",
+     "app": "productcatalogservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "recommendationservice-847c46b576-tdxfk",
+     "app": "recommendationservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "redis-cart-64f7459c49-4dz5x",
+     "app": "redis-cart",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "shippingservice-58484f78cd-dpznc",
+     "app": "shippingservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    }
+   ],
+   "functional": {
+    "checks": {
+     "index 200": {
+      "passes": 1,
+      "fails": 0
+     },
+     "setCurrency 200": {
+      "passes": 1,
+      "fails": 0
+     },
+     "browseProduct 200": {
+      "passes": 1,
+      "fails": 0
+     },
+     "browseProduct has recommendations": {
+      "passes": 1,
+      "fails": 0
+     },
+     "browseProduct has ad": {
+      "passes": 1,
+      "fails": 0
+     },
+     "addToCart 200": {
+      "passes": 2,
+      "fails": 0
+     },
+     "viewCart 200": {
+      "passes": 1,
+      "fails": 0
+     },
+     "checkout 200": {
+      "passes": 1,
+      "fails": 0
+     },
+     "checkout order complete": {
+      "passes": 1,
+      "fails": 0
+     },
+     "checkout email sent (checkoutservice log)": {
+      "passes": 1,
+      "fails": 0
+     }
+    },
+    "pass_rate": 1.0
+   },
+   "load": {
+    "p95_ms": 11.2822246,
+    "p99_ms": 44.11462295999999,
+    "median_ms": 5.933202,
+    "error_rate": 0,
+    "check_pass_rate": 1,
+    "requests_total": 1794,
+    "rps": 11.941449649220651
+   },
+   "pods_after_load": [
+    {
+     "name": "adservice-8458b4797c-l587g",
+     "app": "adservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "cartservice-6b87d49788-dzpmw",
+     "app": "cartservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "checkoutservice-6d859d664d-5srh9",
+     "app": "checkoutservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "currencyservice-86d7b97dbc-nwffm",
+     "app": "currencyservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "emailservice-cdd886b76-nnlcg",
+     "app": "emailservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "frontend-7dfdb7cdfd-2q5dh",
+     "app": "frontend",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "paymentservice-68f4749f6f-sqf6z",
+     "app": "paymentservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "productcatalogservice-575b6f888d-jw6qx",
+     "app": "productcatalogservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "recommendationservice-847c46b576-tdxfk",
+     "app": "recommendationservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "redis-cart-64f7459c49-4dz5x",
+     "app": "redis-cart",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "shippingservice-58484f78cd-dpznc",
+     "app": "shippingservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    }
+   ],
+   "restarts_total": 0,
+   "finished": "2026-10-04T10:26:27.377423+00:00"
+  },
+  {
+   "run_id": "vm-c6i2xl-20261004-r3",
+   "started": "2026-10-04T10:26:28.469131+00:00",
+   "ok": true,
+   "cluster_create_s": 27.7,
+   "ready_s": 25.8,
+   "all_available": true,
+   "pods_after_ready": [
+    {
+     "name": "adservice-8458b4797c-5bvkb",
+     "app": "adservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "cartservice-6b87d49788-zhhgt",
+     "app": "cartservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "checkoutservice-6d859d664d-jd6hk",
+     "app": "checkoutservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "currencyservice-86d7b97dbc-5lw2k",
+     "app": "currencyservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "emailservice-cdd886b76-6qr8p",
+     "app": "emailservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "frontend-7dfdb7cdfd-4hmjf",
+     "app": "frontend",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "paymentservice-68f4749f6f-thn55",
+     "app": "paymentservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "productcatalogservice-575b6f888d-7z5rr",
+     "app": "productcatalogservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "recommendationservice-847c46b576-mx297",
+     "app": "recommendationservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "redis-cart-64f7459c49-8shwv",
+     "app": "redis-cart",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "shippingservice-58484f78cd-v6lq4",
+     "app": "shippingservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    }
+   ],
+   "functional": {
+    "checks": {
+     "index 200": {
+      "passes": 1,
+      "fails": 0
+     },
+     "setCurrency 200": {
+      "passes": 1,
+      "fails": 0
+     },
+     "browseProduct 200": {
+      "passes": 1,
+      "fails": 0
+     },
+     "browseProduct has recommendations": {
+      "passes": 1,
+      "fails": 0
+     },
+     "browseProduct has ad": {
+      "passes": 1,
+      "fails": 0
+     },
+     "addToCart 200": {
+      "passes": 2,
+      "fails": 0
+     },
+     "viewCart 200": {
+      "passes": 1,
+      "fails": 0
+     },
+     "checkout 200": {
+      "passes": 1,
+      "fails": 0
+     },
+     "checkout order complete": {
+      "passes": 1,
+      "fails": 0
+     },
+     "checkout email sent (checkoutservice log)": {
+      "passes": 1,
+      "fails": 0
+     }
+    },
+    "pass_rate": 1.0
+   },
+   "load": {
+    "p95_ms": 12.203611099999998,
+    "p99_ms": 74.89299056000016,
+    "median_ms": 5.807873,
+    "error_rate": 0,
+    "check_pass_rate": 1,
+    "requests_total": 1780,
+    "rps": 11.844443389282427
+   },
+   "pods_after_load": [
+    {
+     "name": "adservice-8458b4797c-5bvkb",
+     "app": "adservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "cartservice-6b87d49788-zhhgt",
+     "app": "cartservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "checkoutservice-6d859d664d-jd6hk",
+     "app": "checkoutservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "currencyservice-86d7b97dbc-5lw2k",
+     "app": "currencyservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "emailservice-cdd886b76-6qr8p",
+     "app": "emailservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "frontend-7dfdb7cdfd-4hmjf",
+     "app": "frontend",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "paymentservice-68f4749f6f-thn55",
+     "app": "paymentservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "productcatalogservice-575b6f888d-7z5rr",
+     "app": "productcatalogservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "recommendationservice-847c46b576-mx297",
+     "app": "recommendationservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "redis-cart-64f7459c49-8shwv",
+     "app": "redis-cart",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "shippingservice-58484f78cd-v6lq4",
+     "app": "shippingservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    }
+   ],
+   "restarts_total": 0,
+   "finished": "2026-10-04T10:30:01.434091+00:00"
+  },
+  {
+   "run_id": "vm-c6i2xl-20261004-r4",
+   "started": "2026-10-04T10:30:03.026714+00:00",
+   "ok": true,
+   "cluster_create_s": 29.3,
+   "ready_s": 26.9,
+   "all_available": true,
+   "pods_after_ready": [
+    {
+     "name": "adservice-8458b4797c-lcdxk",
+     "app": "adservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "cartservice-6b87d49788-4j4lp",
+     "app": "cartservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "checkoutservice-6d859d664d-vjqbj",
+     "app": "checkoutservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "currencyservice-86d7b97dbc-282lm",
+     "app": "currencyservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "emailservice-cdd886b76-dmxww",
+     "app": "emailservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "frontend-7dfdb7cdfd-97mth",
+     "app": "frontend",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "paymentservice-68f4749f6f-67j95",
+     "app": "paymentservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "productcatalogservice-575b6f888d-mzgml",
+     "app": "productcatalogservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "recommendationservice-847c46b576-fqqw8",
+     "app": "recommendationservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "redis-cart-64f7459c49-hfxpz",
+     "app": "redis-cart",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "shippingservice-58484f78cd-4flqm",
+     "app": "shippingservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    }
+   ],
+   "functional": {
+    "checks": {
+     "index 200": {
+      "passes": 1,
+      "fails": 0
+     },
+     "setCurrency 200": {
+      "passes": 1,
+      "fails": 0
+     },
+     "browseProduct 200": {
+      "passes": 1,
+      "fails": 0
+     },
+     "browseProduct has recommendations": {
+      "passes": 1,
+      "fails": 0
+     },
+     "browseProduct has ad": {
+      "passes": 1,
+      "fails": 0
+     },
+     "addToCart 200": {
+      "passes": 2,
+      "fails": 0
+     },
+     "viewCart 200": {
+      "passes": 1,
+      "fails": 0
+     },
+     "checkout 200": {
+      "passes": 1,
+      "fails": 0
+     },
+     "checkout order complete": {
+      "passes": 1,
+      "fails": 0
+     },
+     "checkout email sent (checkoutservice log)": {
+      "passes": 1,
+      "fails": 0
+     }
+    },
+    "pass_rate": 1.0
+   },
+   "load": {
+    "p95_ms": 11.680643449999998,
+    "p99_ms": 35.93650774999889,
+    "median_ms": 6.4745345,
+    "error_rate": 0,
+    "check_pass_rate": 1,
+    "requests_total": 1785,
+    "rps": 11.873783003682924
+   },
+   "pods_after_load": [
+    {
+     "name": "adservice-8458b4797c-lcdxk",
+     "app": "adservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "cartservice-6b87d49788-4j4lp",
+     "app": "cartservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "checkoutservice-6d859d664d-vjqbj",
+     "app": "checkoutservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "currencyservice-86d7b97dbc-282lm",
+     "app": "currencyservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "emailservice-cdd886b76-dmxww",
+     "app": "emailservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "frontend-7dfdb7cdfd-97mth",
+     "app": "frontend",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "paymentservice-68f4749f6f-67j95",
+     "app": "paymentservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "productcatalogservice-575b6f888d-mzgml",
+     "app": "productcatalogservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "recommendationservice-847c46b576-fqqw8",
+     "app": "recommendationservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "redis-cart-64f7459c49-hfxpz",
+     "app": "redis-cart",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "shippingservice-58484f78cd-4flqm",
+     "app": "shippingservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    }
+   ],
+   "restarts_total": 0,
+   "finished": "2026-10-04T10:33:37.727990+00:00"
+  },
+  {
+   "run_id": "vm-c6i2xl-20261004-r5",
+   "started": "2026-10-04T10:33:39.313070+00:00",
+   "ok": true,
+   "cluster_create_s": 29.0,
+   "ready_s": 26.0,
+   "all_available": true,
+   "pods_after_ready": [
+    {
+     "name": "adservice-8458b4797c-5drg5",
+     "app": "adservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "cartservice-6b87d49788-x8rt4",
+     "app": "cartservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "checkoutservice-6d859d664d-9sjt6",
+     "app": "checkoutservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "currencyservice-86d7b97dbc-x77gk",
+     "app": "currencyservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "emailservice-cdd886b76-j4jqk",
+     "app": "emailservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "frontend-7dfdb7cdfd-lfhtk",
+     "app": "frontend",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "paymentservice-68f4749f6f-sdpkp",
+     "app": "paymentservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "productcatalogservice-575b6f888d-qf6pg",
+     "app": "productcatalogservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "recommendationservice-847c46b576-g6f79",
+     "app": "recommendationservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "redis-cart-64f7459c49-24ffh",
+     "app": "redis-cart",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "shippingservice-58484f78cd-hcx2z",
+     "app": "shippingservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    }
+   ],
+   "functional": {
+    "checks": {
+     "index 200": {
+      "passes": 1,
+      "fails": 0
+     },
+     "setCurrency 200": {
+      "passes": 1,
+      "fails": 0
+     },
+     "browseProduct 200": {
+      "passes": 1,
+      "fails": 0
+     },
+     "browseProduct has recommendations": {
+      "passes": 1,
+      "fails": 0
+     },
+     "browseProduct has ad": {
+      "passes": 1,
+      "fails": 0
+     },
+     "addToCart 200": {
+      "passes": 2,
+      "fails": 0
+     },
+     "viewCart 200": {
+      "passes": 1,
+      "fails": 0
+     },
+     "checkout 200": {
+      "passes": 1,
+      "fails": 0
+     },
+     "checkout order complete": {
+      "passes": 1,
+      "fails": 0
+     },
+     "checkout email sent (checkoutservice log)": {
+      "passes": 1,
+      "fails": 0
+     }
+    },
+    "pass_rate": 1.0
+   },
+   "load": {
+    "p95_ms": 11.496655099999996,
+    "p99_ms": 46.405682779998045,
+    "median_ms": 5.643313,
+    "error_rate": 0,
+    "check_pass_rate": 1,
+    "requests_total": 1774,
+    "rps": 11.80077720369408
+   },
+   "pods_after_load": [
+    {
+     "name": "adservice-8458b4797c-5drg5",
+     "app": "adservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "cartservice-6b87d49788-x8rt4",
+     "app": "cartservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "checkoutservice-6d859d664d-9sjt6",
+     "app": "checkoutservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "currencyservice-86d7b97dbc-x77gk",
+     "app": "currencyservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "emailservice-cdd886b76-j4jqk",
+     "app": "emailservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "frontend-7dfdb7cdfd-lfhtk",
+     "app": "frontend",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "paymentservice-68f4749f6f-sdpkp",
+     "app": "paymentservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "productcatalogservice-575b6f888d-qf6pg",
+     "app": "productcatalogservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "recommendationservice-847c46b576-g6f79",
+     "app": "recommendationservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "redis-cart-64f7459c49-24ffh",
+     "app": "redis-cart",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "shippingservice-58484f78cd-hcx2z",
+     "app": "shippingservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    }
+   ],
+   "restarts_total": 0,
+   "finished": "2026-10-04T10:37:13.708811+00:00"
+  },
+  {
+   "run_id": "vm-c6i2xl-20261004-r6",
+   "started": "2026-10-04T10:37:15.154451+00:00",
+   "ok": true,
+   "cluster_create_s": 29.1,
+   "ready_s": 32.3,
+   "all_available": true,
+   "pods_after_ready": [
+    {
+     "name": "adservice-8458b4797c-fvkxh",
+     "app": "adservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "cartservice-6b87d49788-zjnhw",
+     "app": "cartservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "checkoutservice-6d859d664d-7knkg",
+     "app": "checkoutservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "currencyservice-86d7b97dbc-rnhg8",
+     "app": "currencyservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "emailservice-cdd886b76-x5q7h",
+     "app": "emailservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "frontend-7dfdb7cdfd-79x8m",
+     "app": "frontend",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "paymentservice-68f4749f6f-xcbrw",
+     "app": "paymentservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "productcatalogservice-575b6f888d-p427l",
+     "app": "productcatalogservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "recommendationservice-847c46b576-sqgqs",
+     "app": "recommendationservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "redis-cart-64f7459c49-pqq2t",
+     "app": "redis-cart",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "shippingservice-58484f78cd-mdlsm",
+     "app": "shippingservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    }
+   ],
+   "functional": {
+    "checks": {
+     "index 200": {
+      "passes": 1,
+      "fails": 0
+     },
+     "setCurrency 200": {
+      "passes": 1,
+      "fails": 0
+     },
+     "browseProduct 200": {
+      "passes": 1,
+      "fails": 0
+     },
+     "browseProduct has recommendations": {
+      "passes": 1,
+      "fails": 0
+     },
+     "browseProduct has ad": {
+      "passes": 1,
+      "fails": 0
+     },
+     "addToCart 200": {
+      "passes": 2,
+      "fails": 0
+     },
+     "viewCart 200": {
+      "passes": 1,
+      "fails": 0
+     },
+     "checkout 200": {
+      "passes": 1,
+      "fails": 0
+     },
+     "checkout order complete": {
+      "passes": 1,
+      "fails": 0
+     },
+     "checkout email sent (checkoutservice log)": {
+      "passes": 1,
+      "fails": 0
+     }
+    },
+    "pass_rate": 1.0
+   },
+   "load": {
+    "p95_ms": 10.9137258,
+    "p99_ms": 86.95736600000001,
+    "median_ms": 5.737151,
+    "error_rate": 0,
+    "check_pass_rate": 1,
+    "requests_total": 1738,
+    "rps": 11.558443594369853
+   },
+   "pods_after_load": [
+    {
+     "name": "adservice-8458b4797c-fvkxh",
+     "app": "adservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "cartservice-6b87d49788-zjnhw",
+     "app": "cartservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "checkoutservice-6d859d664d-7knkg",
+     "app": "checkoutservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "currencyservice-86d7b97dbc-rnhg8",
+     "app": "currencyservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "emailservice-cdd886b76-x5q7h",
+     "app": "emailservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "frontend-7dfdb7cdfd-79x8m",
+     "app": "frontend",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "paymentservice-68f4749f6f-xcbrw",
+     "app": "paymentservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "productcatalogservice-575b6f888d-p427l",
+     "app": "productcatalogservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "recommendationservice-847c46b576-sqgqs",
+     "app": "recommendationservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "redis-cart-64f7459c49-pqq2t",
+     "app": "redis-cart",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "shippingservice-58484f78cd-mdlsm",
+     "app": "shippingservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    }
+   ],
+   "restarts_total": 0,
+   "finished": "2026-10-04T10:40:56.181588+00:00"
+  },
+  {
+   "run_id": "vm-c6i2xl-20261004-r7",
+   "started": "2026-10-04T10:40:57.567534+00:00",
+   "ok": true,
+   "cluster_create_s": 29.1,
+   "ready_s": 25.9,
+   "all_available": true,
+   "pods_after_ready": [
+    {
+     "name": "adservice-8458b4797c-vd4dj",
+     "app": "adservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "cartservice-6b87d49788-xsj6m",
+     "app": "cartservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "checkoutservice-6d859d664d-j6ntt",
+     "app": "checkoutservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "currencyservice-86d7b97dbc-q4595",
+     "app": "currencyservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "emailservice-cdd886b76-l5r9z",
+     "app": "emailservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "frontend-7dfdb7cdfd-7hjg8",
+     "app": "frontend",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "paymentservice-68f4749f6f-pwzz4",
+     "app": "paymentservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "productcatalogservice-575b6f888d-w67tn",
+     "app": "productcatalogservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "recommendationservice-847c46b576-z659k",
+     "app": "recommendationservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "redis-cart-64f7459c49-wbxs2",
+     "app": "redis-cart",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "shippingservice-58484f78cd-mtx7v",
+     "app": "shippingservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    }
+   ],
+   "functional": {
+    "checks": {
+     "index 200": {
+      "passes": 1,
+      "fails": 0
+     },
+     "setCurrency 200": {
+      "passes": 1,
+      "fails": 0
+     },
+     "browseProduct 200": {
+      "passes": 1,
+      "fails": 0
+     },
+     "browseProduct has recommendations": {
+      "passes": 1,
+      "fails": 0
+     },
+     "browseProduct has ad": {
+      "passes": 1,
+      "fails": 0
+     },
+     "addToCart 200": {
+      "passes": 2,
+      "fails": 0
+     },
+     "viewCart 200": {
+      "passes": 1,
+      "fails": 0
+     },
+     "checkout 200": {
+      "passes": 1,
+      "fails": 0
+     },
+     "checkout order complete": {
+      "passes": 1,
+      "fails": 0
+     },
+     "checkout email sent (checkoutservice log)": {
+      "passes": 1,
+      "fails": 0
+     }
+    },
+    "pass_rate": 1.0
+   },
+   "load": {
+    "p95_ms": 11.524212399999996,
+    "p99_ms": 67.64279132000006,
+    "median_ms": 5.772322,
+    "error_rate": 0,
+    "check_pass_rate": 1,
+    "requests_total": 1747,
+    "rps": 11.62741967849031
+   },
+   "pods_after_load": [
+    {
+     "name": "adservice-8458b4797c-vd4dj",
+     "app": "adservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "cartservice-6b87d49788-xsj6m",
+     "app": "cartservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "checkoutservice-6d859d664d-j6ntt",
+     "app": "checkoutservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "currencyservice-86d7b97dbc-q4595",
+     "app": "currencyservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "emailservice-cdd886b76-l5r9z",
+     "app": "emailservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "frontend-7dfdb7cdfd-7hjg8",
+     "app": "frontend",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "paymentservice-68f4749f6f-pwzz4",
+     "app": "paymentservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "productcatalogservice-575b6f888d-w67tn",
+     "app": "productcatalogservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "recommendationservice-847c46b576-z659k",
+     "app": "recommendationservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "redis-cart-64f7459c49-wbxs2",
+     "app": "redis-cart",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "shippingservice-58484f78cd-mtx7v",
+     "app": "shippingservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    }
+   ],
+   "restarts_total": 0,
+   "finished": "2026-10-04T10:44:32.084043+00:00"
+  },
+  {
+   "run_id": "vm-c6i2xl-20261004-r8",
+   "started": "2026-10-04T10:44:33.199412+00:00",
+   "ok": true,
+   "cluster_create_s": 27.3,
+   "ready_s": 32.9,
+   "all_available": true,
+   "pods_after_ready": [
+    {
+     "name": "adservice-8458b4797c-rb4kz",
+     "app": "adservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "cartservice-6b87d49788-zz7b5",
+     "app": "cartservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "checkoutservice-6d859d664d-2q24r",
+     "app": "checkoutservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "currencyservice-86d7b97dbc-chmwn",
+     "app": "currencyservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "emailservice-cdd886b76-5nt82",
+     "app": "emailservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "frontend-7dfdb7cdfd-r2w9c",
+     "app": "frontend",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "paymentservice-68f4749f6f-mj8z4",
+     "app": "paymentservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "productcatalogservice-575b6f888d-kn59l",
+     "app": "productcatalogservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "recommendationservice-847c46b576-xkbzd",
+     "app": "recommendationservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "redis-cart-64f7459c49-6s7wg",
+     "app": "redis-cart",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "shippingservice-58484f78cd-t9vkp",
+     "app": "shippingservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    }
+   ],
+   "functional": {
+    "checks": {
+     "index 200": {
+      "passes": 1,
+      "fails": 0
+     },
+     "setCurrency 200": {
+      "passes": 1,
+      "fails": 0
+     },
+     "browseProduct 200": {
+      "passes": 1,
+      "fails": 0
+     },
+     "browseProduct has recommendations": {
+      "passes": 1,
+      "fails": 0
+     },
+     "browseProduct has ad": {
+      "passes": 1,
+      "fails": 0
+     },
+     "addToCart 200": {
+      "passes": 2,
+      "fails": 0
+     },
+     "viewCart 200": {
+      "passes": 1,
+      "fails": 0
+     },
+     "checkout 200": {
+      "passes": 1,
+      "fails": 0
+     },
+     "checkout order complete": {
+      "passes": 1,
+      "fails": 0
+     },
+     "checkout email sent (checkoutservice log)": {
+      "passes": 1,
+      "fails": 0
+     }
+    },
+    "pass_rate": 1.0
+   },
+   "load": {
+    "p95_ms": 13.6803051,
+    "p99_ms": 68.90008603999999,
+    "median_ms": 5.954912,
+    "error_rate": 0,
+    "check_pass_rate": 1,
+    "requests_total": 1797,
+    "rps": 11.948846367281863
+   },
+   "pods_after_load": [
+    {
+     "name": "adservice-8458b4797c-rb4kz",
+     "app": "adservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "cartservice-6b87d49788-zz7b5",
+     "app": "cartservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "checkoutservice-6d859d664d-2q24r",
+     "app": "checkoutservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "currencyservice-86d7b97dbc-chmwn",
+     "app": "currencyservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "emailservice-cdd886b76-5nt82",
+     "app": "emailservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "frontend-7dfdb7cdfd-r2w9c",
+     "app": "frontend",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "paymentservice-68f4749f6f-mj8z4",
+     "app": "paymentservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "productcatalogservice-575b6f888d-kn59l",
+     "app": "productcatalogservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "recommendationservice-847c46b576-xkbzd",
+     "app": "recommendationservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "redis-cart-64f7459c49-6s7wg",
+     "app": "redis-cart",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "shippingservice-58484f78cd-t9vkp",
+     "app": "shippingservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    }
+   ],
+   "restarts_total": 0,
+   "finished": "2026-10-04T10:48:13.930602+00:00"
+  },
+  {
+   "run_id": "vm-c6i2xl-20261004-r9",
+   "started": "2026-10-04T10:48:15.232024+00:00",
+   "ok": true,
+   "cluster_create_s": 27.7,
+   "ready_s": 25.9,
+   "all_available": true,
+   "pods_after_ready": [
+    {
+     "name": "adservice-8458b4797c-j5q6l",
+     "app": "adservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "cartservice-6b87d49788-89jpw",
+     "app": "cartservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "checkoutservice-6d859d664d-rk9bg",
+     "app": "checkoutservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "currencyservice-86d7b97dbc-h545s",
+     "app": "currencyservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "emailservice-cdd886b76-z79z8",
+     "app": "emailservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "frontend-7dfdb7cdfd-8hsjh",
+     "app": "frontend",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "paymentservice-68f4749f6f-q9m4z",
+     "app": "paymentservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "productcatalogservice-575b6f888d-l85xl",
+     "app": "productcatalogservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "recommendationservice-847c46b576-sjwkc",
+     "app": "recommendationservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "redis-cart-64f7459c49-r8n6b",
+     "app": "redis-cart",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "shippingservice-58484f78cd-79dct",
+     "app": "shippingservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    }
+   ],
+   "functional": {
+    "checks": {
+     "index 200": {
+      "passes": 1,
+      "fails": 0
+     },
+     "setCurrency 200": {
+      "passes": 1,
+      "fails": 0
+     },
+     "browseProduct 200": {
+      "passes": 1,
+      "fails": 0
+     },
+     "browseProduct has recommendations": {
+      "passes": 1,
+      "fails": 0
+     },
+     "browseProduct has ad": {
+      "passes": 1,
+      "fails": 0
+     },
+     "addToCart 200": {
+      "passes": 2,
+      "fails": 0
+     },
+     "viewCart 200": {
+      "passes": 1,
+      "fails": 0
+     },
+     "checkout 200": {
+      "passes": 1,
+      "fails": 0
+     },
+     "checkout order complete": {
+      "passes": 1,
+      "fails": 0
+     },
+     "checkout email sent (checkoutservice log)": {
+      "passes": 1,
+      "fails": 0
+     }
+    },
+    "pass_rate": 1.0
+   },
+   "load": {
+    "p95_ms": 12.844816000000002,
+    "p99_ms": 80.3010540999999,
+    "median_ms": 5.7657225,
+    "error_rate": 0,
+    "check_pass_rate": 1,
+    "requests_total": 1775,
+    "rps": 11.801395985772169
+   },
+   "pods_after_load": [
+    {
+     "name": "adservice-8458b4797c-j5q6l",
+     "app": "adservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "cartservice-6b87d49788-89jpw",
+     "app": "cartservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "checkoutservice-6d859d664d-rk9bg",
+     "app": "checkoutservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "currencyservice-86d7b97dbc-h545s",
+     "app": "currencyservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "emailservice-cdd886b76-z79z8",
+     "app": "emailservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "frontend-7dfdb7cdfd-8hsjh",
+     "app": "frontend",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "paymentservice-68f4749f6f-q9m4z",
+     "app": "paymentservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "productcatalogservice-575b6f888d-l85xl",
+     "app": "productcatalogservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "recommendationservice-847c46b576-sjwkc",
+     "app": "recommendationservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "redis-cart-64f7459c49-r8n6b",
+     "app": "redis-cart",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "shippingservice-58484f78cd-79dct",
+     "app": "shippingservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    }
+   ],
+   "restarts_total": 0,
+   "finished": "2026-10-04T10:51:48.307368+00:00"
+  },
+  {
+   "run_id": "vm-c6i2xl-20261004-r10",
+   "started": "2026-10-04T10:51:49.415626+00:00",
+   "ok": true,
+   "cluster_create_s": 28.9,
+   "ready_s": 33.1,
+   "all_available": true,
+   "pods_after_ready": [
+    {
+     "name": "adservice-8458b4797c-6j4mx",
+     "app": "adservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "cartservice-6b87d49788-jsnvs",
+     "app": "cartservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "checkoutservice-6d859d664d-rql27",
+     "app": "checkoutservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "currencyservice-86d7b97dbc-shtd8",
+     "app": "currencyservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "emailservice-cdd886b76-2l8lr",
+     "app": "emailservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "frontend-7dfdb7cdfd-ch2th",
+     "app": "frontend",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "paymentservice-68f4749f6f-b2hb9",
+     "app": "paymentservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "productcatalogservice-575b6f888d-lcjp7",
+     "app": "productcatalogservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "recommendationservice-847c46b576-wghhb",
+     "app": "recommendationservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "redis-cart-64f7459c49-sczkv",
+     "app": "redis-cart",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "shippingservice-58484f78cd-77mcq",
+     "app": "shippingservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    }
+   ],
+   "functional": {
+    "checks": {
+     "index 200": {
+      "passes": 1,
+      "fails": 0
+     },
+     "setCurrency 200": {
+      "passes": 1,
+      "fails": 0
+     },
+     "browseProduct 200": {
+      "passes": 1,
+      "fails": 0
+     },
+     "browseProduct has recommendations": {
+      "passes": 1,
+      "fails": 0
+     },
+     "browseProduct has ad": {
+      "passes": 1,
+      "fails": 0
+     },
+     "addToCart 200": {
+      "passes": 2,
+      "fails": 0
+     },
+     "viewCart 200": {
+      "passes": 1,
+      "fails": 0
+     },
+     "checkout 200": {
+      "passes": 1,
+      "fails": 0
+     },
+     "checkout order complete": {
+      "passes": 1,
+      "fails": 0
+     },
+     "checkout email sent (checkoutservice log)": {
+      "passes": 1,
+      "fails": 0
+     }
+    },
+    "pass_rate": 1.0
+   },
+   "load": {
+    "p95_ms": 12.13853,
+    "p99_ms": 62.456458600000424,
+    "median_ms": 5.810957,
+    "error_rate": 0,
+    "check_pass_rate": 1,
+    "requests_total": 1730,
+    "rps": 11.506301857981512
+   },
+   "pods_after_load": [
+    {
+     "name": "adservice-8458b4797c-6j4mx",
+     "app": "adservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "cartservice-6b87d49788-jsnvs",
+     "app": "cartservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "checkoutservice-6d859d664d-rql27",
+     "app": "checkoutservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "currencyservice-86d7b97dbc-shtd8",
+     "app": "currencyservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "emailservice-cdd886b76-2l8lr",
+     "app": "emailservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "frontend-7dfdb7cdfd-ch2th",
+     "app": "frontend",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "paymentservice-68f4749f6f-b2hb9",
+     "app": "paymentservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "productcatalogservice-575b6f888d-lcjp7",
+     "app": "productcatalogservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "recommendationservice-847c46b576-wghhb",
+     "app": "recommendationservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "redis-cart-64f7459c49-sczkv",
+     "app": "redis-cart",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    },
+    {
+     "name": "shippingservice-58484f78cd-77mcq",
+     "app": "shippingservice",
+     "phase": "Running",
+     "ready": true,
+     "restarts": 0,
+     "last_terminated_reason": null,
+     "waiting_reason": null
+    }
+   ],
+   "restarts_total": 0,
+   "finished": "2026-10-04T10:55:31.022901+00:00"
+  }
+ ],
+ "band": {
+  "n_runs": 10,
+  "n_ok": 10,
+  "p95_ms": {
+   "mean": 11.86096458,
+   "sd": 0.8828989604587962,
+   "min": 10.844922249999996,
+   "max": 13.6803051
+  },
+  "error_rate": {
+   "mean": 0,
+   "max": 0
+  },
+  "ready_s": {
+   "mean": 28.31,
+   "max": 33.1
+  },
+  "restarts_total": 0,
+  "thresholds": {
+   "p95_ms_max": 14.509661461376389,
+   "error_rate_max": 0.01
+  }
+ }
+}

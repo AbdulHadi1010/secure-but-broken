@@ -1,0 +1,19 @@
+{
+ "case_id": "added-capabilities-cartservice",
+ "service_port": 7070,
+ "type": "added-capabilities",
+ "fix_class": "a",
+ "service": "cartservice",
+ "reference_fix": "remove SYS_ADMIN from securityContext.capabilities.add (keep drop: [ALL])",
+ "target_rules": [
+  "checkov:CKV_K8S_25",
+  "checkov:CKV_K8S_39",
+  "kics:235236ee-ad78-4065-bd29-61b061f28ce0",
+  "kics:19ebaa28-fc86-4a58-bcfa-015c9e22fe40"
+ ],
+ "coupled_rules": [],
+ "injected_capability": "SYS_ADMIN",
+ "injected_cap_mask": "200000",
+ "gold_sha256": "08aa0feec0d6b47270472db2275acdc52479b3d80615bec107ab30682ac33dcb",
+ "case_sha256": "1aa373050d30df16a49e01e19f4117f4dd92967c86dd199c4930a4297c5b9fea"
+}

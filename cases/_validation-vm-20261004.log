@@ -1,0 +1,927 @@
+=== added-capabilities-cartservice 2026-10-04T11:19:50+00:00
+{
+ "case_id": "added-capabilities-cartservice",
+ "validated": "2026-10-04T11:19:55.436060+00:00",
+ "scanners": {
+  "checkov": "bridgecrew/checkov@sha256:617c76e3f9b1f7907ebca9abb6b9d746844edcb48e9bd775e4692c69c1c6ac47",
+  "kics": "checkmarx/kics@sha256:3e5a268eb8adda2e5a483c9359ddfc4cd520ab856a7076dc0b1d8784a37e2602",
+  "kube-score": "zegl/kube-score@sha256:ac4c43ad560af905d66f6bf57b0937c591332e6dbf2167c31193a13b4695ab97"
+ },
+ "new_findings": [
+  "checkov:CKV_K8S_25:Deployment/cartservice",
+  "checkov:CKV_K8S_39:Deployment/cartservice",
+  "kics:19ebaa28-fc86-4a58-bcfa-015c9e22fe40:Deployment/cartservice",
+  "kics:235236ee-ad78-4065-bd29-61b061f28ce0:Deployment/cartservice"
+ ],
+ "gold_findings_lost": [],
+ "v1_flagged": true,
+ "v1_targets_present": true,
+ "unexpected_new_findings": [],
+ "v2_gold_clean_for_targets": true,
+ "dry_run_ok": true,
+ "ready_s": 25.9,
+ "all_available": true,
+ "functional_pass_rate": 1.0,
+ "l7_on_case": {
+  "static": {
+   "pass": 20,
+   "fail": 2,
+   "warn": 0,
+   "error": 0,
+   "failures": [
+    "disallow-capabilities -> boutique/Deployment/cartservice",
+    "disallow-capabilities-strict -> boutique/Deployment/cartservice"
+   ],
+   "ok": false
+  },
+  "runtime": {
+   "pod": "cartservice-86df55c954-s8hnj",
+   "container": "server",
+   "ok": true,
+   "cap_eff": 0,
+   "cap_bnd": 2097152,
+   "no_new_privs": true,
+   "uid_real": 10001,
+   "uid_effective": 10001,
+   "seccomp": "2"
+  },
+  "runtime_ok": false,
+  "pass": false,
+  "intent": "the injected capability is absent from the bounding set"
+ },
+ "v3_deploys": true,
+ "v4_l7_flags_case": true,
+ "valid": true
+}
+=== added-capabilities-checkoutservice 2026-10-04T11:21:04+00:00
+{
+ "case_id": "added-capabilities-checkoutservice",
+ "validated": "2026-10-04T11:21:09.488316+00:00",
+ "scanners": {
+  "checkov": "bridgecrew/checkov@sha256:617c76e3f9b1f7907ebca9abb6b9d746844edcb48e9bd775e4692c69c1c6ac47",
+  "kics": "checkmarx/kics@sha256:3e5a268eb8adda2e5a483c9359ddfc4cd520ab856a7076dc0b1d8784a37e2602",
+  "kube-score": "zegl/kube-score@sha256:ac4c43ad560af905d66f6bf57b0937c591332e6dbf2167c31193a13b4695ab97"
+ },
+ "new_findings": [
+  "checkov:CKV_K8S_25:Deployment/checkoutservice",
+  "checkov:CKV_K8S_39:Deployment/checkoutservice",
+  "kics:19ebaa28-fc86-4a58-bcfa-015c9e22fe40:Deployment/checkoutservice",
+  "kics:235236ee-ad78-4065-bd29-61b061f28ce0:Deployment/checkoutservice"
+ ],
+ "gold_findings_lost": [],
+ "v1_flagged": true,
+ "v1_targets_present": true,
+ "unexpected_new_findings": [],
+ "v2_gold_clean_for_targets": true,
+ "dry_run_ok": true,
+ "ready_s": 25.8,
+ "all_available": true,
+ "functional_pass_rate": 1.0,
+ "l7_on_case": {
+  "static": {
+   "pass": 20,
+   "fail": 2,
+   "warn": 0,
+   "error": 0,
+   "failures": [
+    "disallow-capabilities -> boutique/Deployment/checkoutservice",
+    "disallow-capabilities-strict -> boutique/Deployment/checkoutservice"
+   ],
+   "ok": false
+  },
+  "runtime": {
+   "pod": "checkoutservice-566bc67f98-69hxc",
+   "container": "server",
+   "ok": true,
+   "cap_eff": 0,
+   "cap_bnd": 2097152,
+   "no_new_privs": true,
+   "uid_real": 10001,
+   "uid_effective": 10001,
+   "seccomp": "2"
+  },
+  "runtime_ok": false,
+  "pass": false,
+  "intent": "the injected capability is absent from the bounding set"
+ },
+ "v3_deploys": true,
+ "v4_l7_flags_case": true,
+ "valid": true
+}
+=== added-capabilities-frontend 2026-10-04T11:22:17+00:00
+{
+ "case_id": "added-capabilities-frontend",
+ "validated": "2026-10-04T11:22:23.234991+00:00",
+ "scanners": {
+  "checkov": "bridgecrew/checkov@sha256:617c76e3f9b1f7907ebca9abb6b9d746844edcb48e9bd775e4692c69c1c6ac47",
+  "kics": "checkmarx/kics@sha256:3e5a268eb8adda2e5a483c9359ddfc4cd520ab856a7076dc0b1d8784a37e2602",
+  "kube-score": "zegl/kube-score@sha256:ac4c43ad560af905d66f6bf57b0937c591332e6dbf2167c31193a13b4695ab97"
+ },
+ "new_findings": [
+  "checkov:CKV_K8S_25:Deployment/frontend",
+  "checkov:CKV_K8S_39:Deployment/frontend",
+  "kics:19ebaa28-fc86-4a58-bcfa-015c9e22fe40:Deployment/frontend",
+  "kics:235236ee-ad78-4065-bd29-61b061f28ce0:Deployment/frontend"
+ ],
+ "gold_findings_lost": [],
+ "v1_flagged": true,
+ "v1_targets_present": true,
+ "unexpected_new_findings": [],
+ "v2_gold_clean_for_targets": true,
+ "dry_run_ok": true,
+ "ready_s": 26.6,
+ "all_available": true,
+ "functional_pass_rate": 1.0,
+ "l7_on_case": {
+  "static": {
+   "pass": 20,
+   "fail": 2,
+   "warn": 0,
+   "error": 0,
+   "failures": [
+    "disallow-capabilities -> boutique/Deployment/frontend",
+    "disallow-capabilities-strict -> boutique/Deployment/frontend"
+   ],
+   "ok": false
+  },
+  "runtime": {
+   "pod": "frontend-7d8d99fdc6-zk5jr",
+   "container": "server",
+   "ok": true,
+   "cap_eff": 0,
+   "cap_bnd": 2097152,
+   "no_new_privs": true,
+   "uid_real": 10001,
+   "uid_effective": 10001,
+   "seccomp": "2"
+  },
+  "runtime_ok": false,
+  "pass": false,
+  "intent": "the injected capability is absent from the bounding set"
+ },
+ "v3_deploys": true,
+ "v4_l7_flags_case": true,
+ "valid": true
+}
+=== allow-privilege-escalation-cartservice 2026-10-04T11:23:29+00:00
+{
+ "case_id": "allow-privilege-escalation-cartservice",
+ "validated": "2026-10-04T11:23:35.225685+00:00",
+ "scanners": {
+  "checkov": "bridgecrew/checkov@sha256:617c76e3f9b1f7907ebca9abb6b9d746844edcb48e9bd775e4692c69c1c6ac47",
+  "kics": "checkmarx/kics@sha256:3e5a268eb8adda2e5a483c9359ddfc4cd520ab856a7076dc0b1d8784a37e2602",
+  "kube-score": "zegl/kube-score@sha256:ac4c43ad560af905d66f6bf57b0937c591332e6dbf2167c31193a13b4695ab97"
+ },
+ "new_findings": [
+  "checkov:CKV_K8S_20:Deployment/cartservice",
+  "kics:5572cc5e-1e4c-4113-92a6-7a8a3bd25e6d:Deployment/cartservice"
+ ],
+ "gold_findings_lost": [],
+ "v1_flagged": true,
+ "v1_targets_present": true,
+ "unexpected_new_findings": [],
+ "v2_gold_clean_for_targets": true,
+ "dry_run_ok": true,
+ "ready_s": 32.9,
+ "all_available": true,
+ "functional_pass_rate": 1.0,
+ "l7_on_case": {
+  "static": {
+   "pass": 10,
+   "fail": 1,
+   "warn": 0,
+   "error": 0,
+   "failures": [
+    "disallow-privilege-escalation -> boutique/Deployment/cartservice"
+   ],
+   "ok": false
+  },
+  "runtime": {
+   "pod": "cartservice-6b845f69f7-hh99x",
+   "container": "server",
+   "ok": true,
+   "cap_eff": 0,
+   "cap_bnd": 0,
+   "no_new_privs": false,
+   "uid_real": 10001,
+   "uid_effective": 10001,
+   "seccomp": "2"
+  },
+  "runtime_ok": false,
+  "pass": false,
+  "intent": "the process cannot gain privileges: NoNewPrivs is set"
+ },
+ "v3_deploys": true,
+ "v4_l7_flags_case": true,
+ "valid": true
+}
+=== allow-privilege-escalation-checkoutservice 2026-10-04T11:24:47+00:00
+{
+ "case_id": "allow-privilege-escalation-checkoutservice",
+ "validated": "2026-10-04T11:24:53.581683+00:00",
+ "scanners": {
+  "checkov": "bridgecrew/checkov@sha256:617c76e3f9b1f7907ebca9abb6b9d746844edcb48e9bd775e4692c69c1c6ac47",
+  "kics": "checkmarx/kics@sha256:3e5a268eb8adda2e5a483c9359ddfc4cd520ab856a7076dc0b1d8784a37e2602",
+  "kube-score": "zegl/kube-score@sha256:ac4c43ad560af905d66f6bf57b0937c591332e6dbf2167c31193a13b4695ab97"
+ },
+ "new_findings": [
+  "checkov:CKV_K8S_20:Deployment/checkoutservice",
+  "kics:5572cc5e-1e4c-4113-92a6-7a8a3bd25e6d:Deployment/checkoutservice"
+ ],
+ "gold_findings_lost": [],
+ "v1_flagged": true,
+ "v1_targets_present": true,
+ "unexpected_new_findings": [],
+ "v2_gold_clean_for_targets": true,
+ "dry_run_ok": true,
+ "ready_s": 26.4,
+ "all_available": true,
+ "functional_pass_rate": 1.0,
+ "l7_on_case": {
+  "static": {
+   "pass": 10,
+   "fail": 1,
+   "warn": 0,
+   "error": 0,
+   "failures": [
+    "disallow-privilege-escalation -> boutique/Deployment/checkoutservice"
+   ],
+   "ok": false
+  },
+  "runtime": {
+   "pod": "checkoutservice-6d47d955d7-gcdjh",
+   "container": "server",
+   "ok": true,
+   "cap_eff": 0,
+   "cap_bnd": 0,
+   "no_new_privs": false,
+   "uid_real": 10001,
+   "uid_effective": 10001,
+   "seccomp": "2"
+  },
+  "runtime_ok": false,
+  "pass": false,
+  "intent": "the process cannot gain privileges: NoNewPrivs is set"
+ },
+ "v3_deploys": true,
+ "v4_l7_flags_case": true,
+ "valid": true
+}
+=== allow-privilege-escalation-frontend 2026-10-04T11:26:01+00:00
+{
+ "case_id": "allow-privilege-escalation-frontend",
+ "validated": "2026-10-04T11:26:06.503670+00:00",
+ "scanners": {
+  "checkov": "bridgecrew/checkov@sha256:617c76e3f9b1f7907ebca9abb6b9d746844edcb48e9bd775e4692c69c1c6ac47",
+  "kics": "checkmarx/kics@sha256:3e5a268eb8adda2e5a483c9359ddfc4cd520ab856a7076dc0b1d8784a37e2602",
+  "kube-score": "zegl/kube-score@sha256:ac4c43ad560af905d66f6bf57b0937c591332e6dbf2167c31193a13b4695ab97"
+ },
+ "new_findings": [
+  "checkov:CKV_K8S_20:Deployment/frontend",
+  "kics:5572cc5e-1e4c-4113-92a6-7a8a3bd25e6d:Deployment/frontend"
+ ],
+ "gold_findings_lost": [],
+ "v1_flagged": true,
+ "v1_targets_present": true,
+ "unexpected_new_findings": [],
+ "v2_gold_clean_for_targets": true,
+ "dry_run_ok": true,
+ "ready_s": 33.4,
+ "all_available": true,
+ "functional_pass_rate": 1.0,
+ "l7_on_case": {
+  "static": {
+   "pass": 10,
+   "fail": 1,
+   "warn": 0,
+   "error": 0,
+   "failures": [
+    "disallow-privilege-escalation -> boutique/Deployment/frontend"
+   ],
+   "ok": false
+  },
+  "runtime": {
+   "pod": "frontend-7fbcd47c85-hh8qb",
+   "container": "server",
+   "ok": true,
+   "cap_eff": 0,
+   "cap_bnd": 0,
+   "no_new_privs": false,
+   "uid_real": 10001,
+   "uid_effective": 10001,
+   "seccomp": "2"
+  },
+  "runtime_ok": false,
+  "pass": false,
+  "intent": "the process cannot gain privileges: NoNewPrivs is set"
+ },
+ "v3_deploys": true,
+ "v4_l7_flags_case": true,
+ "valid": true
+}
+=== missing-limits-cartservice 2026-10-04T11:27:20+00:00
+{
+ "case_id": "missing-limits-cartservice",
+ "validated": "2026-10-04T11:27:25.975592+00:00",
+ "scanners": {
+  "checkov": "bridgecrew/checkov@sha256:617c76e3f9b1f7907ebca9abb6b9d746844edcb48e9bd775e4692c69c1c6ac47",
+  "kics": "checkmarx/kics@sha256:3e5a268eb8adda2e5a483c9359ddfc4cd520ab856a7076dc0b1d8784a37e2602",
+  "kube-score": "zegl/kube-score@sha256:ac4c43ad560af905d66f6bf57b0937c591332e6dbf2167c31193a13b4695ab97"
+ },
+ "new_findings": [
+  "checkov:CKV_K8S_11:Deployment/cartservice",
+  "checkov:CKV_K8S_13:Deployment/cartservice",
+  "kics:4ac0e2b7-d2d2-4af7-8799-e8de6721ccda:Deployment/cartservice",
+  "kics:b14d1bc4-a208-45db-92f0-e21f8e2588e9:Deployment/cartservice",
+  "kube-score:container-resources:Deployment/cartservice"
+ ],
+ "gold_findings_lost": [],
+ "v1_flagged": true,
+ "v1_targets_present": true,
+ "unexpected_new_findings": [],
+ "v2_gold_clean_for_targets": true,
+ "dry_run_ok": true,
+ "ready_s": 32.4,
+ "all_available": true,
+ "functional_pass_rate": 1.0,
+ "l7_on_case": {
+  "static": {
+   "pass": 10,
+   "fail": 1,
+   "warn": 0,
+   "error": 0,
+   "failures": [
+    "require-requests-limits -> boutique/Deployment/cartservice"
+   ],
+   "ok": false
+  },
+  "runtime": {
+   "pod": "cartservice-574756b7f-gr2f6",
+   "ok": true,
+   "limits": {
+    "ephemeral-storage": "512Mi"
+   },
+   "source": "status"
+  },
+  "runtime_ok": false,
+  "pass": false,
+  "intent": "the running container has CPU and memory limits applied"
+ },
+ "v3_deploys": true,
+ "v4_l7_flags_case": true,
+ "valid": true
+}
+=== missing-limits-checkoutservice 2026-10-04T11:28:36+00:00
+{
+ "case_id": "missing-limits-checkoutservice",
+ "validated": "2026-10-04T11:28:42.202393+00:00",
+ "scanners": {
+  "checkov": "bridgecrew/checkov@sha256:617c76e3f9b1f7907ebca9abb6b9d746844edcb48e9bd775e4692c69c1c6ac47",
+  "kics": "checkmarx/kics@sha256:3e5a268eb8adda2e5a483c9359ddfc4cd520ab856a7076dc0b1d8784a37e2602",
+  "kube-score": "zegl/kube-score@sha256:ac4c43ad560af905d66f6bf57b0937c591332e6dbf2167c31193a13b4695ab97"
+ },
+ "new_findings": [
+  "checkov:CKV_K8S_11:Deployment/checkoutservice",
+  "checkov:CKV_K8S_13:Deployment/checkoutservice",
+  "kics:4ac0e2b7-d2d2-4af7-8799-e8de6721ccda:Deployment/checkoutservice",
+  "kics:b14d1bc4-a208-45db-92f0-e21f8e2588e9:Deployment/checkoutservice",
+  "kube-score:container-resources:Deployment/checkoutservice"
+ ],
+ "gold_findings_lost": [],
+ "v1_flagged": true,
+ "v1_targets_present": true,
+ "unexpected_new_findings": [],
+ "v2_gold_clean_for_targets": true,
+ "dry_run_ok": true,
+ "ready_s": 34.4,
+ "all_available": true,
+ "functional_pass_rate": 1.0,
+ "l7_on_case": {
+  "static": {
+   "pass": 10,
+   "fail": 1,
+   "warn": 0,
+   "error": 0,
+   "failures": [
+    "require-requests-limits -> boutique/Deployment/checkoutservice"
+   ],
+   "ok": false
+  },
+  "runtime": {
+   "pod": "checkoutservice-fb7df7bc9-mxfvm",
+   "ok": true,
+   "limits": {
+    "ephemeral-storage": "512Mi"
+   },
+   "source": "status"
+  },
+  "runtime_ok": false,
+  "pass": false,
+  "intent": "the running container has CPU and memory limits applied"
+ },
+ "v3_deploys": true,
+ "v4_l7_flags_case": true,
+ "valid": true
+}
+=== missing-limits-frontend 2026-10-04T11:29:54+00:00
+{
+ "case_id": "missing-limits-frontend",
+ "validated": "2026-10-04T11:29:59.834950+00:00",
+ "scanners": {
+  "checkov": "bridgecrew/checkov@sha256:617c76e3f9b1f7907ebca9abb6b9d746844edcb48e9bd775e4692c69c1c6ac47",
+  "kics": "checkmarx/kics@sha256:3e5a268eb8adda2e5a483c9359ddfc4cd520ab856a7076dc0b1d8784a37e2602",
+  "kube-score": "zegl/kube-score@sha256:ac4c43ad560af905d66f6bf57b0937c591332e6dbf2167c31193a13b4695ab97"
+ },
+ "new_findings": [
+  "checkov:CKV_K8S_11:Deployment/frontend",
+  "checkov:CKV_K8S_13:Deployment/frontend",
+  "kics:4ac0e2b7-d2d2-4af7-8799-e8de6721ccda:Deployment/frontend",
+  "kics:b14d1bc4-a208-45db-92f0-e21f8e2588e9:Deployment/frontend",
+  "kube-score:container-resources:Deployment/frontend"
+ ],
+ "gold_findings_lost": [],
+ "v1_flagged": true,
+ "v1_targets_present": true,
+ "unexpected_new_findings": [],
+ "v2_gold_clean_for_targets": true,
+ "dry_run_ok": true,
+ "ready_s": 26.5,
+ "all_available": true,
+ "functional_pass_rate": 1.0,
+ "l7_on_case": {
+  "static": {
+   "pass": 10,
+   "fail": 1,
+   "warn": 0,
+   "error": 0,
+   "failures": [
+    "require-requests-limits -> boutique/Deployment/frontend"
+   ],
+   "ok": false
+  },
+  "runtime": {
+   "pod": "frontend-78f9654589-zqlz6",
+   "ok": true,
+   "limits": {
+    "ephemeral-storage": "512Mi"
+   },
+   "source": "status"
+  },
+  "runtime_ok": false,
+  "pass": false,
+  "intent": "the running container has CPU and memory limits applied"
+ },
+ "v3_deploys": true,
+ "v4_l7_flags_case": true,
+ "valid": true
+}
+=== netpol-cartservice 2026-10-04T11:31:06+00:00
+{
+ "case_id": "netpol-cartservice",
+ "validated": "2026-10-04T11:31:11.940446+00:00",
+ "scanners": {
+  "checkov": "bridgecrew/checkov@sha256:617c76e3f9b1f7907ebca9abb6b9d746844edcb48e9bd775e4692c69c1c6ac47",
+  "kics": "checkmarx/kics@sha256:3e5a268eb8adda2e5a483c9359ddfc4cd520ab856a7076dc0b1d8784a37e2602",
+  "kube-score": "zegl/kube-score@sha256:ac4c43ad560af905d66f6bf57b0937c591332e6dbf2167c31193a13b4695ab97"
+ },
+ "new_findings": [
+  "kube-score:pod-networkpolicy:Deployment/cartservice"
+ ],
+ "gold_findings_lost": [],
+ "v1_flagged": true,
+ "v1_targets_present": true,
+ "unexpected_new_findings": [],
+ "v2_gold_clean_for_targets": true,
+ "dry_run_ok": true,
+ "ready_s": 26.0,
+ "all_available": true,
+ "functional_pass_rate": 1.0,
+ "l7_on_case": {
+  "static": {
+   "ok": true,
+   "skipped": true
+  },
+  "runtime": {
+   "ok": true,
+   "result": "OPEN",
+   "raw": "OPEN\n"
+  },
+  "runtime_ok": false,
+  "pass": false,
+  "intent": "a pod outside the namespace cannot connect to the service"
+ },
+ "v3_deploys": true,
+ "v4_l7_flags_case": true,
+ "valid": true
+}
+=== netpol-checkoutservice 2026-10-04T11:32:18+00:00
+{
+ "case_id": "netpol-checkoutservice",
+ "validated": "2026-10-04T11:32:24.631436+00:00",
+ "scanners": {
+  "checkov": "bridgecrew/checkov@sha256:617c76e3f9b1f7907ebca9abb6b9d746844edcb48e9bd775e4692c69c1c6ac47",
+  "kics": "checkmarx/kics@sha256:3e5a268eb8adda2e5a483c9359ddfc4cd520ab856a7076dc0b1d8784a37e2602",
+  "kube-score": "zegl/kube-score@sha256:ac4c43ad560af905d66f6bf57b0937c591332e6dbf2167c31193a13b4695ab97"
+ },
+ "new_findings": [
+  "kube-score:pod-networkpolicy:Deployment/checkoutservice"
+ ],
+ "gold_findings_lost": [],
+ "v1_flagged": true,
+ "v1_targets_present": true,
+ "unexpected_new_findings": [],
+ "v2_gold_clean_for_targets": true,
+ "dry_run_ok": true,
+ "ready_s": 33.0,
+ "all_available": true,
+ "functional_pass_rate": 1.0,
+ "l7_on_case": {
+  "static": {
+   "ok": true,
+   "skipped": true
+  },
+  "runtime": {
+   "ok": true,
+   "result": "OPEN",
+   "raw": "OPEN\n"
+  },
+  "runtime_ok": false,
+  "pass": false,
+  "intent": "a pod outside the namespace cannot connect to the service"
+ },
+ "v3_deploys": true,
+ "v4_l7_flags_case": true,
+ "valid": true
+}
+=== netpol-productcatalogservice 2026-10-04T11:33:35+00:00
+{
+ "case_id": "netpol-productcatalogservice",
+ "validated": "2026-10-04T11:33:41.647409+00:00",
+ "scanners": {
+  "checkov": "bridgecrew/checkov@sha256:617c76e3f9b1f7907ebca9abb6b9d746844edcb48e9bd775e4692c69c1c6ac47",
+  "kics": "checkmarx/kics@sha256:3e5a268eb8adda2e5a483c9359ddfc4cd520ab856a7076dc0b1d8784a37e2602",
+  "kube-score": "zegl/kube-score@sha256:ac4c43ad560af905d66f6bf57b0937c591332e6dbf2167c31193a13b4695ab97"
+ },
+ "new_findings": [
+  "kube-score:pod-networkpolicy:Deployment/productcatalogservice"
+ ],
+ "gold_findings_lost": [],
+ "v1_flagged": true,
+ "v1_targets_present": true,
+ "unexpected_new_findings": [],
+ "v2_gold_clean_for_targets": true,
+ "dry_run_ok": true,
+ "ready_s": 26.3,
+ "all_available": true,
+ "functional_pass_rate": 1.0,
+ "l7_on_case": {
+  "static": {
+   "ok": true,
+   "skipped": true
+  },
+  "runtime": {
+   "ok": true,
+   "result": "OPEN",
+   "raw": "OPEN\n"
+  },
+  "runtime_ok": false,
+  "pass": false,
+  "intent": "a pod outside the namespace cannot connect to the service"
+ },
+ "v3_deploys": true,
+ "v4_l7_flags_case": true,
+ "valid": true
+}
+=== privileged-cartservice 2026-10-04T11:34:46+00:00
+{
+ "case_id": "privileged-cartservice",
+ "validated": "2026-10-04T11:34:52.808624+00:00",
+ "scanners": {
+  "checkov": "bridgecrew/checkov@sha256:617c76e3f9b1f7907ebca9abb6b9d746844edcb48e9bd775e4692c69c1c6ac47",
+  "kics": "checkmarx/kics@sha256:3e5a268eb8adda2e5a483c9359ddfc4cd520ab856a7076dc0b1d8784a37e2602",
+  "kube-score": "zegl/kube-score@sha256:ac4c43ad560af905d66f6bf57b0937c591332e6dbf2167c31193a13b4695ab97"
+ },
+ "new_findings": [
+  "checkov:CKV_K8S_16:Deployment/cartservice",
+  "checkov:CKV_K8S_20:Deployment/cartservice",
+  "kics:5572cc5e-1e4c-4113-92a6-7a8a3bd25e6d:Deployment/cartservice",
+  "kics:dd29336b-fe57-445b-a26e-e6aa867ae609:Deployment/cartservice",
+  "kube-score:container-security-context-privileged:Deployment/cartservice"
+ ],
+ "gold_findings_lost": [],
+ "v1_flagged": true,
+ "v1_targets_present": true,
+ "unexpected_new_findings": [],
+ "v2_gold_clean_for_targets": true,
+ "dry_run_ok": true,
+ "ready_s": 26.3,
+ "all_available": true,
+ "functional_pass_rate": 1.0,
+ "l7_on_case": {
+  "static": {
+   "pass": 10,
+   "fail": 1,
+   "warn": 0,
+   "error": 0,
+   "failures": [
+    "disallow-privileged-containers -> boutique/Deployment/cartservice"
+   ],
+   "ok": false
+  },
+  "runtime": {
+   "pod": "cartservice-dcf6bd779-z9kzt",
+   "container": "server",
+   "ok": true,
+   "cap_eff": 0,
+   "cap_bnd": 2199023255551,
+   "no_new_privs": false,
+   "uid_real": 10001,
+   "uid_effective": 10001,
+   "seccomp": "0"
+  },
+  "runtime_ok": false,
+  "pass": false,
+  "intent": "container is not privileged: capability bounding set is not the full set"
+ },
+ "v3_deploys": true,
+ "v4_l7_flags_case": true,
+ "valid": true
+}
+=== privileged-checkoutservice 2026-10-04T11:35:59+00:00
+{
+ "case_id": "privileged-checkoutservice",
+ "validated": "2026-10-04T11:36:05.077183+00:00",
+ "scanners": {
+  "checkov": "bridgecrew/checkov@sha256:617c76e3f9b1f7907ebca9abb6b9d746844edcb48e9bd775e4692c69c1c6ac47",
+  "kics": "checkmarx/kics@sha256:3e5a268eb8adda2e5a483c9359ddfc4cd520ab856a7076dc0b1d8784a37e2602",
+  "kube-score": "zegl/kube-score@sha256:ac4c43ad560af905d66f6bf57b0937c591332e6dbf2167c31193a13b4695ab97"
+ },
+ "new_findings": [
+  "checkov:CKV_K8S_16:Deployment/checkoutservice",
+  "checkov:CKV_K8S_20:Deployment/checkoutservice",
+  "kics:5572cc5e-1e4c-4113-92a6-7a8a3bd25e6d:Deployment/checkoutservice",
+  "kics:dd29336b-fe57-445b-a26e-e6aa867ae609:Deployment/checkoutservice",
+  "kube-score:container-security-context-privileged:Deployment/checkoutservice"
+ ],
+ "gold_findings_lost": [],
+ "v1_flagged": true,
+ "v1_targets_present": true,
+ "unexpected_new_findings": [],
+ "v2_gold_clean_for_targets": true,
+ "dry_run_ok": true,
+ "ready_s": 27.5,
+ "all_available": true,
+ "functional_pass_rate": 1.0,
+ "l7_on_case": {
+  "static": {
+   "pass": 10,
+   "fail": 1,
+   "warn": 0,
+   "error": 0,
+   "failures": [
+    "disallow-privileged-containers -> boutique/Deployment/checkoutservice"
+   ],
+   "ok": false
+  },
+  "runtime": {
+   "pod": "checkoutservice-dd6cb7777-b9f5f",
+   "container": "server",
+   "ok": true,
+   "cap_eff": 0,
+   "cap_bnd": 2199023255551,
+   "no_new_privs": false,
+   "uid_real": 10001,
+   "uid_effective": 10001,
+   "seccomp": "0"
+  },
+  "runtime_ok": false,
+  "pass": false,
+  "intent": "container is not privileged: capability bounding set is not the full set"
+ },
+ "v3_deploys": true,
+ "v4_l7_flags_case": true,
+ "valid": true
+}
+=== privileged-frontend 2026-10-04T11:37:12+00:00
+{
+ "case_id": "privileged-frontend",
+ "validated": "2026-10-04T11:37:17.865665+00:00",
+ "scanners": {
+  "checkov": "bridgecrew/checkov@sha256:617c76e3f9b1f7907ebca9abb6b9d746844edcb48e9bd775e4692c69c1c6ac47",
+  "kics": "checkmarx/kics@sha256:3e5a268eb8adda2e5a483c9359ddfc4cd520ab856a7076dc0b1d8784a37e2602",
+  "kube-score": "zegl/kube-score@sha256:ac4c43ad560af905d66f6bf57b0937c591332e6dbf2167c31193a13b4695ab97"
+ },
+ "new_findings": [
+  "checkov:CKV_K8S_16:Deployment/frontend",
+  "checkov:CKV_K8S_20:Deployment/frontend",
+  "kics:5572cc5e-1e4c-4113-92a6-7a8a3bd25e6d:Deployment/frontend",
+  "kics:dd29336b-fe57-445b-a26e-e6aa867ae609:Deployment/frontend",
+  "kube-score:container-security-context-privileged:Deployment/frontend"
+ ],
+ "gold_findings_lost": [],
+ "v1_flagged": true,
+ "v1_targets_present": true,
+ "unexpected_new_findings": [],
+ "v2_gold_clean_for_targets": true,
+ "dry_run_ok": true,
+ "ready_s": 32.6,
+ "all_available": true,
+ "functional_pass_rate": 1.0,
+ "l7_on_case": {
+  "static": {
+   "pass": 10,
+   "fail": 1,
+   "warn": 0,
+   "error": 0,
+   "failures": [
+    "disallow-privileged-containers -> boutique/Deployment/frontend"
+   ],
+   "ok": false
+  },
+  "runtime": {
+   "pod": "frontend-f7759cfcf-87nz8",
+   "container": "server",
+   "ok": true,
+   "cap_eff": 0,
+   "cap_bnd": 2199023255551,
+   "no_new_privs": false,
+   "uid_real": 10001,
+   "uid_effective": 10001,
+   "seccomp": "0"
+  },
+  "runtime_ok": false,
+  "pass": false,
+  "intent": "container is not privileged: capability bounding set is not the full set"
+ },
+ "v3_deploys": true,
+ "v4_l7_flags_case": true,
+ "valid": true
+}
+=== run-as-root-cartservice 2026-10-04T11:38:29+00:00
+{
+ "case_id": "run-as-root-cartservice",
+ "validated": "2026-10-04T11:38:35.528603+00:00",
+ "scanners": {
+  "checkov": "bridgecrew/checkov@sha256:617c76e3f9b1f7907ebca9abb6b9d746844edcb48e9bd775e4692c69c1c6ac47",
+  "kics": "checkmarx/kics@sha256:3e5a268eb8adda2e5a483c9359ddfc4cd520ab856a7076dc0b1d8784a37e2602",
+  "kube-score": "zegl/kube-score@sha256:ac4c43ad560af905d66f6bf57b0937c591332e6dbf2167c31193a13b4695ab97"
+ },
+ "new_findings": [
+  "checkov:CKV_K8S_23:Deployment/cartservice",
+  "checkov:CKV_K8S_40:Deployment/cartservice",
+  "kics:02323c00-cdc3-4fdc-a310-4f2b3e7a1660:Deployment/cartservice",
+  "kics:cf34805e-3872-4c08-bf92-6ff7bb0cfadb:Deployment/cartservice",
+  "kube-score:container-security-context-user-group-id:Deployment/cartservice"
+ ],
+ "gold_findings_lost": [],
+ "v1_flagged": true,
+ "v1_targets_present": true,
+ "unexpected_new_findings": [],
+ "v2_gold_clean_for_targets": true,
+ "dry_run_ok": true,
+ "ready_s": 26.2,
+ "all_available": true,
+ "functional_pass_rate": 1.0,
+ "l7_on_case": {
+  "static": {
+   "pass": 20,
+   "fail": 2,
+   "warn": 0,
+   "error": 0,
+   "failures": [
+    "require-run-as-nonroot -> boutique/Deployment/cartservice",
+    "require-run-as-non-root-user -> boutique/Deployment/cartservice"
+   ],
+   "ok": false
+  },
+  "runtime": {
+   "pod": "cartservice-669bb64ffc-8zskz",
+   "container": "server",
+   "ok": true,
+   "cap_eff": 0,
+   "cap_bnd": 0,
+   "no_new_privs": true,
+   "uid_real": 0,
+   "uid_effective": 0,
+   "seccomp": "2"
+  },
+  "runtime_ok": false,
+  "pass": false,
+  "intent": "the process runs with a non-zero effective UID"
+ },
+ "v3_deploys": true,
+ "v4_l7_flags_case": true,
+ "valid": true
+}
+=== run-as-root-checkoutservice 2026-10-04T11:39:42+00:00
+{
+ "case_id": "run-as-root-checkoutservice",
+ "validated": "2026-10-04T11:39:48.224588+00:00",
+ "scanners": {
+  "checkov": "bridgecrew/checkov@sha256:617c76e3f9b1f7907ebca9abb6b9d746844edcb48e9bd775e4692c69c1c6ac47",
+  "kics": "checkmarx/kics@sha256:3e5a268eb8adda2e5a483c9359ddfc4cd520ab856a7076dc0b1d8784a37e2602",
+  "kube-score": "zegl/kube-score@sha256:ac4c43ad560af905d66f6bf57b0937c591332e6dbf2167c31193a13b4695ab97"
+ },
+ "new_findings": [
+  "checkov:CKV_K8S_23:Deployment/checkoutservice",
+  "checkov:CKV_K8S_40:Deployment/checkoutservice",
+  "kics:02323c00-cdc3-4fdc-a310-4f2b3e7a1660:Deployment/checkoutservice",
+  "kics:cf34805e-3872-4c08-bf92-6ff7bb0cfadb:Deployment/checkoutservice",
+  "kube-score:container-security-context-user-group-id:Deployment/checkoutservice"
+ ],
+ "gold_findings_lost": [],
+ "v1_flagged": true,
+ "v1_targets_present": true,
+ "unexpected_new_findings": [],
+ "v2_gold_clean_for_targets": true,
+ "dry_run_ok": true,
+ "ready_s": 33.5,
+ "all_available": true,
+ "functional_pass_rate": 1.0,
+ "l7_on_case": {
+  "static": {
+   "pass": 20,
+   "fail": 2,
+   "warn": 0,
+   "error": 0,
+   "failures": [
+    "require-run-as-nonroot -> boutique/Deployment/checkoutservice",
+    "require-run-as-non-root-user -> boutique/Deployment/checkoutservice"
+   ],
+   "ok": false
+  },
+  "runtime": {
+   "pod": "checkoutservice-8455cfc59c-7n7pl",
+   "container": "server",
+   "ok": true,
+   "cap_eff": 0,
+   "cap_bnd": 0,
+   "no_new_privs": true,
+   "uid_real": 0,
+   "uid_effective": 0,
+   "seccomp": "2"
+  },
+  "runtime_ok": false,
+  "pass": false,
+  "intent": "the process runs with a non-zero effective UID"
+ },
+ "v3_deploys": true,
+ "v4_l7_flags_case": true,
+ "valid": true
+}
+=== run-as-root-frontend 2026-10-04T11:41:02+00:00
+{
+ "case_id": "run-as-root-frontend",
+ "validated": "2026-10-04T11:41:08.530987+00:00",
+ "scanners": {
+  "checkov": "bridgecrew/checkov@sha256:617c76e3f9b1f7907ebca9abb6b9d746844edcb48e9bd775e4692c69c1c6ac47",
+  "kics": "checkmarx/kics@sha256:3e5a268eb8adda2e5a483c9359ddfc4cd520ab856a7076dc0b1d8784a37e2602",
+  "kube-score": "zegl/kube-score@sha256:ac4c43ad560af905d66f6bf57b0937c591332e6dbf2167c31193a13b4695ab97"
+ },
+ "new_findings": [
+  "checkov:CKV_K8S_23:Deployment/frontend",
+  "checkov:CKV_K8S_40:Deployment/frontend",
+  "kics:02323c00-cdc3-4fdc-a310-4f2b3e7a1660:Deployment/frontend",
+  "kics:cf34805e-3872-4c08-bf92-6ff7bb0cfadb:Deployment/frontend",
+  "kube-score:container-security-context-user-group-id:Deployment/frontend"
+ ],
+ "gold_findings_lost": [],
+ "v1_flagged": true,
+ "v1_targets_present": true,
+ "unexpected_new_findings": [],
+ "v2_gold_clean_for_targets": true,
+ "dry_run_ok": true,
+ "ready_s": 32.9,
+ "all_available": true,
+ "functional_pass_rate": 1.0,
+ "l7_on_case": {
+  "static": {
+   "pass": 20,
+   "fail": 2,
+   "warn": 0,
+   "error": 0,
+   "failures": [
+    "require-run-as-nonroot -> boutique/Deployment/frontend",
+    "require-run-as-non-root-user -> boutique/Deployment/frontend"
+   ],
+   "ok": false
+  },
+  "runtime": {
+   "pod": "frontend-85957d7b67-pznqn",
+   "container": "server",
+   "ok": true,
+   "cap_eff": 0,
+   "cap_bnd": 0,
+   "no_new_privs": true,
+   "uid_real": 0,
+   "uid_effective": 0,
+   "seccomp": "2"
+  },
+  "runtime_ok": false,
+  "pass": false,
+  "intent": "the process runs with a non-zero effective UID"
+ },
+ "v3_deploys": true,
+ "v4_l7_flags_case": true,
+ "valid": true
+}

@@ -1,0 +1,15 @@
+{
+ "case_id": "allow-privilege-escalation-cartservice",
+ "service_port": 7070,
+ "type": "allow-privilege-escalation",
+ "fix_class": "a",
+ "service": "cartservice",
+ "reference_fix": "set securityContext.allowPrivilegeEscalation to false",
+ "target_rules": [
+  "checkov:CKV_K8S_20",
+  "kics:5572cc5e-1e4c-4113-92a6-7a8a3bd25e6d"
+ ],
+ "coupled_rules": [],
+ "gold_sha256": "08aa0feec0d6b47270472db2275acdc52479b3d80615bec107ab30682ac33dcb",
+ "case_sha256": "72cd8c338f15b88b1ff6659fe738dd62dd858e0a6dc264308fda77f75495d700"
+}

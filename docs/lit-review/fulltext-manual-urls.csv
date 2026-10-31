@@ -1,0 +1,9 @@
+rec_id,url,found_by
+R0772,https://dl.ifip.org/db/conf/networking/networking2026/1571260960.pdf,web search 2026-10-17 (exact title)
+R0099,https://amohan.mcm.edu/upload/conf_pubs/cloudbot2025.pdf,web search 2026-10-17 (title)
+R0030,https://par.nsf.gov/servlets/purl/10540424,web search 2026-10-17 (NSF PAR open copy)
+R0327,https://journals.uran.ua/tarp/article/download/365453/350957/850299,web search 2026-10-17 (publisher OA download)
+R0861,https://par.nsf.gov/servlets/purl/10646999,web search 2026-10-17 (NSF PAR open copy of IaC-Eval)
+R0860,https://scitepress.org/publishedPapers/2024/127103/pdf/index.html,web search 2026-10-17 (SciTePress paper PDF)
+R0862,https://hub.hku.hk/handle/10722/362932,web search 2026-10-17 (HKU repository page)
+R0861,https://proceedings.neurips.cc/paper_files/paper/2024/file/f26b29298ae8acd94bd7e839688e329b-Paper-Datasets_and_Benchmarks_Track.pdf,NeurIPS 2024 proceedings PDF (URL pattern from the abstract page found by web search)

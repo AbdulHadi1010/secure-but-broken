@@ -1,0 +1,50 @@
+% Methodology overview (the four phases of the approach). Hand-drawn diagram; counts come from macros or the design.
+\begin{figure*}[t]\centering
+\begin{tikzpicture}[
+  font=\scriptsize, node distance=2.5mm,
+  mstep/.style={draw, rounded corners=2pt, align=center, text width=31mm, minimum height=11.5mm, inner sep=2pt, fill=white},
+  key/.style={mstep, fill=black!14},
+  phase/.style={draw, dashed, rounded corners=4pt, inner sep=3.5mm},
+  ptitle/.style={font=\footnotesize\bfseries, align=center},
+  arr/.style={-{Stealth[length=2mm]}, thick}]
+  % Phase 1: literature review
+  \node[mstep] (s1) {Systematic search: arXiv, OpenAlex, IEEE Xplore, ACM DL + snowballing};
+  \node[mstep, below=of s1] (s2) {Two-stage screening with a second screener (agreement, $\kappa$)};
+  \node[mstep, below=of s2] (s3) {Extraction: oracle, deployment, app behaviour, runtime intent};
+  \node[key, below=of s3] (s4) {Gap: no study checks all three after deployment};
+  % Phase 2: prepare
+  \node[mstep, right=10mm of s1] (p1) {Gold app: Online Boutique, pinned by digest, hardened to scanner-clean};
+  \node[mstep, below=of p1] (p2) {Baseline: \BandRuns{} gold runs $\rightarrow$ working band (errors, p95)};
+  \node[mstep, below=of p2] (p3) {6 types $\times$ 3 services $\rightarrow$ 18 injected cases, each validated};
+  \node[key, below=of p3] (p4) {Intent per type: Kyverno policy + runtime probe; protocol frozen};
+  % Phase 3: repair and judge
+  \node[mstep, right=10mm of p1] (r1) {Repairer LLM (3 models, 2 prompt wordings) returns full manifests};
+  \node[mstep, below=of r1] (r2) {Static gates L1--L3: target rules, no new findings, dry run};
+  \node[mstep, below=of r2] (r3) {Fresh cluster L4--L7: ready, user journeys, load test, intent probes};
+  \node[key, below=of r3] (r4) {Verdict: safe / breaking / deceptive / not fixed / invalid};
+  % Phase 4: analyse
+  \node[mstep, right=12mm of r1] (a1) {RQ1--RQ2: breaking and deceptive rates (Wilson CIs)};
+  \node[mstep, below=of a1] (a2) {RQ3: by type and model (Fisher exact)};
+  \node[mstep, below=of a2] (a3) {RQ4: C0 vs C1 vs C2 (McNemar + Holm; mixed effects)};
+  \node[key, below=of a3] (a4) {Transfer: replay of final repairs on Amazon EKS};
+  % phase frames and titles
+  \foreach \n/\a/\b/\t in {f1/s1/s4/{1. Literature review},f2/p1/p4/{2. Prepare},
+                          f3/r1/r4/{3. Repair and judge},f4/a1/a4/{4. Analyse}} {
+    \node[phase, fit=(\a)(\b)] (\n) {};
+    \node[ptitle, above=0.5mm of \n.north] {\t};
+  }
+  \foreach \x/\y in {s1/s2,s2/s3,s3/s4,p1/p2,p2/p3,p3/p4,r1/r2,r2/r3,r3/r4,a1/a2,a2/a3,a3/a4} \draw[arr] (\x) -- (\y);
+  \draw[arr] (f1.east) -- (f2.west);
+  \draw[arr] (f2.east) -- (f3.west);
+  \draw[arr] (f3.east) -- (f4.west);
+  % feedback loop inside phase 3
+  \draw[arr, dashed] (r4.east) -- ++(2.6mm,0) |- (r1.east);
+\end{tikzpicture}
+\caption{Proposed methodology. (1) A systematic literature review establishes the gap. (2) Before any repair, a hardened
+gold application, its working band, validated misconfiguration cases and per-type security-intent checks are fixed in a
+pre-registered protocol. (3) Each repair chain gives a case to a repairer model and judges every attempt with static
+gates and on a freshly deployed cluster; under C1 and C2 the failure is fed back (dashed loop, Figure~\ref{fig:pipeline}).
+(4) Verdicts answer RQ1--RQ4, and a sample of final repairs is replayed on Amazon EKS. Shaded boxes are each phase's
+output.}
+\label{fig:method}
+\end{figure*}

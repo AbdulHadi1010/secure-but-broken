@@ -1,0 +1,26 @@
+{
+ "cluster_create_s": 41.5,
+ "ready_s_warm_cache": 32.1,
+ "healthy": {
+  "pass_rate": 1.0
+ },
+ "without_recommendationservice": {
+  "pass_rate": 0.8888888888888888,
+  "failed": [
+   "browseProduct has recommendations"
+  ]
+ },
+ "without_paymentservice": {
+  "pass_rate": 0.7777777777777778,
+  "failed": [
+   "checkout 200",
+   "checkout order complete"
+  ]
+ },
+ "without_adservice": {
+  "pass_rate": 1.0,
+  "failed": []
+ }
+}
+
+[exited with code 0]

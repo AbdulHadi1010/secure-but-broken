@@ -1,0 +1,27 @@
+rec_id	short_name	artefact	task	success_oracle
+R0171	LLMSecConfig	K8s	security repair	scanner clean
+R0399	K8s misconfig. in the wild	K8s	security repair	scanners clean
+R0444	KubeRepair	K8s	misconfig. repair	policy + dry-run
+R0331	KuTIE	K8s	security repair	static vs cluster truth
+R0156	KubeGuard	K8s	least privilege	F1 vs runtime logs
+R0340	TerraProbe	Terraform	security repair	layered static oracle
+R0049	LLM IaC repair (SecDev)	Terraform	security repair	scanner + manual check
+R0330	Security degradation in loops	Terraform	security repair	Checkov per iteration
+R0494	TerraRepair	Terraform	security repair	scanner clean
+R0382	IaC-Guard-V	multi-IaC	security repair	four static gates
+R0367	IacFix	CDK/CFN	security repair	build + SMT proof
+R0861	IaC-Eval	Terraform	generation	plan + Rego intent
+R0112	IaCGen / DPIaC-Eval	CFN	generation	cloud deploy succeeds
+R0856	InfraAPR	Pulumi	defect repair	deploy + OPA rule
+R0099	CloudBot	Terraform	generation	AWS deploy + app runs
+R0006	CloudEval-YAML	K8s	generation	unit tests on Minikube
+R0806	Source code to K8s manifests	K8s	generation	Skaffold deploy
+R0354	FDE-Bench	Docker/K8s	deploy config	rebuild + behaviour tests
+R0170	ChaosEater	K8s	resilience reconfig.	k6 steady states
+R0132	LLM autoscaling (thesis)	K8s HPA	scaling config	Locust SLOs
+R0435	OperAID	K8s (5G core)	fault remediation	live execution check
+R0410	Privacy orchestration	K8s + SDN	generation	runtime compliance
+R0755	KubeScribe	K8s runtime policies	policy generation	compile + path coverage
+R0865	Ansible security smells	Ansible	secure generation	CIS-CAT after deploy
+R0772	NetPolAgent	K8s NetPol	generation	connectivity probes
+R0462	SafeFix-Agent	Terraform	security repair	sandbox apply + smoke test

@@ -1,0 +1,32 @@
+% Pipeline overview (one attempt and the repair loop). Hand-drawn diagram, no numbers.
+\begin{figure*}[t]\centering
+\begin{tikzpicture}[
+  node distance=4mm and 5mm, font=\footnotesize,
+  box/.style={draw, rounded corners=2pt, align=center, minimum height=9mm, inner sep=3pt, fill=white},
+  gate/.style={draw, rounded corners=2pt, align=center, minimum height=9mm, minimum width=13mm, inner sep=2pt},
+  stat/.style={gate, fill=black!6}, run/.style={gate, fill=black!14},
+  arr/.style={-{Stealth[length=2mm]}, thick}]
+  \node[box] (case) {Case\\(gold + one\\misconfiguration)};
+  \node[box, right=of case] (rep) {Repairer\\LLM};
+  \node[stat, right=7mm of rep] (l1) {L1\\target rules};
+  \node[stat, right=2mm of l1] (l2) {L2\\no new\\findings};
+  \node[stat, right=2mm of l2] (l3) {L3\\server\\dry run};
+  \node[run, right=2mm of l3] (l4) {L4\\ready on\\fresh cluster};
+  \node[run, right=2mm of l4] (l5) {L5\\user\\journeys};
+  \node[run, right=2mm of l5] (l6) {L6\\load test\\vs.\ band};
+  \node[run, right=2mm of l6] (l7) {L7\\intent: policy\\+ runtime probe};
+  \node[box, below=9mm of l5] (ver) {Verdict: safe / breaking / deceptive /\\breaking+deceptive / not fixed / invalid};
+  \node[box, below=9mm of rep] (fb) {Feedback (C1: scanner findings;\\C2: runtime evidence, LLM or template)};
+  \draw[arr] (case) -- (rep);
+  \draw[arr] (rep) -- (l1);
+  \foreach \a/\b in {l1/l2,l2/l3,l3/l4,l4/l5,l5/l6,l6/l7} \draw[-, thick] (\a) -- (\b);
+  \draw[arr] (l7.south) |- (ver.east);
+  \draw[arr] (ver.west) -- node[above, font=\scriptsize]{not safe and attempts left} (fb.east);
+  \draw[arr] (fb.north) -- (rep.south);
+  \node[font=\scriptsize, above=1mm of l2] {static};
+  \node[font=\scriptsize, above=1mm of l5] {deployed and exercised};
+\end{tikzpicture}
+\caption{One repair attempt and the repair loop. Light gates are static checks (what prior work uses as the oracle);
+dark gates run on a freshly created cluster. C0 makes one attempt; C1 and C2 repeat with feedback up to five attempts.}
+\label{fig:pipeline}
+\end{figure*}

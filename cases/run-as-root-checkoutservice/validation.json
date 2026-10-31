@@ -1,0 +1,156 @@
+{
+ "case_id": "run-as-root-checkoutservice",
+ "validated": "2026-10-04T11:39:48.224588+00:00",
+ "scanners": {
+  "checkov": "bridgecrew/checkov@sha256:617c76e3f9b1f7907ebca9abb6b9d746844edcb48e9bd775e4692c69c1c6ac47",
+  "kics": "checkmarx/kics@sha256:3e5a268eb8adda2e5a483c9359ddfc4cd520ab856a7076dc0b1d8784a37e2602",
+  "kube-score": "zegl/kube-score@sha256:ac4c43ad560af905d66f6bf57b0937c591332e6dbf2167c31193a13b4695ab97"
+ },
+ "new_findings": [
+  "checkov:CKV_K8S_23:Deployment/checkoutservice",
+  "checkov:CKV_K8S_40:Deployment/checkoutservice",
+  "kics:02323c00-cdc3-4fdc-a310-4f2b3e7a1660:Deployment/checkoutservice",
+  "kics:cf34805e-3872-4c08-bf92-6ff7bb0cfadb:Deployment/checkoutservice",
+  "kube-score:container-security-context-user-group-id:Deployment/checkoutservice"
+ ],
+ "gold_findings_lost": [],
+ "v1_flagged": true,
+ "v1_targets_present": true,
+ "unexpected_new_findings": [],
+ "v2_gold_clean_for_targets": true,
+ "dry_run_ok": true,
+ "ready_s": 33.5,
+ "all_available": true,
+ "functional_pass_rate": 1.0,
+ "l7_on_case": {
+  "static": {
+   "pass": 20,
+   "fail": 2,
+   "warn": 0,
+   "error": 0,
+   "failures": [
+    "require-run-as-nonroot -> boutique/Deployment/checkoutservice",
+    "require-run-as-non-root-user -> boutique/Deployment/checkoutservice"
+   ],
+   "ok": false
+  },
+  "runtime": {
+   "pod": "checkoutservice-8455cfc59c-7n7pl",
+   "container": "server",
+   "ok": true,
+   "cap_eff": 0,
+   "cap_bnd": 0,
+   "no_new_privs": true,
+   "uid_real": 0,
+   "uid_effective": 0,
+   "seccomp": "2"
+  },
+  "runtime_ok": false,
+  "pass": false,
+  "intent": "the process runs with a non-zero effective UID"
+ },
+ "pods": [
+  {
+   "name": "adservice-8458b4797c-svhgp",
+   "app": "adservice",
+   "phase": "Running",
+   "ready": true,
+   "restarts": 0,
+   "last_terminated_reason": null,
+   "waiting_reason": null
+  },
+  {
+   "name": "cartservice-6b87d49788-nhbm2",
+   "app": "cartservice",
+   "phase": "Running",
+   "ready": true,
+   "restarts": 0,
+   "last_terminated_reason": null,
+   "waiting_reason": null
+  },
+  {
+   "name": "checkoutservice-8455cfc59c-7n7pl",
+   "app": "checkoutservice",
+   "phase": "Running",
+   "ready": true,
+   "restarts": 0,
+   "last_terminated_reason": null,
+   "waiting_reason": null
+  },
+  {
+   "name": "currencyservice-86d7b97dbc-pgct7",
+   "app": "currencyservice",
+   "phase": "Running",
+   "ready": true,
+   "restarts": 0,
+   "last_terminated_reason": null,
+   "waiting_reason": null
+  },
+  {
+   "name": "emailservice-cdd886b76-52mc2",
+   "app": "emailservice",
+   "phase": "Running",
+   "ready": true,
+   "restarts": 0,
+   "last_terminated_reason": null,
+   "waiting_reason": null
+  },
+  {
+   "name": "frontend-7dfdb7cdfd-2v5pb",
+   "app": "frontend",
+   "phase": "Running",
+   "ready": true,
+   "restarts": 0,
+   "last_terminated_reason": null,
+   "waiting_reason": null
+  },
+  {
+   "name": "paymentservice-68f4749f6f-vpm7r",
+   "app": "paymentservice",
+   "phase": "Running",
+   "ready": true,
+   "restarts": 0,
+   "last_terminated_reason": null,
+   "waiting_reason": null
+  },
+  {
+   "name": "productcatalogservice-575b6f888d-6nkzk",
+   "app": "productcatalogservice",
+   "phase": "Running",
+   "ready": true,
+   "restarts": 0,
+   "last_terminated_reason": null,
+   "waiting_reason": null
+  },
+  {
+   "name": "recommendationservice-847c46b576-ljw9x",
+   "app": "recommendationservice",
+   "phase": "Running",
+   "ready": true,
+   "restarts": 0,
+   "last_terminated_reason": null,
+   "waiting_reason": null
+  },
+  {
+   "name": "redis-cart-64f7459c49-zvrpp",
+   "app": "redis-cart",
+   "phase": "Running",
+   "ready": true,
+   "restarts": 0,
+   "last_terminated_reason": null,
+   "waiting_reason": null
+  },
+  {
+   "name": "shippingservice-58484f78cd-q2qkx",
+   "app": "shippingservice",
+   "phase": "Running",
+   "ready": true,
+   "restarts": 0,
+   "last_terminated_reason": null,
+   "waiting_reason": null
+  }
+ ],
+ "v3_deploys": true,
+ "v4_l7_flags_case": true,
+ "valid": true
+}

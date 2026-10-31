@@ -1,0 +1,27 @@
+# Blind second screening (independent AI session, title/abstract only, blind to first-screener decisions) - IEEE block
+# Codes: I | ? | X1 | X2 | X3 | X4 | X5 | X6
+R0724 X1 intent-based network security enforcement; no LLM producing configuration
+R0732 X1 metamodel-driven Vagrant generation; no LLM involved
+R0736 X1 license plate recognition; unrelated to IaC
+R0743 X1 rule-based Kubernetes self-healing; no LLM generating configuration
+R0744 I foundation models on Bedrock for IaC/CloudFormation misconfigurations, evaluated
+R0756 ? intelligent K8s network policy generation; LLM use unclear from abstract
+R0763 ? LLM-orchestrated cloud pipeline automation; may generate infra configs
+R0771 X1 RAG-driven autoscaling decisions, not configuration generation
+R0777 ? LLM agents generate cyber range scenarios; may include deployment configs
+R0782 X1 AI-integrated DevSecOps pipeline; no LLM producing IaC evident
+R0783 X1 LLM configuration of cloud-native 5G core; network config excluded
+R0786 X1 LLM-driven autoscaling decisions, not configuration generation
+R0787 X1 agentic AI troubleshooting/remediation; no IaC configuration generation
+R0788 X1 Open RAN automation; RAN configuration excluded
+R0791 X1 KV cache placement for LLM serving; off-topic
+R0792 X6 course/study guide, not a research paper
+R0793 X6 course/handbook, not a research paper
+R0796 X6 book on Apache Airflow, not a research paper
+R0805 X1 GPU/cluster scheduling packing; no LLM configuration generation
+R0817 X1 LLM reverse-engineers code into SysML; not IaC
+R0822 X1 LLMOps framework for enterprise AI platforms; off-topic
+R0830 ? NLP-based NL-to-AWS template generation; LLM use and evaluation unclear
+R0833 X6 course, not a research paper
+R0835 X1 LLM hallucination mitigation; off-topic
+R0838 X6 course on Google Cloud delivery, not a research paper

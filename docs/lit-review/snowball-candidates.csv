@@ -1,0 +1,7 @@
+candidate,source_of_lead,note
+arXiv 2512.14792 IaC Generation with LLMs: An Error Taxonomy and A Study on Configuration Knowledge Injection,web search while locating R0352,check if already a record; else snowballing candidate
+arXiv 2411.19043 Using a Feedback Loop for LLM-based Infrastructure as Code Generation,web search while locating R0496,already a record (R0146/R0053/R0043/R0089)
+arXiv 2510.20211 Automated Cloud Infrastructure-as-Code Reconciliation with AI Agents (NSYNC),web search while locating R0462,not a record: snowballing candidate
+arXiv 2408.11428 Migrating Existing Container Workload to Kubernetes - LLM Based Approach and Evaluation,web search while locating R0030,already a record (R0146/R0053/R0043/R0089)
+SBC WebMedia 2025 Automating Cloud Infrastructure Provisioning with Semantically-Enriched LLMs,web search while locating R0496,already a record (R0146/R0053/R0043/R0089)
+TerraFault (Xiang et al.): LLM agents generate mutate deploy and analyze IaC updates,cited in R0496 related work,not yet checked against records

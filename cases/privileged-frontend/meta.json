@@ -1,0 +1,19 @@
+{
+ "case_id": "privileged-frontend",
+ "service_port": 80,
+ "type": "privileged",
+ "fix_class": "a",
+ "service": "frontend",
+ "reference_fix": "set securityContext.privileged to false (or remove it) and restore allowPrivilegeEscalation: false",
+ "target_rules": [
+  "checkov:CKV_K8S_16",
+  "kics:dd29336b-fe57-445b-a26e-e6aa867ae609",
+  "kube-score:container-security-context-privileged"
+ ],
+ "coupled_rules": [
+  "checkov:CKV_K8S_20",
+  "kics:5572cc5e-1e4c-4113-92a6-7a8a3bd25e6d"
+ ],
+ "gold_sha256": "08aa0feec0d6b47270472db2275acdc52479b3d80615bec107ab30682ac33dcb",
+ "case_sha256": "6c15547f7ac58f985599e43c693d72e32d779191f29000ddec1b5e50dd38f26e"
+}

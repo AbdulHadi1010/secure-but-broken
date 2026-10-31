@@ -1,0 +1,14 @@
+{
+ "case_id": "netpol-productcatalogservice",
+ "service_port": 3550,
+ "type": "netpol",
+ "fix_class": "c",
+ "service": "productcatalogservice",
+ "reference_fix": "restore a NetworkPolicy for the service that admits only its real callers on its port (gold: upstream policy) and let deny-all select it again",
+ "target_rules": [
+  "kube-score:pod-networkpolicy"
+ ],
+ "coupled_rules": [],
+ "gold_sha256": "08aa0feec0d6b47270472db2275acdc52479b3d80615bec107ab30682ac33dcb",
+ "case_sha256": "b077f349aad1dfc2c039c06fce55eb0e49d5990ab875b0876acb8cb65479bf39"
+}

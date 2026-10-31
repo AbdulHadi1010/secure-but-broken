@@ -1,0 +1,4 @@
+Data, documents and figures in this repository (everything outside the code directories harness/, scripts/,
+analysis/*.py, worker/, infra/, injectors/, tests/) are licensed under the Creative Commons Attribution 4.0
+International licence (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/
+Third-party material keeps its own licence (Google Online Boutique manifests: Apache License 2.0).

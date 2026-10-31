@@ -1,0 +1,10 @@
+{
+  "_note": "Corrections applied by scripts/lit/make_bib.py on top of records.csv (index metadata). Each one was checked against the full text read during full-text screening.",
+  "R0340": {"title": "TerraProbe: A Layered-Oracle Framework for Detecting Deceptive Fixes in LLM-Assisted Terraform Security Repair", "why": "index title carried the journal name as a prefix; title as on the paper"},
+  "R0330": {"kind": "inproceedings", "booktitle": "20th International Symposium on Empirical Software Engineering and Measurement (ESEM 2026), LIPIcs", "doi": "10.4230/LIPIcs.ESEM.2026.50", "why": "paper states ESEM 2026 technical track (LIPIcs)"},
+  "R0494": {"kind": "inproceedings", "booktitle": "20th International Symposium on Empirical Software Engineering and Measurement (ESEM 2026), LIPIcs", "doi": "10.4230/LIPIcs.ESEM.2026.68", "why": "paper states ESEM 2026 (LIPIcs)"},
+  "R0112": {"journal": "Proceedings of the ACM on Software Engineering (FSE)", "why": "venue name tidied"},
+  "R0861": {"booktitle": "Advances in Neural Information Processing Systems 37, Datasets and Benchmarks Track", "why": "venue name tidied"},
+  "R0132": {"kind": "mastersthesis", "school": "University of Stuttgart", "why": "master's thesis (OPUS Stuttgart)"},
+  "R0099": {"kind": "misc", "howpublished": "MD-SOAR repository, University System of Maryland", "why": "repository deposit, not a journal"}
+}

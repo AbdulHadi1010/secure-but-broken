@@ -1,0 +1,133 @@
+# Literature search log (append-only)
+
+## arxiv — 2026-10-17 07:20 UTC
+- Hits: 0
+- Raw: `docs/lit-review/raw/arxiv-20261017.jsonl`
+- Exact query:
+```
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI") AND all:"infrastructure as code" AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI") AND all:"infrastructure-as-code" AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI") AND all:IaC AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI") AND all:Kubernetes AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI") AND all:Terraform AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI") AND all:Helm AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI") AND all:"cloud configuration" AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI") AND all:misconfiguration AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI") AND all:misconfigurations AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
++ local filter on title+abstract: \b(repair|fix|remediat|harden|generat)
+```
+
+## arxiv — 2026-10-17 07:22 UTC
+- Hits: 0
+- Raw: `docs/lit-review/raw/arxiv-20261017.jsonl`
+- Exact query:
+```
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI") AND all:"infrastructure as code" AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI") AND all:"infrastructure-as-code" AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI") AND all:IaC AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI") AND all:Kubernetes AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI") AND all:Terraform AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI") AND all:Helm AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI") AND all:"cloud configuration" AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI") AND all:misconfiguration AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI") AND all:misconfigurations AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
++ local filter on title+abstract: \b(repair|fix|remediat|harden|generat)
+```
+
+## arxiv — 2026-10-17 07:23 UTC
+- Hits: 103
+- Raw: `docs/lit-review/raw/arxiv-20261017.jsonl`
+- Exact query:
+```
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI") AND all:"infrastructure as code" AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI") AND all:"infrastructure-as-code" AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI") AND all:IaC AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI") AND all:Kubernetes AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI") AND all:Terraform AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI") AND all:Helm AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI") AND all:"cloud configuration" AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI") AND all:misconfiguration AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI") AND all:misconfigurations AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
++ local filter on title+abstract: \b(repair|fix|remediat|harden|generat)
+```
+
+> Note (2026-10-17): the two arXiv entries above with 0 hits are INVALID runs: the local task filter's regex was broken by
+> a shell escaping error (a backspace character instead of `\b`), so every record was filtered out. Fixed and re-run; the
+> entry below (103 hits) is the valid arXiv run. Seed check: all six seed works found (LLMSecConfig 2502.02009,
+> TerraProbe 2606.26590, IaC-Guard-V 2609.28488, KuTIE 2607.25995, KubeGuard 2509.04191, IaCGen/DPIaC-Eval 2506.05623).
+
+> Correction (2026-10-17): in the note above, the valid 103-hit arXiv run is the entry ABOVE the note, not below.
+
+## openalex — 2026-10-17 07:28 UTC
+- Hits: 523
+- Raw: `docs/lit-review/raw/openalex-20261017.jsonl`
+- Exact query:
+```
+title_and_abstract.search:("large language model" OR "large language models" OR "LLM" OR "LLMs" OR "GPT" OR "code model" OR "code models" OR "generative AI") AND ("infrastructure as code" OR "infrastructure-as-code" OR "IaC" OR "Kubernetes" OR "Terraform" OR "Helm" OR "cloud configuration" OR "misconfiguration" OR "misconfigurations") AND ("repair" OR "repairs" OR "repairing" OR "fix" OR "fixes" OR "fixing" OR "remediate" OR "remediation" OR "remediating" OR "harden" OR "hardening" OR "generate" OR "generation" OR "generating" OR "generated"),from_publication_date:2023-01-01,to_publication_date:2026-10-31
+```
+
+## openalex — 2026-10-17 09:56 UTC
+- Hits: 715
+- Raw: `docs/lit-review/raw/openalex-v1.1-20261017.jsonl`
+- Exact query:
+```
+title_and_abstract.search:("large language model" OR "large language models" OR "LLM" OR "LLMs" OR "GPT" OR "code model" OR "code models" OR "generative AI" OR "language model" OR "language models" OR "foundation model" OR "foundation models") AND ("infrastructure as code" OR "infrastructure-as-code" OR "IaC" OR "Kubernetes" OR "Terraform" OR "Helm" OR "cloud configuration" OR "misconfiguration" OR "misconfigurations" OR "Ansible" OR "CloudFormation" OR "Pulumi" OR "Puppet" OR "Chef" OR "Dockerfile" OR "Dockerfiles" OR "Docker Compose") AND ("repair" OR "repairs" OR "repairing" OR "fix" OR "fixes" OR "fixing" OR "remediate" OR "remediation" OR "remediating" OR "harden" OR "hardening" OR "generate" OR "generation" OR "generating" OR "generated"),from_publication_date:2023-01-01,to_publication_date:2026-10-31
+```
+
+## arxiv — 2026-10-17 09:57 UTC
+- Hits: 140
+- Raw: `docs/lit-review/raw/arxiv-v1.1-20261017.jsonl`
+- Exact query:
+```
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI" OR all:"language model" OR all:"language models" OR all:"foundation model" OR all:"foundation models") AND all:"infrastructure as code" AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI" OR all:"language model" OR all:"language models" OR all:"foundation model" OR all:"foundation models") AND all:"infrastructure-as-code" AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI" OR all:"language model" OR all:"language models" OR all:"foundation model" OR all:"foundation models") AND all:IaC AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI" OR all:"language model" OR all:"language models" OR all:"foundation model" OR all:"foundation models") AND all:Kubernetes AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI" OR all:"language model" OR all:"language models" OR all:"foundation model" OR all:"foundation models") AND all:Terraform AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI" OR all:"language model" OR all:"language models" OR all:"foundation model" OR all:"foundation models") AND all:Helm AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI" OR all:"language model" OR all:"language models" OR all:"foundation model" OR all:"foundation models") AND all:"cloud configuration" AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI" OR all:"language model" OR all:"language models" OR all:"foundation model" OR all:"foundation models") AND all:misconfiguration AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI" OR all:"language model" OR all:"language models" OR all:"foundation model" OR all:"foundation models") AND all:misconfigurations AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI" OR all:"language model" OR all:"language models" OR all:"foundation model" OR all:"foundation models") AND all:Ansible AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI" OR all:"language model" OR all:"language models" OR all:"foundation model" OR all:"foundation models") AND all:CloudFormation AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI" OR all:"language model" OR all:"language models" OR all:"foundation model" OR all:"foundation models") AND all:Pulumi AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI" OR all:"language model" OR all:"language models" OR all:"foundation model" OR all:"foundation models") AND all:Puppet AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI" OR all:"language model" OR all:"language models" OR all:"foundation model" OR all:"foundation models") AND all:Chef AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI" OR all:"language model" OR all:"language models" OR all:"foundation model" OR all:"foundation models") AND all:Dockerfile AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI" OR all:"language model" OR all:"language models" OR all:"foundation model" OR all:"foundation models") AND all:Dockerfiles AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI" OR all:"language model" OR all:"language models" OR all:"foundation model" OR all:"foundation models") AND all:"Docker Compose" AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
++ local filter on title+abstract: \b(repair|fix|remediat|harden|generat)
+```
+
+## openalex — 2026-10-17 10:00 UTC
+- Hits: 725
+- Raw: `docs/lit-review/raw/openalex-v1.2-20261017.jsonl`
+- Exact query:
+```
+title_and_abstract.search:("large language model" OR "large language models" OR "LLM" OR "LLMs" OR "GPT" OR "code model" OR "code models" OR "generative AI" OR "language model" OR "language models" OR "foundation model" OR "foundation models") AND ("infrastructure as code" OR "infrastructure-as-code" OR "IaC" OR "Kubernetes" OR "Terraform" OR "Helm" OR "cloud configuration" OR "misconfiguration" OR "misconfigurations" OR "Ansible" OR "CloudFormation" OR "Pulumi" OR "Puppet" OR "Chef" OR "Dockerfile" OR "Dockerfiles" OR "Docker Compose") AND ("repair" OR "repairs" OR "repairing" OR "fix" OR "fixes" OR "fixing" OR "remediate" OR "remediation" OR "remediating" OR "harden" OR "hardening" OR "generate" OR "generation" OR "generating" OR "generated" OR "self-healing" OR "self healing"),from_publication_date:2023-01-01,to_publication_date:2026-10-31
+```
+
+## arxiv — 2026-10-17 10:00 UTC
+- Hits: 140
+- Raw: `docs/lit-review/raw/arxiv-v1.2-20261017.jsonl`
+- Exact query:
+```
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI" OR all:"language model" OR all:"language models" OR all:"foundation model" OR all:"foundation models") AND all:"infrastructure as code" AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI" OR all:"language model" OR all:"language models" OR all:"foundation model" OR all:"foundation models") AND all:"infrastructure-as-code" AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI" OR all:"language model" OR all:"language models" OR all:"foundation model" OR all:"foundation models") AND all:IaC AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI" OR all:"language model" OR all:"language models" OR all:"foundation model" OR all:"foundation models") AND all:Kubernetes AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI" OR all:"language model" OR all:"language models" OR all:"foundation model" OR all:"foundation models") AND all:Terraform AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI" OR all:"language model" OR all:"language models" OR all:"foundation model" OR all:"foundation models") AND all:Helm AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI" OR all:"language model" OR all:"language models" OR all:"foundation model" OR all:"foundation models") AND all:"cloud configuration" AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI" OR all:"language model" OR all:"language models" OR all:"foundation model" OR all:"foundation models") AND all:misconfiguration AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI" OR all:"language model" OR all:"language models" OR all:"foundation model" OR all:"foundation models") AND all:misconfigurations AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI" OR all:"language model" OR all:"language models" OR all:"foundation model" OR all:"foundation models") AND all:Ansible AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI" OR all:"language model" OR all:"language models" OR all:"foundation model" OR all:"foundation models") AND all:CloudFormation AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI" OR all:"language model" OR all:"language models" OR all:"foundation model" OR all:"foundation models") AND all:Pulumi AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI" OR all:"language model" OR all:"language models" OR all:"foundation model" OR all:"foundation models") AND all:Puppet AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI" OR all:"language model" OR all:"language models" OR all:"foundation model" OR all:"foundation models") AND all:Chef AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI" OR all:"language model" OR all:"language models" OR all:"foundation model" OR all:"foundation models") AND all:Dockerfile AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI" OR all:"language model" OR all:"language models" OR all:"foundation model" OR all:"foundation models") AND all:Dockerfiles AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
+(all:"large language model" OR all:"large language models" OR all:LLM OR all:LLMs OR all:GPT OR all:"code model" OR all:"code models" OR all:"generative AI" OR all:"language model" OR all:"language models" OR all:"foundation model" OR all:"foundation models") AND all:"Docker Compose" AND (cat:cs.SE OR cat:cs.CR OR cat:cs.AI OR cat:cs.DC OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[202301010000 TO 202610312359]
++ local filter on title+abstract: \b(repair|fix|remediat|harden|generat)
+```

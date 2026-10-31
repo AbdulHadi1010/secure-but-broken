@@ -1,0 +1,14 @@
+{
+ "case_id": "netpol-checkoutservice",
+ "service_port": 5050,
+ "type": "netpol",
+ "fix_class": "c",
+ "service": "checkoutservice",
+ "reference_fix": "restore a NetworkPolicy for the service that admits only its real callers on its port (gold: upstream policy) and let deny-all select it again",
+ "target_rules": [
+  "kube-score:pod-networkpolicy"
+ ],
+ "coupled_rules": [],
+ "gold_sha256": "08aa0feec0d6b47270472db2275acdc52479b3d80615bec107ab30682ac33dcb",
+ "case_sha256": "c7db7e384e7e8e39a21b384813c9565a1df7bf6e40947b926c2de995e804eb53"
+}

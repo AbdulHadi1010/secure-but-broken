@@ -1,0 +1,22 @@
+excel_id,title
+A1,Automated Code Generation for IT Tasks in YAML through Large Language Models
+A2,Ansible Lightspeed: A Code Generation Service for IT Automation
+A3,CloudEval-YAML: A Practical Benchmark for Cloud Configuration Generation
+A4,IaC-Eval: A Code Generation Benchmark for Cloud Infrastructure-as-Code Programs
+A5,Multi-IaC-Eval: Benchmarking Cloud Infrastructure as Code Across Multiple Formats
+A6,Deployability-Centric Infrastructure-as-Code Generation
+A7,TerraFormer: Automated Infrastructure-as-Code with LLMs Fine-Tuned via Policy-Guided Verifier Feedback
+A8,Compared to What? A Human-Anchored Security Benchmark for LLM-Generated Infrastructure-as-Code
+A9,Security-First Evaluation of Text-to-Terraform
+A10,SWE-InfraBench: Evaluating Language Models on Cloud Infrastructure Code
+B4,GenKubeSec: LLM-Based Kubernetes Misconfiguration Detection Localization Reasoning and Remediation
+B5,Kubernetes Misconfigurations in the Wild: Taxonomy Evolution and Automated Repair with Large Language Models
+C1,Repairing Infrastructure-as-Code using Large Language Models
+C2,Towards the Self-Healing of IaC Projects Using Constrained LLM Technologies
+C3,LLMSecConfig: An LLM-Based Approach for Fixing Software Container Misconfigurations
+C4,KubeGuard: LLM-Assisted Kubernetes Hardening via Configuration Files and Runtime Logs Analysis
+C5,Does Runtime Topology Context Improve LLM-Generated Kubernetes Security Patches?
+C6,TerraProbe: A Layered-Oracle Framework for Detecting Deceptive Fixes in LLM-Assisted Terraform Security Repair
+C7,IaC-Guard-V: A Verification Framework for LLM-Generated Infrastructure-as-Code Repairs
+C8,Does Fixing Break Security? An Empirical Study of Security Degradation in Iterative LLM-Driven Infrastructure-as-Code Repair
+C9,TerraRepair: A Tool-Grounded LLM Agent for Infrastructure-as-Code Repair

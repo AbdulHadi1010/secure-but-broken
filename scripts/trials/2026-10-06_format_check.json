@@ -1,0 +1,78 @@
+{
+ "case": "privileged-frontend",
+ "repairers": [
+  {
+   "key": "kimi-k3",
+   "model_id": "us.moonshotai.kimi-k3",
+   "input_tokens": 7,
+   "output_tokens": 7513,
+   "cost_usd": 0.123985,
+   "wall_s": 53.06,
+   "stop_reason": "end_turn",
+   "temperature_sent": null,
+   "parsed": true,
+   "n_docs": 45
+  },
+  {
+   "key": "glm-5",
+   "model_id": "zai.glm-5",
+   "input_tokens": 7862,
+   "output_tokens": 7641,
+   "cost_usd": 0.032313,
+   "wall_s": 84.28,
+   "stop_reason": "end_turn",
+   "temperature_sent": 0.2,
+   "parsed": true,
+   "n_docs": 45
+  },
+  {
+   "key": "deepseek-v3-2",
+   "model_id": "deepseek.v3.2",
+   "input_tokens": 8022,
+   "output_tokens": 7791,
+   "cost_usd": 0.019387,
+   "wall_s": 127.26,
+   "stop_reason": "end_turn",
+   "temperature_sent": 0.2,
+   "parsed": true,
+   "n_docs": 45
+  },
+  {
+   "key": "gpt-oss-120b",
+   "model_id": "openai.gpt-oss-120b-1:0",
+   "input_tokens": 7697,
+   "output_tokens": 7635,
+   "cost_usd": 0.005736,
+   "wall_s": 46.52,
+   "stop_reason": "end_turn",
+   "temperature_sent": 0.2,
+   "parsed": true,
+   "n_docs": 45
+  },
+  {
+   "key": "qwen3-coder-next",
+   "model_id": "qwen.qwen3-coder-next",
+   "input_tokens": 8476,
+   "output_tokens": 8209,
+   "cost_usd": 0.014089,
+   "wall_s": 183.2,
+   "stop_reason": "end_turn",
+   "temperature_sent": 0.2,
+   "parsed": true,
+   "n_docs": 45
+  }
+ ],
+ "moderator": {
+  "key": "mistral-large-3",
+  "source": "llm",
+  "usage": [
+   {
+    "input_tokens": 8635,
+    "output_tokens": 187,
+    "wall_s": 3.08,
+    "cost_usd": 0.004598
+   }
+  ],
+  "message_head": "### What failed\n- A workload pod repeatedly terminated with an error and entered a crash loop, preventing it from becoming ready [E1].\n- The failing workload pod attempted to bind to a privileged port but was denied due to insufficient permissions [E2].\n\n### Evidence\n- [E1] `pod frontend-x phase=Running ready=False restarts=4 (last_terminated_reason=Error, waiting_reason=CrashLoopBackOff)`\n- [E2] `error lines in the log of frontend-x: listen tcp :80: bind: permission denied`\n\n### Constraints still required\n- All workloads must run as non-root users with the least privileges necessary.\n- Securi"
+ }
+}

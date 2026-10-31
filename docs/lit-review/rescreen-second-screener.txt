@@ -1,0 +1,146 @@
+# Blind second screening (independent AI session, title/abstract only, blind to first-screener decisions)
+# Codes: I | ? | X1 | X2 | X3 | X4 | X5 | X6
+R0005 X1 ChatGPT in dentistry, unrelated
+R0006 I benchmark of LLM cloud/K8s YAML configuration generation
+R0008 X1 Salesforce access-control pipelines, not IaC generation
+R0011 X1 table-to-text generation
+R0013 X2 LLM detects and explains K8s misconfigurations only
+R0015 X3 generative AI cloud-ops framework, no evident evaluation
+R0020 X1 quantum DevOps framework, no LLM config generation
+R0021 X1 LLM standardizes cost data, not configuration
+R0032 X1 GenAI performance on edge devices
+R0040 X1 LLM for policy compliance analysis, no config produced
+R0042 X1 LLM metacognition annotation
+R0049 I LLM repair of IaC misconfigurations
+R0051 ? guardrails for copilot-generated IaC; unclear whether generation evaluated
+R0060 X3 review of GenAI in DevOps
+R0073 ? DevOps framework incl. LLM IaC generation, simulated evaluation
+R0075 X1 HFT self-healing via telemetry, not config generation
+R0078 X1 healthcare insurance AI architecture
+R0080 X1 financial document RAG
+R0084 X1 notebook executability
+R0087 X6 artifact record; drone configurations
+R0089 I LLM Terraform generation evaluated on IaC-Eval
+R0091 X1 hybrid cloud automation, no LLM
+R0096 ? K8s security framework with LLM policy generation, evaluated
+R0102 X1 LLM intent translation for service migration
+R0107 X1 LLM forensic explanations post-incident
+R0115 X1 GenAI threat detection platform, config generation peripheral
+R0120 X1 edge computing latency
+R0125 X1 supply chain security analysis
+R0126 X1 deprescribing clinical AI
+R0128 X6 untitled fragment "Evaluation", no abstract
+R0131 X1 anomaly detection explanation
+R0140 ? GenAI IaC generation/remediation, vague experimental claims
+R0142 X1 SDN intent-based networking
+R0146 I LLM Terraform generation with knowledge injection, evaluated
+R0149 I SLM IaC generation benchmark and training, evaluated
+R0156 I LLM generates/refines K8s manifests, evaluated
+R0157 ? LLM K8s management agent; config writes unclear
+R0158 I LLM cloud configuration generation with deployment feedback
+R0163 ? thesis generating IoT IaC/configs; evaluation unclear
+R0168 X2 LLM configuration audit detection
+R0169 X1 cloud automation agent, no config generation shown
+R0178 X1 SDN P4 network policy generation
+R0181 X6 dataset; network troubleshooting
+R0183 X1 MLOps overview
+R0188 I LLM Kubernetes manifest generation with error feedback
+R0190 ? LLM container orchestration via MCP commands
+R0201 X1 hybrid cloud compliance, no LLM
+R0208 X1 video RAG workflow
+R0217 X1 supply chain risk monitoring
+R0229 ? no abstract; security policy generation for cloud-native
+R0231 X1 ML platform integration pattern
+R0238 X6 source code; IoT state machines
+R0247 X1 OS hardening compliance survey
+R0259 X1 anomaly detection and RCA
+R0288 X1 AI curricula analysis
+R0293 X1 mobile DSL generation, no abstract
+R0296 X4 observability in agent-generated application code
+R0297 X1 LLM warm starts for configuration optimization, not IaC
+R0302 X3 formal specification, no evaluation
+R0304 X6 software/benchmark release record
+R0307 X2 LLM explains confirmed findings, no config produced
+R0310 X1 GenAI service recovery diagnostics
+R0313 X1 deploying LLMs on K8s, not LLM-generated config
+R0315 X1 LLM spot-instance allocation planning
+R0316 X1 philosophy of creativity
+R0319 X1 detection rule generation benchmark
+R0323 X1 autonomous SRE agent for Elasticsearch operations
+R0329 X1 LLM maintenance reasoning framework
+R0331 I LLM K8s security patches, runtime-context evaluation
+R0332 ? no abstract; LLM IaC generation with security feedback
+R0335 X6 podcast episode
+R0338 X1 educational content generation
+R0350 X1 LLM incident response action selection
+R0351 X1 system package build repair
+R0358 X3 survey of agentic CI/CD
+R0361 X1 anomaly detection and root cause
+R0362 X6 software/reproducibility artifact record
+R0370 I fine-tuned model Terraform generation, validated
+R0375 X1 simulated cyber defense agents
+R0378 X1 peptide naming
+R0386 ? no abstract; multi-cloud deployment failure remediation agent
+R0387 X1 retail checkout GenAI
+R0389 X2 IaC smell detection only
+R0391 X1 no abstract; CPU heterogeneity management
+R0394 X6 software/repository record
+R0406 I LLM generates K8s zero-trust policies, evaluated
+R0407 ? LLM VNF deployment workflows validated on K8s twin
+R0411 X1 network slice descriptors, network domain
+R0422 X1 Arabic LLM benchmark
+R0427 X6 software repository; FaaS code transformation
+R0429 X1 accounts payable automation
+R0438 X6 podcast episode
+R0440 X6 artifact evaluation package
+R0449 X1 genomic report summarization
+R0450 X6 dataset of Checkov findings
+R0456 X6 replication package record
+R0461 X3 synthesis and framework, evaluation only specified
+R0463 X1 ML CI/CD vulnerability detection
+R0464 X4 LLM SAST for application code
+R0472 I LLM agents remediate Terraform drift/misconfigurations, evaluated
+R0475 ? no abstract; LLM policy-as-code IaC hardening
+R0485 X1 LLM chaos workload synthesis
+R0490 I benchmark of LLM AWS CDK IaC edits
+R0497 X3 overview of AI vulnerability management
+R0500 X4 security smells in coding-agent code
+R0504 X1 LLM DevOps concept classification
+R0505 X1 harm incident catalogue
+R0507 X6 experiment runs record
+R0509 X6 podcast episode
+R0510 X1 generative surveying statistics
+R0514 X4 code knowledge graph for coding agents
+R0520 I LLM Ansible YAML generation evaluated
+R0521 X1 recipe revision
+R0523 X1 ChatGPT penetration testing reconnaissance
+R0526 X1 aspect term extraction
+R0535 I controlled LLM Ansible YAML generation evaluated
+R0537 X1 food LLM, no abstract
+R0544 I LLM Ansible code completion usage evaluation
+R0547 X1 social media influence operations
+R0556 X6 software release
+R0562 X6 podcast episode
+R0564 X1 Grok deliberation study
+R0567 X1 meal planning
+R0569 I LLM-generated Ansible remediation playbooks benchmark
+R0570 X6 dataset; microservice code generation
+R0577 X6 supplementary material; state machine synthesis
+R0579 X1 AI personhood
+R0582 X6 software release YOLO
+R0586 X1 fact-checking
+R0592 X1 recipe generation
+R0602 X1 recommender auditing
+R0622 X6 code/model reproduction material
+R0642 X6 podcast episode
+R0646 X1 theoretical physics
+R0669 X6 replication package; program repair
+R0674 X6 reproduction code record
+R0680 X6 software; presentation-to-video
+R0689 X1 digital twin model debugging
+R0699 X1 personalization audits
+R0702 X6 research artifact; formal specifications
+R0703 X6 software release
+R0706 X1 GitHub repository contents study
+R0710 X3 review of ML for IaC security
+R0719 X1 incident retrospection framework

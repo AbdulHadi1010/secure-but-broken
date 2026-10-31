@@ -1,0 +1,6 @@
+{
+ "A_permissive": [],
+ "B_missing": [
+  "kube-score pod-networkpolicy | Pod NetworkPolicy"
+ ]
+}

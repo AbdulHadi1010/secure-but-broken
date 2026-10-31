@@ -1,0 +1,5 @@
+query,found_by
+IaC-Eval: A code generation benchmark for cloud infrastructure code,known seed (Kon et al. 2024); missed by the database searches (logged limitation)
+Automated Cloud Infrastructure-as-Code Reconciliation with AI Agents,web search while locating R0462 (NSYNC; arXiv 2510.20211)
+Automated Bug Discovery in Cloud Infrastructure as Code Updates with LLM Agents,cited in R0496 related work (TerraFault)
+Evaluating and Preventing Security Smells in AI-Generated Ansible Code,paper behind replication-package record R0618

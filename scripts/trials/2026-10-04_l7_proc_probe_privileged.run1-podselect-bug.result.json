@@ -1,0 +1,35 @@
+{
+ "gold_frontend": {
+  "pod": "frontend-7dfdb7cdfd-fjk5x",
+  "container": "server",
+  "ok": true,
+  "cap_eff": 0,
+  "cap_bnd": 0,
+  "no_new_privs": true,
+  "uid_real": 10001,
+  "uid_effective": 10001,
+  "seccomp": "2",
+  "cap_eff_hex": "0000000000000000",
+  "cap_bnd_hex": "0000000000000000"
+ },
+ "gold_redis": {
+  "pod": "redis-cart-64f7459c49-6r47s",
+  "container": "redis",
+  "ok": true,
+  "cap_eff": 0,
+  "cap_bnd": 0,
+  "no_new_privs": true,
+  "uid_real": 10001,
+  "uid_effective": 10001,
+  "seccomp": "2",
+  "cap_eff_hex": "0000000000000000",
+  "cap_bnd_hex": "0000000000000000"
+ },
+ "privileged_frontend": {
+  "pod": "frontend-7dfdb7cdfd-fjk5x",
+  "container": "server",
+  "ok": false,
+  "error": "no /proc status read",
+  "raw": ""
+ }
+}

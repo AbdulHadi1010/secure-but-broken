@@ -1,0 +1,19 @@
+{
+ "case_id": "added-capabilities-frontend",
+ "service_port": 80,
+ "type": "added-capabilities",
+ "fix_class": "a",
+ "service": "frontend",
+ "reference_fix": "remove SYS_ADMIN from securityContext.capabilities.add (keep drop: [ALL])",
+ "target_rules": [
+  "checkov:CKV_K8S_25",
+  "checkov:CKV_K8S_39",
+  "kics:235236ee-ad78-4065-bd29-61b061f28ce0",
+  "kics:19ebaa28-fc86-4a58-bcfa-015c9e22fe40"
+ ],
+ "coupled_rules": [],
+ "injected_capability": "SYS_ADMIN",
+ "injected_cap_mask": "200000",
+ "gold_sha256": "08aa0feec0d6b47270472db2275acdc52479b3d80615bec107ab30682ac33dcb",
+ "case_sha256": "2b3511d2afc16020277aa7632e1a6f0c02ecedcb1d06af53b04d2a0aea7bf091"
+}

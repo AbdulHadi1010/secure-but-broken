@@ -1,0 +1,34 @@
+{
+  "per_database": {
+    "arXiv": 140,
+    "OpenAlex": 694,
+    "IEEE Xplore": 230,
+    "ACM DL": 51
+  },
+  "db_sum": 1115,
+  "unique_db": 859,
+  "duplicates_removed": 256,
+  "snowballing": 6,
+  "screened": 865,
+  "ta_excluded": {
+    "X1": 413,
+    "X2": 25,
+    "X3": 41,
+    "X6": 156,
+    "X4": 21,
+    "X5": 21
+  },
+  "ta_excluded_total": 677,
+  "sought": 188,
+  "not_retrieved": 5,
+  "assessed": 183,
+  "decided": 183,
+  "ft_excluded": {
+    "IC2": 26,
+    "IC1": 12,
+    "E1": 7,
+    "E3": 6
+  },
+  "ft_excluded_total": 51,
+  "included": 132
+}

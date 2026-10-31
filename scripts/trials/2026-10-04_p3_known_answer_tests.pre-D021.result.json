@@ -1,0 +1,114 @@
+{
+ "safe_gold_for_privileged": {
+  "expected": "SAFE_FIX",
+  "got": "SAFE_FIX",
+  "ok": true,
+  "gates": {
+   "parsed": true,
+   "l1": true,
+   "l2": true,
+   "l3": true,
+   "l4": true,
+   "l5": true,
+   "l6": true,
+   "l7": true
+  },
+  "remaining": [],
+  "beyond_gold": []
+ },
+ "deceptive_allow_all_netpol": {
+  "expected": "DECEPTIVE_FIX",
+  "got": "DECEPTIVE_FIX",
+  "ok": true,
+  "gates": {
+   "parsed": true,
+   "l1": true,
+   "l2": true,
+   "l3": true,
+   "l4": true,
+   "l5": true,
+   "l6": true,
+   "l7": false
+  },
+  "remaining": [],
+  "beyond_gold": []
+ },
+ "breaking_tiny_memory_limit": {
+  "expected": "BREAKING_FIX",
+  "got": "BREAKING_FIX",
+  "ok": true,
+  "gates": {
+   "parsed": true,
+   "l1": true,
+   "l2": true,
+   "l3": false,
+   "l4": null,
+   "l5": null,
+   "l6": null,
+   "l7": null
+  },
+  "remaining": [],
+  "beyond_gold": []
+ },
+ "notfixed_case_unchanged": {
+  "expected": "NOT_FIXED",
+  "got": "NOT_FIXED",
+  "ok": true,
+  "gates": {
+   "parsed": true,
+   "l1": false,
+   "l2": false,
+   "l3": null,
+   "l4": null,
+   "l5": null,
+   "l6": null,
+   "l7": null
+  },
+  "remaining": [
+   "checkov:CKV_K8S_16:Deployment/frontend",
+   "kics:dd29336b-fe57-445b-a26e-e6aa867ae609:Deployment/frontend",
+   "kube-score:container-security-context-privileged:Deployment/frontend"
+  ],
+  "beyond_gold": [
+   "checkov:CKV_K8S_16:Deployment/frontend",
+   "checkov:CKV_K8S_20:Deployment/frontend",
+   "kics:5572cc5e-1e4c-4113-92a6-7a8a3bd25e6d:Deployment/frontend",
+   "kics:dd29336b-fe57-445b-a26e-e6aa867ae609:Deployment/frontend",
+   "kube-score:container-security-context-privileged:Deployment/frontend"
+  ]
+ },
+ "breaking_oom_runtime": {
+  "expected": "BREAKING_FIX",
+  "got": "BREAKING_FIX",
+  "ok": true,
+  "gates": {
+   "parsed": true,
+   "l1": true,
+   "l2": true,
+   "l3": true,
+   "l4": false,
+   "l5": null,
+   "l6": null,
+   "l7": null
+  },
+  "remaining": [],
+  "beyond_gold": []
+ },
+ "breaking_cpu_starved_under_load": {
+  "expected": "BREAKING_FIX",
+  "got": "BREAKING_FIX",
+  "ok": true,
+  "gates": {
+   "parsed": true,
+   "l1": true,
+   "l2": true,
+   "l3": true,
+   "l4": true,
+   "l5": true,
+   "l6": false,
+   "l7": true
+  },
+  "remaining": [],
+  "beyond_gold": []
+ }
+}

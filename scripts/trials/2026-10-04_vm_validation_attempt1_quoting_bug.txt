@@ -1,0 +1,9 @@
+
+Failed exit=1 output=s3://sbb-artifacts-<AWS_ACCOUNT_ID>/ssm/e5ab1cba-2986-4c14-99a5-d88638f6038e/
+breaking_tiny_memory_limit {'expected': 'BREAKING_FIX', 'got': 'BREAKING_FIX', 'ok': True, 'gates': {'parsed': True, 'l1': True, 'l2': True, 'l3': False, 'l4': None, 'l5': None, 'l6': None, 'l7': None}, 'remaining': [], 'beyond_gold': []}
+breaking_oom_runtime {'expected': 'BREAKING_FIX', 'got': 'BREAKING_FIX', 'ok': True, 'gates': {'parsed': True, 'l1': True, 'l2': True, 'l3': True, 'l4': False, 'l5': None, 'l6': None, 'l7': None}, 'remaining': [], 'beyond_gold': []}
+breaking_cpu_starved_under_load {'expected': 'BREAKING_FIX', 'got': 'BREAKING_FIX', 'ok': True, 'gates': {'parsed': True, 'l1': True, 'l2': True, 'l3': True, 'l4': True, 'l5': True, 'l6': False, 'l7': True}, 'remaining': [], 'beyond_gold': []}
+0
+failed to run commands: exit status 1
+
+[exited with code 0]

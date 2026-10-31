@@ -1,0 +1,14 @@
+{
+ "case_id": "netpol-cartservice",
+ "service_port": 7070,
+ "type": "netpol",
+ "fix_class": "c",
+ "service": "cartservice",
+ "reference_fix": "restore a NetworkPolicy for the service that admits only its real callers on its port (gold: upstream policy) and let deny-all select it again",
+ "target_rules": [
+  "kube-score:pod-networkpolicy"
+ ],
+ "coupled_rules": [],
+ "gold_sha256": "08aa0feec0d6b47270472db2275acdc52479b3d80615bec107ab30682ac33dcb",
+ "case_sha256": "eb86b73fe241919c9439f43f141fd1694581b24652f3a92df5bccf5678a14f77"
+}
